@@ -16,7 +16,6 @@ if (call A3A_fnc_modBlacklist) exitWith {};
 player forceAddUniform "U_C_WorkerCoveralls";
 
 musicON = false;
-recruitCooldown = 0;			//Prevents units being recruited too soon after being dismissed.
 incomeRep = false;
 isPowPaycheckAnnounced = false; //Are players know about that IDAP pays for released prisoners
 isSupportAnnounced = false;     //Are support abilities announced
