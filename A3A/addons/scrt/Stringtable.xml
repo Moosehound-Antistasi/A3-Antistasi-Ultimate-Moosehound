@@ -725,7 +725,7 @@
                 <Korean>의식불명 상태로는 집결 지점으로 이동할 수 없습니다.</Korean>
             </Key>
             <Key ID="STR_A3AP_rally_hq">
-                <Original>You can't travel to rally point outside the HQ.</Original>
+                <Original>You can't travel to rally point from outside the HQ.</Original>
                 <Russian>Вы не можете путешествовать к точке сбора находясь за пределами штаба.</Russian>
                 <Chinesesimp>您不能前往总部外的集结点。</Chinesesimp>
                 <Korean>본부 밖의 집결 지점으로 이동할 수 없습니다.</Korean>
