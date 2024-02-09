@@ -354,7 +354,7 @@
                 <German>Maschinengewehrschütze rekrutieren</German>
                 <Czech>Kulometník</Czech>
                 <Chinesesimp>招募自动步枪手</Chinesesimp>
-                <Korean>자동화기사수 모집</Korean>
+                <Korean>자동소총수 모집</Korean>
                 <Italian>Recluta Fuciliere Automatico</Italian>
                 <Spanish>Reclutar ametrallador</Spanish>
                 <Polish>Rekrutuj Celowniczego KM</Polish>
@@ -550,7 +550,7 @@
                 <German>Maschinengewehrschütze rekrutieren</German>
                 <Czech>Kulometník</Czech>
                 <Chinesesimp>招募自动步枪手</Chinesesimp>
-                <Korean>자동화기사수 모집</Korean>
+                <Korean>자동소총수 모집</Korean>
                 <Italian>Recluta Fuciliere Automatico</Italian>
                 <Spanish>Reclutar Ametrallador</Spanish>
                 <Polish>Rekrutuj Celowniczego KM</Polish>
@@ -630,10 +630,12 @@
             <Key ID="STR_antistasi_dialogs_unit_recruit_atmissile_text">
                 <Original>Recruit AT Specialist</Original>
                 <Russian>ПТ-специалист</Russian>
+                <Korean>대전차전문가 모집</Korean>
             </Key>
             <Key ID="STR_antistasi_dialogs_unit_recruit_aamissile_text">
                 <Original>Recruit AA Specialist</Original>
                 <Russian>Оператор ПЗРК</Russian>
+                <Korean>대공전문가 모집</Korean>
             </Key>
         </Container>
         <Container name="dialog_generic">
@@ -1037,7 +1039,7 @@
                 <German>Aggression</German>
                 <Czech>Agresivita</Czech>
                 <Chinesesimp>侵略性</Chinesesimp>
-                <Korean>어그로 효과</Korean>
+                <Korean>공격성 효과</Korean>
                 <Russian>Агрессия</Russian>
                 <Italian>Effetti Aggro</Italian>
                 <Spanish>Efectos Aggro</Spanish>
@@ -1049,7 +1051,7 @@
                 <German>Behalte dies im Auge. Wenn sie zu hoch wird, wirst du dich deutlich mehr Angriffen und besseren Einheiten entgegenstellen müssen.</German>
                 <Czech>Dávejte pozor na to. Pokud je příliš vysoká, budete muset čelit více útokům s lepšími jednotkami.</Czech>
                 <Chinesesimp>密切关注侵略性。如果侵略性太高, 你将不得不面对更多、更强的进攻部队。</Chinesesimp>
-                <Korean>경계하십시오. 수치가 너무 높다면, 적군이 더 자주, 강하게 공격할 것입니다.</Korean>
+                <Korean>조심하십시오. 수치가 너무 높다면, 적군이 더 자주, 강하게 공격할 것입니다.</Korean>
                 <Russian>Следите за уровнем агрессии. Чем он выше, тем больше хорошо экипированных солдат будет использовать противник.</Russian>
                 <Italian>Tienilo d'occhio. Se è troppo alto, dovrai affrontare più attacchi con truppe migliori.</Italian>
                 <Spanish>Echale un ojo, si es muy alto, te tendrás que enfrentar a más ataques con mejores tropas</Spanish>
@@ -2721,6 +2723,7 @@
                 <Original>Credits</Original>
                 <English>Credits</English>
                 <Russian>Заслуги</Russian>
+                <Korean>크레딧</Korean>
             </Key>
             <Key ID="STR_antistasi_journal_entry_header_Credits_1">
                 <Original>Script Credits</Original>
@@ -2795,26 +2798,31 @@
                 <Original>Antistasi Basics</Original>
                 <English>Antistasi Basics</English>
                 <Russian>Основы Antistasi</Russian>
+                <Korean>일반 안티스타시</Korean>
             </Key>
             <Key ID="STR_antistasi_journal_entry_header_commander_options_name">
                 <Original>Commander Options</Original>
                 <English>Commander Options</English>
                 <Russian>Функции командира</Russian>
+                <Korean>지휘관 옵션</Korean>
             </Key>
             <Key ID="STR_antistasi_journal_entry_header_special_keys_name">
                 <Original>Special Keys</Original>
                 <English>Special Keys</English>
                 <Russian>Спец. клавиши</Russian>
+                <Korean>특수 키</Korean>
             </Key>
             <Key ID="STR_antistasi_journal_entry_header_features_detail_name">
                 <Original>Features Detail</Original>
                 <English>Features Detail</English>
                 <Russian>Возможности</Russian>
+                <Korean>기능 세부 정보</Korean>
             </Key>
             <Key ID="STR_antistasi_journal_entry_header_ai_management_name">
                 <Original>AI Management</Original>
                 <English>AI Management</English>
                 <Russian>Управление ИИ</Russian>
+                <Korean>AI 관리</Korean>
             </Key>
             <Key ID="STR_antistasi_journal_entry_header_game_options_name">
                 <Original>Game Options</Original>
@@ -4869,46 +4877,59 @@
             <Key ID="STR_A3A_Utility_Items_Last_Time_Purchase">
         <Original>You already bought one, wait %1 seconds before you can buy another.</Original>
         <Spanish>Ya has comprado una unidad, espera %1 segundos antes de poder comprar otra.</Spanish>				  
+        <Korean>이미 하나를 구입하였습니다. 다른 걸 구입하려면 %1초를 기다리십시오.</Korean>
       </Key>
       <Key ID="STR_A3A_Utility_Items_Insufficient_Funds">
         <Original>You can't afford this Item.</Original>
         <Spanish>No puedes pagar ese objeto.</Spanish>
+        <Korean>이 아이템을 구입할 자금이 부족합니다.</Korean>
       </Key>
       <Key ID="STR_A3A_Utility_Items_Purchase_Title">
         <Original>Item Purchase</Original>
         <Spanish>Compra de objeto</Spanish>
+        <Korean>아이템 구입</Korean>
       </Key>
       <Key ID="STR_A3A_Packable_Objects_Title">
         <Original>Packing Objects</Original>
         <Spanish>Objetos empacables</Spanish>
+        <Korean>오브젝트 포장</Korean>
       </Key>
       <Key ID="STR_A3A_Packable_Objects_refunding_error">
         <Original>refunding money due to error</Original>
         <Spanish>Devolviendo el dinero a causa de un error.</Spanish>
+        <Korean>오류로 인해 환불됨</Korean>
       </Key>
       <Key ID="STR_A3A_Utility_Items_Name_lootbox">
         <Original>Loot Box</Original>
+        <Korean>전리품 상자</Korean>
       </Key>
       <Key ID="STR_A3A_Utility_Items_Name_fueldrum">
         <Original>Fuel Drum</Original>
+        <Korean>연료통 (드럼통)</Korean>
       </Key>
       <Key ID="STR_A3A_Utility_Items_Name_fueltank">
         <Original>Fuel Tank</Original>
+        <Korean>연료통 (연료탱크)</Korean>
       </Key>
       <Key ID="STR_A3A_Utility_Items_Name_medicaltent">
         <Original>Medical Tent</Original>
+        <Korean>의료텐트</Korean>
       </Key>
       <Key ID="STR_A3A_Utility_Items_Name_medicalbox">
         <Original>Medical Box</Original>
+        <Korean>의료 상자</Korean>
       </Key>
       <Key ID="STR_A3A_Utility_Items_Name_ammostation">
         <Original>Ammo Station</Original>
+        <Korean>탄약고</Korean>
       </Key>
       <Key ID="STR_A3A_Utility_Items_Name_repairstation">
         <Original>Repair Station</Original>
+        <Korean>수리소</Korean>
       </Key>
       <Key ID="STR_A3A_Utility_Items_Name_light">
         <Original>Light</Original>
+        <Korean>조명</Korean>
       </Key>
         </Container>
         <Container name="server_info">
@@ -4979,6 +5000,7 @@
             <Key ID="STR_A3A_feedback_serverinfo_mismatch">
                 <Original>Version mismatch error:&lt;br/&gt;&lt;br/&gt;Server: %1&lt;br/&gt;Client: %2</Original>
                 <Russian>Ошибка, несовпадение версий:&lt;br/&gt;&lt;br/&gt;Сервер: %1&lt;br/&gt;Клиент: %2</Russian>
+                <Korean>버전 불일치 오류:&lt;br/&gt;&lt;br/&gt;서버: %1&lt;br/&gt;클라이언트: %2</Korean>
             </Key>
         </Container>
         <Container name="A3A_actions">
@@ -5199,41 +5221,49 @@
                 <Original>ANTISTASI ULTIMATE PARAMETERS</Original>
                 <English>ANTISTASI ULTIMATE PARAMETERS</English>
                 <Russian>ПАРАМЕТРЫ ANTISTASI ULTIMATE</Russian>
+                <Korean>안티스타시 얼티밋 매개변수</Korean>
             </Key>
             <Key ID="STR_A3AU_cosmetics">
                 <Original>Enable Cosmetics</Original>
                 <English>Enable Cosmetics</English>
                 <Russian>Добавить косметические предметы</Russian>
+                <Korean>설계도 활성화</Korean>
             </Key>
             <Key ID="STR_A3AU_uncap_zombie_spawn">
                 <Original>Enable Uncapped Zombie Spawning</Original>
                 <English>Enable Uncapped Zombie Spawning</English>
                 <Russian>Включить неограниченный спавн зомби</Russian>
+                <Korean>무제한 좀비 스폰 활성화</Korean>
             </Key>
             <Key ID="STR_A3AU_old_garrison_spawn">
                 <Original>Use Old Plus Garrison Spawning</Original>
                 <English>Use Old Plus Garrison Spawning</English>
                 <Russian>Использовать старую логику спавна гарнизонов из Plus</Russian>
+                <Korean>기존 안티스타시 플러스 주둔지 스폰 사용</Korean>
             </Key>
             <Key ID="STR_A3AU_vanilla_weapons_in_arms_dealer">
                 <Original>Include Vanilla Weapons In Arms Dealer</Original>
                 <English>Include Vanilla Weapons In Arms Dealer</English>
                 <Russian>Добавить ванильное оружие в ассортимент торговца оружием</Russian>
+                <Korean>암거래상에 바닐라 무기 포함</Korean>
             </Key>
             <Key ID="STR_A3AU_stamina_enabled">
                 <Original>Enable Stamina (Vanilla)</Original>
                 <English>Enable Stamina (Vanilla)</English>
                 <Russian>Включить выносливость (Vanilla)</Russian>
+                <Korean>스태미나 활성화 (바닐라)</Korean>
             </Key>
             <Key ID="STR_A3AU_fatigue_enabled">
                 <Original>Enable Fatigue (Vanilla)</Original>
                 <English>Enable Fatigue (Vanilla)</English>
                 <Russian>Включить усталость (Vanilla)</Russian>
+                <Korean>피로도 활성화 (바닐라)</Korean>
             </Key>
             <Key ID="STR_A3AU_sway_enabled">
                 <Original>Enable Sway (Vanilla)</Original>
                 <English>Enable Sway (Vanilla)</English>
                 <Russian>Включить раскачку оружия (Vanilla)</Russian>
+                <Korean>무기 흔들림 활성화 (바닐라)</Korean>
             </Key>
         </Container>
     </Package>

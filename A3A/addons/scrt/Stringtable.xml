@@ -12,11 +12,12 @@
                 <Original>Fuel Tank</Original>
                 <Russian>Топливная цистерна</Russian>
                 <Chinesesimp>油箱</Chinesesimp>
-                <Korean>연료탱크</Korean>
+                <Korean>연료통 (연료탱크)</Korean>
             </Key>
             <Key ID="STR_A3AP_buyvehdialog_fuel_drum">
                 <Original>Fuel Drum</Original>
                 <Russian>Бочка с топливом</Russian>
+                <Korean>연료통 (드럼통)</Korean>
             </Key>
             <Key ID="STR_A3AP_buyvehdialog_light">
                 <Original>Light</Original>
@@ -33,18 +34,22 @@
             <Key ID="STR_A3AP_buyvehdialog_medical_tent">
                 <Original>Medical Tent</Original>
                 <Russian>Медицинская палатка</Russian>
+                <Korean>의료텐트</Korean>
             </Key>
             <Key ID="STR_A3AP_buyvehdialog_ammo_station">
                 <Original>Ammo Station</Original>
                 <Russian>Пункт боепитания</Russian>
+                <Korean>탄약고</Korean>
             </Key>
             <Key ID="STR_A3AP_buyvehdialog_repair_station">
                 <Original>Repair Station</Original>
                 <Russian>Пункт ремонта</Russian>
+                <Korean>수리소</Korean>
             </Key>
             <Key ID="STR_A3AP_buyvehdialog_medical_box">
                 <Original>Medical Box</Original>
                 <Russian>Коробка с медициной</Russian>
+                <Korean>의료 상자</Korean>
             </Key>
         </Container>
         <Container name="arsenal">
@@ -3881,10 +3886,12 @@
             <Key ID="STR_params_global_civilian_max">
                 <Original>Maximum civilians on server</Original>
                 <Russian>Максимальное количество гражданских на сервере</Russian>
+                <Korean>서버 내 최대 민간인 수</Korean>
             </Key>
             <Key ID="STR_params_civ_per_town">
                 <Original>Maximum civilians per town</Original>
                 <Russian>Максимальное количество гражданских на населенный пункт</Russian>
+                <Korean>마을 당 최대 민간인 수</Korean>
             </Key>
             <Key ID="STR_params_civ_traffic_none">
                 <Original>None</Original>
@@ -4009,10 +4016,12 @@
             <Key ID="STR_params_gc_threshold">
                 <Original>Garbage Cleaner Threshold for Automatic Garbage Collection (in hours)</Original>
                 <Russian>Порог активации сборщика мусора (в часах)</Russian>
+                <Korean>자동 쓰레기 청소에 대한 쓰레기 청소 프로그램 임계점 (시간)</Korean>
             </Key>
             <Key ID="STR_params_revive_time">
                 <Original>Revive time for players (in seconds)</Original>
                 <Russian>Время до поднятия игрока на ноги (в секундах)</Russian>
+                <Korean>플레이어 소생 시간 (초)</Korean>
             </Key>
             <Key ID="STR_params_antistasi_plus">
                 <Original>ANTISTASI PLUS PARAMETERS</Original>
@@ -4816,6 +4825,7 @@
                 <Original>Your Headquarters</Original>
                 <English>Your Headquarters</English>
                 <Russian>Штаб</Russian>
+                <Korean>당신의 본부</Korean>
             </Key>
         </Container>
         <Container name="system_chats">
@@ -4920,10 +4930,12 @@
             <Key ID="STR_info_bar_undercover_break_reason_mil_items_1">
                 <Original>You can't stay Undercover while:&lt;br/&gt;&lt;br/&gt;A weapon is visible&lt;br/&gt;Wearing a vest&lt;br/&gt;Wearing a helmet&lt;br/&gt;Wearing NVGs&lt;br/&gt;Wearing a military uniform!</Original>
                 <Russian>Вы не можете оставаться под прикрытием, если:&lt;br/&gt;&lt;br/&gt; у вас есть какое-либо видимое оружие&lt;br/&gt;Вы в бронежилете или разгрузке&lt;br/&gt;Вы в каске&lt;br/&gt;Вы носите ПНВ&lt;br/&gt;Вы в военной форме!</Russian>
+                <Korean>다음과 같은 경우에는 위장을 유지할 수 없습니다:&lt;br/&gt;&lt;br/&gt;무기 보임&lt;br/&gt;조끼 착용&lt;br/&gt;헬멧 착용&lt;br/&gt;야시경 착용&lt;br/&gt;군복을 입음!</Korean>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_mil_items_2">
                 <Original>You can't stay Undercover while:&lt;br/&gt;&lt;br/&gt;A weapon is visible&lt;br/&gt;Wearing a vest&lt;br/&gt;Wearing a helmet&lt;br/&gt;Wearing NVGs&lt;br/&gt;Wearing a military uniform&lt;br/&gt;Enemy have added you to Wanted list!</Original>
                 <Russian>Вы не можете оставаться под прикрытием, если:&lt;br/&gt;&lt;br/&gt; у вас есть какое-либо видимое оружие&lt;br/&gt;Вы в бронежилете или разгрузке&lt;br/&gt;Вы в каске&lt;br/&gt;Вы носите ПНВ&lt;br/&gt;Вы в военной форме&lt;br/&gt;Враг добавил вас в список разыскиваемых лиц!</Russian>
+                <Korean>다음과 같은 경우에는 위장을 유지할 수 없습니다:&lt;br/&gt;&lt;br/&gt;무기 보임&lt;br/&gt;조끼 착용&lt;br/&gt;헬멧 착용&lt;br/&gt;야시경 착용&lt;br/&gt;군복을 입음!&lt;br/&gt;적이 당신을 수배 목록에 추가했습니다!</Korean>
             </Key>
             <Key ID="STR_info_bar_undercover_break_reason_mil_carry">
                 <Original>You're looking very suspicious while carrying military-grade items, and the enemy has noticed it.</Original>
@@ -5284,10 +5296,12 @@
             <Key ID="STR_antistasi_dialogs_at_title">
                 <Original>AT Specialist</Original>
                 <Russian>ПТ-специалист</Russian>
+                <Korean>대전차전문가</Korean>
             </Key>
             <Key ID="STR_antistasi_dialogs_aa_title">
                 <Original>AA Specialist</Original>
                 <Russian>Оператор ПЗРК</Russian>
+                <Korean>대공전문가</Korean>
             </Key>
         </Container>
         <Container name="simple_menu_dialogs">
@@ -6983,7 +6997,7 @@
                 <Russian>Поиск завершен, но вы ничего не нашли.</Russian>
                 <Chinesesimp>搜索完成，但你一无所获。</Chinesesimp>
                 <Korean>검색을 완료했지만 아무것도 찾지 못했습니다.</Korean>
-                </Key>
+            </Key>
         </Container>
         <Container name="intel">
             <Key ID="STR_intel_header">
@@ -8012,7 +8026,6 @@
                 <Chinesesimp>&lt;t size='0.6'&gt; %1 正在来救你的路上。&lt;t size='0.5'&gt;&lt;br/&gt;按R键重生。%2%3&lt;/t&gt;&lt;/t&gt;</Chinesesimp>
                 <Korean>&lt;t size='0.6'&gt;%1이(가) 당신을 도우러 가는 중입니다.&lt;t size='0.5'&gt;&lt;br/&gt;재투입하려면 R 키를 누르십시오.%2%3&lt;/t&gt;&lt;/t&gt;</Korean>
             </Key>
-        
             <Key ID="STR_antistasi_actions_unconscious_action_prompt_possess">
                 <Original>&lt;br/&gt;Press T to possess friendly AI unit to help yourself.</Original>
                 <Russian>&lt;br/&gt;Нажмите T, чтобы вселиться в дружественный ИИ-юнит, чтобы помочь себе.</Russian>
@@ -8512,7 +8525,7 @@
                 <Original>Unconscious</Original>
                 <Russian>Раненый</Russian>
                 <Chinesesimp>失去意识</Chinesesimp>
-                <Korean>의식불명의</Korean>
+                <Korean>의식불명</Korean>
             </Key>
         </Container>
         <Container name="player_actions">
@@ -9417,18 +9430,22 @@
             <Key ID="STR_A3A_goUndercover_error_towing_ropes_head">
                 <Original>This vehicle cannot go undercover while it has tow ropes attached</Original>
                 <Russian>Эта техника не может уйти в маскировка пока к ней прикреплен буксировочный трос.</Russian>
+                <Korean>이 차량은 견인줄이 걸려 있는 동안에는 위장이 불가능합니다.</Korean>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_towing_ropes">
                 <Original>In vehicle with tow ropes attached</Original>
                 <Russian>В технике с прикрепленным буксировочным тросом</Russian>
+                <Korean>견인줄이 부착된 차량일 경우</Korean>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_towing_ropes_2">
                 <Original>%1&lt;br/&gt;Holding tow ropes.</Original>
                 <Russian>"%1&lt;br/&gt;В руках буксировочный трос.</Russian>
+                <Korean>%1이(가)&lt;br/&gt;견인줄을 잡고 있습니다.</Korean>
             </Key>
             <Key ID="STR_A3A_goUndercover_error_towing_ropes_output">
                 <Original>Holding tow ropes</Original>
                 <Russian>Держит буксировочный трос</Russian>
+                <Korean>견인줄을 잡는 중</Korean>
             </Key>
         </Container>
         <Container name="A3A_ai">
@@ -9801,10 +9818,12 @@
             <Key ID="STR_A3A_reinf_reinfPlayer_no_money_equip">
                 <Original>You don't have enough money to equip this type of unit.</Original>
                 <Russian>У вас недостаточно денег для экипирования данного типа юнита.</Russian>
+                <Korean>이런 종류의 유닛을 장비하는 데 필요한 자금이 부족합니다.</Korean>
             </Key>
             <Key ID="STR_A3A_reinf_reinfPlayer_no_weapons_equip">
                 <Original>You don't have enough weapons to equip this type of unit.</Original>
                 <Russian>У вас недостаточно оружия для экипирования данного типа юнита.</Russian>
+                <Korean>이런 종류의 유닛을 장비하는 데 필요한 무기가 부족합니다.</Korean>
             </Key>
             <Key ID="STR_A3A_reinf_reinfPlayer_full_squad">
                 <Original>Your squad is full or you have too many scattered units with no radio contact.</Original>
@@ -10357,7 +10376,7 @@
                 <Original>You can't Fast Travel if:&lt;br/&gt;you don't have a driver in all your vehicles or&lt;br/&gt;your vehicles are damaged and can't move or&lt;br/&gt;your group is in a boat.</Original>
                 <Russian>Вы не можете быстро путешествовать пока:&lt;br/&gt;во всех транспортных средствах вашего отряда нет водителей или&lt;br/&gt; ваша техника повреждена и обездвижена или&lt;br/&gt;ваш отряд находится в лодке или ином плавательном средстве.</Russian>
                 <Chinesesimp>如果出现以下情况，您将无法快速旅行：&lt;br/&gt;您的所有车辆都没有驾驶员，或者&lt;br/&gt;您的车辆损坏且无法移动，或者&lt;br/&gt;&gt;你的小队在船上或其他船只上。</Chinesesimp>
-                <Korean>다음의 경우 빠른 이동이 불가능합니다:&lt;br/&gt;해당 차량에 운전수가 없거나&amp;lt;br/&amp;gt;차량이 손상되어 움직일 수 없거나&lt;br/&gt;당신의 그룹이 보트에 있을 경우.</Korean>
+                <Korean>다음의 경우 빠른 이동이 불가능합니다:&lt;br/&gt;해당 차량에 운전수가 없거나&lt;br/&gt;차량이 손상되어 움직일 수 없거나&lt;br/&gt;당신의 그룹이 보트에 있을 경우.</Korean>
             </Key>
             <Key ID="STR_A3A_Dialogs_fast_travel_click">
                 <Original>Click on the zone you want to travel.</Original>
@@ -10381,7 +10400,7 @@
                 <Original>Player groups are only allowed to Fast Travel to HQ, Airbases, Military Bases, Rally Points and Arms Dealer.</Original>
                 <Russian>Группы игроков могут быстро путешествовтаь только до штаба, авиа- и военных баз, а также точек сбора и оружейного торговца.</Russian>
                 <Chinesesimp>玩家组队只能快速前往总部、空军基地、军事基地、集结点和军火商。</Chinesesimp>
-                <Korean>플레이어 그룹은 본부, 공군 기지, 군사 기지, 집결 지점, CIA 암거래상으로만 빠른 이동이 가능합니다.</Korean>
+                <Korean>플레이어 그룹은 본부, 공군 기지, 군사 기지, 집결 지점, 암거래상으로만 빠른 이동이 가능합니다.</Korean>
             </Key>
             <Key ID="STR_A3A_Dialogs_fast_travel_no_enemy_zone">
                 <Original>You can't Fast Travel to an enemy controlled zone.</Original>
