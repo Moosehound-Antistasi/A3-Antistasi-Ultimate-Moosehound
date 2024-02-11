@@ -1,0 +1,6 @@
+name = "Antistasi Ultimate - Moosehound Edition"
+prefix = "A3A"
+mainprefix = "x"
+
+[version]
+path = "addons/core/Includes/script_version.hpp"

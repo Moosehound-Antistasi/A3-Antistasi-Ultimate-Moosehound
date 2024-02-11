@@ -8,6 +8,7 @@
 *.bat
 *.png
 AntistasiBuilder.cfg
+.hemttout
 
 #Ignore mission files that have been copied to A3-Antistasi
 A3-Antistasi/description.ext
