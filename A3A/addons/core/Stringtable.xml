@@ -687,6 +687,16 @@
                 <Spanish>No</Spanish>
                 <Polish>Nie</Polish>
             </Key>
+            <Key ID="STR_A3AU_dialogs_radioman_support">
+                <Original>Radioman</Original>
+                <English>Radioman</English>
+                <Russian>радист</Russian>
+            </Key>
+            <Key ID="STR_A3AU_dialogs_squadleader_support">
+                <Original>Squadleader</Original>
+                <English>Squadleader</English>
+                <Russian>лидер команды</Russian>
+            </Key>
         </Container>
         <Container name="credits_generic">
             <Key ID="STR_antistasi_credits_generic_overview_text">
@@ -5246,6 +5256,11 @@
                 <English>Include Vanilla Weapons In Arms Dealer</English>
                 <Russian>Добавить ванильное оружие в ассортимент торговца оружием</Russian>
                 <Korean>암거래상에 바닐라 무기 포함</Korean>
+            </Key>
+            <Key ID="STR_A3AU_radioman_support">
+                <Original>Support Caller</Original>
+                <English>Support Caller</English>
+                <Russian>Вызывающий поддержку</Russian>
             </Key>
             <Key ID="STR_A3AU_stamina_enabled">
                 <Original>Enable Stamina (Vanilla)</Original>

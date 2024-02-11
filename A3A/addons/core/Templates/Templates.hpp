@@ -265,6 +265,14 @@ class Templates
         name = "RHS";
         file = "RHS_Civ";
     };
+	
+    class RHS_SAF : RHS_Base
+    {
+	    side = "Inv";
+	    flagTexture = "rhssaf\addons\rhssaf_main\data\flags\flag_serbia_co.paa";
+        name = "RHS SAF";
+        file = "RHS_AI_SAF";
+    };
 
 
     // ************************************** 3CB Factions *******************************************************

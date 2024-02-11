@@ -176,6 +176,13 @@ class Params
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
         default = 0;
     };
+    class radiomanSupport
+    {
+        title = $STR_A3AU_radioman_support;
+        values[] = {0,1};
+        texts[] = {$STR_A3AU_dialogs_radioman_support,$STR_A3AU_dialogs_squadleader_support};
+        default = 0;
+    };
     class staminaEnabled
     {
         title = $STR_A3AU_stamina_enabled;

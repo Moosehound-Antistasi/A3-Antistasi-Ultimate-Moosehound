@@ -63,6 +63,7 @@ class CfgMissions
 		A3A_Mission(ruha, "Antistasi Ultimate - Ruha")
 		A3A_Mission(gm_weferlingen_winter, "Antistasi Ultimate - Weferlingen Winter")
         A3A_Mission(gm_weferlingen_summer, "Antistasi Ultimate - Weferlingen Summer")
+        A3A_Mission(green_sea, "Antistasi Ultimate - Green Sea")
 		A3A_Mission(brf_sumava, "Antistasi Ultimate - Sumava")
 #if __A3_DEBUG__
         A3A_Mission(Stratis, $STR_antistasi_mission_info_Stratis_mapname_text)

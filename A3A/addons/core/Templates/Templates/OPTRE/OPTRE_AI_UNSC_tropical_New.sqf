@@ -396,8 +396,8 @@ _policeLoadoutData set ["sidearms", [
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _militiaLoadoutData set ["uniforms", ["OPTRE_FC_Marines_Uniform_WDL_L"]];
-_militiaLoadoutData set ["vests", ["OPTRE_FC_M52B_Armor_Rifleman_WDL", "OPTRE_FC_M52B_Armor_Light_WDL"]];
-_militiaLoadoutData set ["sniVests", ["OPTRE_FC_M52B_Armor_Sniper_WDL"]];
+_militiaLoadoutData set ["vests", ["OPTRE_FC_M52B_Armor_Rifleman", "OPTRE_FC_M52B_Armor_Light"]];
+_militiaLoadoutData set ["sniVests", ["OPTRE_FC_M52B_Armor_Sniper"]];
 _militiaLoadoutData set ["backpacks", ["OPTRE_UNSC_Rucksack"]];
 _militiaLoadoutData set ["slBackpacks", ["OPTRE_UNSC_Rucksack"]];
 _militiaLoadoutData set ["atBackpacks", ["OPTRE_UNSC_Rucksack"]];

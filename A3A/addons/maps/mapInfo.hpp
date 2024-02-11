@@ -37,5 +37,6 @@ class mapInfo {
 	#include "Antistasi_ruha.ruha\mapInfo.hpp"
 	#include "Antistasi_gm_weferlingen_winter.gm_weferlingen_winter\mapInfo.hpp"
     #include "Antistasi_gm_weferlingen_summer.gm_weferlingen_summer\mapInfo.hpp"
+    #include "Antistasi_green_sea.green_sea\mapInfo.hpp"
 	#include "Antistasi_brf_sumava.brf_sumava\mapInfo.hpp"
 };
