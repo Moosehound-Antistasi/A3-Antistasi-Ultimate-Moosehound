@@ -18,7 +18,7 @@ class CfgPatches {
 	#include "Addons\main\config.hpp"
 #undef HALs_DEF_INIT
 
-#if __A3_DEBUG__
+#ifdef __A3_DEBUG__
     class A3A {
         #include "CfgFunctions.hpp"
     };

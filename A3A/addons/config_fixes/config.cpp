@@ -8,11 +8,11 @@ class CfgPatches
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        #if __has_include("\CUP\Weapons\CUP_Weapons_DynamicLoadout\mk82\CUP_mk82_pod.p3d")
-        requiredAddons[] = {"A3_Weapons_F", "CUP_Weapons_DynamicLoadout"};
-        #else
+        //#if __has_include("\CUP\Weapons\CUP_Weapons_DynamicLoadout\mk82\CUP_mk82_pod.p3d")
+        //requiredAddons[] = {"A3_Weapons_F", "CUP_Weapons_DynamicLoadout"};
+        //#else
         requiredAddons[] = {"A3_Weapons_F"};
-        #endif
+        //#endif
         author = AUTHOR;
         authors[] = { AUTHORS };
         authorUrl = "";

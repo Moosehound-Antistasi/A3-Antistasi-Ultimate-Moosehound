@@ -22,11 +22,11 @@ class A3A {
     #include "Templates.hpp"
     #include "Params.hpp"
 
-#if __A3_DEBUG__
+#ifdef __A3_DEBUG__
     #include "CfgFunctions.hpp"
 #endif
 };
-#if __A3_DEBUG__
+#ifdef __A3_DEBUG__
     class CfgFunctions {
         class A3A {
             class debug {
@@ -41,9 +41,9 @@ class A3A {
 #endif
 
 // Load external member list if present
-#if __has_include("\A3AMembers.hpp")
-#include "\A3AMembers.hpp"
-#endif
+//#if __has_include("\A3AMembers.hpp")
+//#include "\A3AMembers.hpp"
+//#endif
 
 #ifndef UseDoomGUI
     #include "defines.hpp"

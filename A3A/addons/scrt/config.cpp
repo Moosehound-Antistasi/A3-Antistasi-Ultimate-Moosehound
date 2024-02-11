@@ -19,7 +19,7 @@ class CfgPatches {
 #include "UILayouts\rebelMenu.hpp"
 #include "UILayouts\menu.hpp"
 
-#if __A3_DEBUG__
+#ifdef __A3_DEBUG__
     class A3A {
         #include "CfgFunctions.hpp"
     };

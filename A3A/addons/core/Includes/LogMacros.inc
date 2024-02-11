@@ -76,7 +76,7 @@
 #define Log_Debug
 #define Log_Verbose
 
-#if __A3_DEBUG__
+#ifdef __A3_DEBUG__
     #define Log_Trace
 #endif
 
