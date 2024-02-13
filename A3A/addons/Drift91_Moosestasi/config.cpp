@@ -2,16 +2,14 @@ class CfgPatches
 {
 	class Drift91_Moosestasi
 	{
-		units[]=
-		{
-			"Flag_FIA_F"
-		};
+		units[]={"Flag_FIA_F"};
 		weapons[]={};
 		requiredVersion=0.1;
-		requiredAddons[]=
-		{
-			"A3_Data_F"
-		};
+		requiredAddons[]={"A3_Data_F", "A3_Structures_F_Mil_Flags", "A3_Ui_F"};
+
+		name = "Antistasi Ultimate - Moosehound Edition";
+		author = "Drift_91";
+		url = "https://github.com/Moosehound-Antistasi/A3-Antistasi-Ultimate-Moosehound";
 	};
 };
 
@@ -36,7 +34,6 @@ class CfgFactionClasses
 
 class CfgVehicles
 {
-	
 	class FlagCarrier;
 	class Flag_FIA_F: FlagCarrier
 	{
@@ -44,5 +41,16 @@ class CfgVehicles
 		{
 			init = "(_this select 0) setFlagTexture '\Drift91_Moosestasi\textures\flags\Flag_FIA_CO.paa'";
 		};
+	};
+};
+
+class CfgMarkers
+{
+	class flag_NATO;
+	class flag_FIA: flag_NATO
+	{
+		name="$STR_A3_CfgMarkers_flag_FIA";
+		icon="\Drift91_Moosestasi\textures\flags\FIA_ca.paa";
+		texture="\Drift91_Moosestasi\textures\flags\FIA_ca.paa";
 	};
 };
