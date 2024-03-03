@@ -26,6 +26,7 @@ class CfgFaces
 		class Drift91_HeadKyle_01: WhiteHead_09
 		{
 			displayname="McKeown";
+			texture="\Drift91_Faces\faces\kyle_01_co.paa";
 			identityTypes[]={};
 			author="Bohemia Interactive & Drift_91";
 		};
