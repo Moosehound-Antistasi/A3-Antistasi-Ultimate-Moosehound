@@ -3971,6 +3971,10 @@
                 <Chinesesimp>制导筒子应该解锁吗？</Chinesesimp>
                 <Korean>유도탄 발사기의 언락을 허용합니까?</Korean>
             </Key>
+            <Key ID="STR_params_allowUnlockedExplosives">
+                <Original>Allow Unlocked Explosives</Original>
+                <Russian>Разрешить разблокированную взрывчатку</Russian>
+            </Key>
             <Key ID="STR_params_startWithLongRangeRadio">
                 <Original>[TFAR] Start with Long Range Radio</Original>
                 <Russian>[TFAR] Начинать с рюкзаков ДВ-радиосвязи </Russian>
@@ -4689,6 +4693,7 @@
                 <Chinesesimp>[实验]真随机箱: 移除箱子上的所有平衡检查</Chinesesimp>
                 <Korean>[실험용] 완전히 랜덤한 상자: 상자에 대한 밸런스 확인 없음</Korean>
             </Key>
+
         </Container>
         <Container name="roles">
             <Key ID="STR_role_default_commander_role_name">
@@ -8037,6 +8042,9 @@
                 <Russian>&lt;br/&gt;Нажмите Q, чтобы использовать набор восстановления боеспособности.</Russian>
                 <Chinesesimp>&lt;br/&gt;按 Q 使用战备恢复包。</Chinesesimp>
                 <Korean>&lt;br/&gt;전투 준비 복구 키트를 사용하려면 Q 키를 누르십시오.</Korean>
+            </Key>
+            <Key ID="STR_antistasi_actions_unconscious_action_prompt_withstand">
+                <Original>&lt;br/&gt;Press H to Withstand.</Original>
             </Key>
             <Key ID="STR_antistasi_actions_common_access_vehicle_marker_text">
                 <Original>Access Vehicle Market</Original>

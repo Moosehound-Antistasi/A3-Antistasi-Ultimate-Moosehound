@@ -26,5 +26,6 @@ Antistasi-Ultimate.biprivatekey
 __pycache__/
 build/
 release/
+dev/
 Tools/Town Generator/output.txt
 *.py[cod]

@@ -126,6 +126,13 @@ class Params
         texts[] = {"8","12","16","24","32"};
         default = 16;
     };
+    class A3A_selfReviveMethods
+    {
+        title = $STR_A3A_Params_selfReviveMethods_title;
+        values[] = {0,1};
+        texts[] = {$STR_antistasi_dialogs_generic_button_no_text, $STR_A3A_Params_selfReviveMethods_withstand};
+        default = 0;
+    };
     class A3A_builderPermissions
     {
         title = "Player classes permitted to use the building placer";
@@ -530,6 +537,14 @@ class Params
         texts[] = {$STR_antistasi_dialogs_generic_button_yes_text, $STR_antistasi_dialogs_generic_button_no_text};
         default = 0;
     };
+    class allowUnlockedExplosives
+    {
+        attr[] = {"server"};
+        title = $STR_params_allowUnlockedExplosives;
+        values[] = {1,0};
+        texts[] = {$STR_antistasi_dialogs_generic_button_yes_text,$STR_antistasi_dialogs_generic_button_no_text};
+        default = 0;
+    };
     class startWithLongRangeRadio
     {
         attr[] = {"server"};
@@ -558,7 +573,7 @@ class Params
         title = $STR_params_reviveKitsEnabled;
         values[] = {0,1};
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
-        default = 0;
+        default = 1;
     };
 
     class SpacerLoot
