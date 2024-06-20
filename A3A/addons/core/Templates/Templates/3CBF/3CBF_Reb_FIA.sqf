@@ -196,6 +196,8 @@ private _rebUniforms = [
     "UK3CB_LSM_I_U_CombatUniform_01"
 ];
 
+#include "VSM_Reb_Uniforms.sqf"
+
 ["uniforms", _rebUniforms] call _fnc_saveToTemplate;
 
 ["headgear", [
