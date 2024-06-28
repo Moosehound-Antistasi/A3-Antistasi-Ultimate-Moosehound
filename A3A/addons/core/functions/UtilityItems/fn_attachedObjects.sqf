@@ -6,6 +6,7 @@
         Exceptions:
         Null
         Source ("#particelSource" etc.)
+		KJW's Two Primary Weapons weapon holder
 
     Arguments:
     0. <Object> Object to count attached objects off
@@ -27,4 +28,5 @@ params [["_object", objNull, [objNull]]];
 attachedObjects _object select {
     !isNull _x
     && {!("#" in typeOf _x)} //example "#particleSource"
+	&& {!(typeOf _x isEqualTo "KJW_TwoPrimaryWeapons_GWH")} //compatibility with KJW's Two Primary Weapons mod
 };
