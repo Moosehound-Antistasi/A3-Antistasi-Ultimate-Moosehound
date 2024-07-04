@@ -28,5 +28,5 @@ params [["_object", objNull, [objNull]]];
 attachedObjects _object select {
     !isNull _x
     && {!("#" in typeOf _x)} //example "#particleSource"
-	&& {!(typeOf _x isEqualTo "KJW_TwoPrimaryWeapons_GWH")} //compatibility with KJW's Two Primary Weapons mod
+	&& {(typeOf _x != "KJW_TwoPrimaryWeapons_GWH")} //compatibility with KJW's Two Primary Weapons mod
 };
