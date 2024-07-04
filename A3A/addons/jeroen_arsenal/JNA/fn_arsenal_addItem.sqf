@@ -28,19 +28,19 @@ if(typeName (_this select 0) isEqualTo "SCALAR")then{//[_index, _item] and [_ind
 
 				//TFAR fix
 				private _radioName = getText(configfile >> "CfgWeapons" >> _item >> "tf_parent");
-				if!(_radioName isEqualTo "" || isNull (configfile >> "CfgWeapons" >> _radioName))then{_item = _radioName};
+				if!(_radioName isEqualTo "")then{_item = _radioName};
 
 				//Weapon Stack fix
 				private _weaponname = getText(configfile >> "CfgWeapons" >> _item >> "baseWeapon");
-				if!(_weaponname isEqualTo "" || isNull (configfile >> "CfgWeapons" >> _weaponname))then{_item = _weaponname};
+				if!(_weaponname isEqualTo "")then{_item = _weaponname};
 
 				//RHS Sight Stack fix
 				private _sightname = getText(configfile >> "CfgWeapons" >> _item >> "rhs_optic_base");
-				if!(_sightname isEqualTo "" || isNull (configfile >> "CfgWeapons" >> _sightname))then{_item = _sightname};
+				if!(_sightname isEqualTo "")then{_item = _sightname};
 				
 				//ACRE fix
 				private _radioName = getText(configfile >> "CfgVehicles" >> _item >> "acre_baseClass");
-				if!(_radioName isEqualTo "" || isNull (configfile >> "CfgVehicles" >> _radioName))then{_item = _radioName};
+				if!(_radioName isEqualTo "")then{_item = _radioName};
 
 				// Update server immediately if local. Avoids lag after unlockEquipment
 				if (isServer) then { ["UpdateItemAdd",[_index, _item, _amount,true]] call jn_fnc_arsenal }
