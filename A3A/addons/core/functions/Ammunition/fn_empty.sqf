@@ -8,6 +8,8 @@ if (count _this > 0) then {
 	_trucksX = _trucksX select {not (_x isKindOf "StaticWeapon")};
 	// Prevent trolling by hiding small UAVs near the arsenal
 	_trucksX = _trucksX select {getNumber (configFile >> "CfgVehicles" >> (typeof _x) >> "isUAV") == 0};
+	// Compatibility with KJW's Two Primary Weapons mod
+	_trucksX = _trucksX select {(typeOf _x != "KJW_TwoPrimaryWeapons_GWH")};
 	_trucksX = _trucksX - [boxX,vehicleBox];
 	if (count _trucksX < 1) then {_truckX = vehicleBox} else {_truckX = _trucksX select 0};
 };
