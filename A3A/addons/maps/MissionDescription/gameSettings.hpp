@@ -1,5 +1,5 @@
 respawn = "BASE";
-respawnDelay = 15;
+respawnDelay = 5;
 
 // Player corpses preserved for 15min minimum
 corpseRemovalMinTime = 900;
@@ -7,6 +7,10 @@ corpseRemovalMinTime = 900;
 aiKills = 0;
 disabledAI = 1;
 Saving = 0;
+
+corpseManagerMode = 0;
+weaponholderManagerMode = 0;
+wreckManagerMode = 0;
 
 class Header
 {

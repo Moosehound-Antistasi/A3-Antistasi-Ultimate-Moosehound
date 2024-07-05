@@ -37,7 +37,7 @@ _nul = [_totalSalary, _rebelsCount, _rebels] spawn {
 	
 	{
 		private _playerMoney = round (((_x getVariable ["moneyX", 0]) + _incomePerPlayer) max 0);
-		_x setVariable ["moneyX", _playerMoney, (owner _x)];
+		_x setVariable ["moneyX", _playerMoney, [2, (owner _x)]];
 		private _paycheckText = format [
 			localize "STR_comms_mp_paycheck",
 			name _x,
