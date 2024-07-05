@@ -5,6 +5,10 @@ aiKills = 0;
 disabledAI = 1;
 Saving = 0;
 
+corpseManagerMode = 0;
+weaponholderManagerMode = 0;
+wreckManagerMode = 0;
+
 class Header
 {
 	gameType = ANTI;
