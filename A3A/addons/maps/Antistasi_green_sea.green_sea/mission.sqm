@@ -8,7 +8,7 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=3646;
+		nextID=3648;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=304;
+		nextID=314;
 	};
 	class Camera
 	{
 		pos[]={2913.1606,56.971489,1945.6353};
 		dir[]={-0.54444081,-0.54687804,0.63601625};
 		up[]={-0.35563615,0.8372103,0.41545409};
-		aside[]={0.7596826,1.1117663e-007,0.65030062};
+		aside[]={0.7596826,1.1117663e-07,0.65030062};
 	};
 };
 binarizationWanted=0;
@@ -785,7 +785,7 @@ class Mission
 					type="rectangle";
 					a=428.56769;
 					b=572.02759;
-					angle=1.7248766;
+					angle=1.7248765;
 					id=2372;
 					atlOffset=-5.9803352;
 				};
@@ -1297,7 +1297,7 @@ class Mission
 					colorName="ColorEAST";
 					a=537.86267;
 					b=642.15106;
-					angle=89.853989;
+					angle=89.853981;
 					id=2917;
 				};
 				class Item78
@@ -1515,7 +1515,7 @@ class Mission
 					colorName="ColorBrown";
 					a=20.351999;
 					b=12.158;
-					angle=113.85198;
+					angle=113.85197;
 					id=3640;
 				};
 				class Item95
@@ -1528,7 +1528,7 @@ class Mission
 					colorName="ColorBrown";
 					a=20.351999;
 					b=12.158;
-					angle=113.85197;
+					angle=113.85196;
 					id=3641;
 				};
 				class Item96
@@ -1541,7 +1541,7 @@ class Mission
 					colorName="ColorBrown";
 					a=20.351999;
 					b=12.158;
-					angle=113.85197;
+					angle=113.85196;
 					id=3642;
 				};
 			};
@@ -2375,7 +2375,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=198.52919;
+					angle=198.52917;
 					id=2877;
 				};
 			};
@@ -2542,7 +2542,7 @@ class Mission
 					colorName="ColorWEST";
 					a=127.9091;
 					b=99.523102;
-					angle=0.055634405;
+					angle=0.055634402;
 					id=2582;
 				};
 				class Item12
@@ -2752,7 +2752,7 @@ class Mission
 					colorName="ColorOrange";
 					a=68.304047;
 					b=77.093102;
-					angle=217.4653;
+					angle=217.46529;
 					id=2738;
 					atlOffset=0.091308594;
 				};
@@ -2766,7 +2766,7 @@ class Mission
 					colorName="ColorOrange";
 					a=117.29169;
 					b=65.928009;
-					angle=160.6683;
+					angle=160.66829;
 					id=2864;
 				};
 				class Item10
@@ -23655,7 +23655,7 @@ class Mission
 					colorName="ColorYellow";
 					a=6.4089999;
 					b=5.434;
-					angle=222.39983;
+					angle=222.39981;
 					id=2696;
 				};
 				class Item14
@@ -23668,7 +23668,7 @@ class Mission
 					colorName="ColorYellow";
 					a=6.4089999;
 					b=5.434;
-					angle=55.421848;
+					angle=55.421844;
 					id=2700;
 					atlOffset=0.75766754;
 				};
@@ -25853,14 +25853,14 @@ class Mission
 			name="Antistasi Plus Reb HQ and Game Logic";
 			class Entities
 			{
-				items=22;
+				items=24;
 				class Item0
 				{
 					dataType="Logic";
 					class PositionInfo
 					{
-						position[]={6484.3677,39.43,4926.9639};
-						angles[]={0,0.56222343,0};
+						position[]={6484.3682,39.43,4926.9639};
+						angles[]={0,0.56222296,0};
 					};
 					id=2827;
 					type="ModuleCurator_F";
@@ -26955,9 +26955,143 @@ class Mission
 					type="HeadlessClient_F";
 					atlOffset=0.015640259;
 				};
+				class Item22
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={6484.3682,39.43,4926.9639};
+						angles[]={0,0.56222296,0};
+					};
+					id=3646;
+					type="ModuleCurator_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ModuleCurator_F_Owner";
+							expression="_this setVariable ['Owner',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="76561197996287940";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ModuleCurator_F_Forced";
+							expression="_this setVariable ['Forced',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ModuleCurator_F_Name";
+							expression="_this setVariable ['Name',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ModuleCurator_F_Addons";
+							expression="_this setVariable ['Addons',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=3;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item23
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={6484.3682,39.43,4926.9639};
+						angles[]={0,0.56222296,0};
+					};
+					id=3647;
+					type="ModuleCurator_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ModuleCurator_F_Owner";
+							expression="_this setVariable ['Owner',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="76561197975720248";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ModuleCurator_F_Forced";
+							expression="_this setVariable ['Forced',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ModuleCurator_F_Name";
+							expression="_this setVariable ['Name',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ModuleCurator_F_Addons";
+							expression="_this setVariable ['Addons',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=3;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
 			};
 			id=2863;
-			atlOffset=41256108;
+			atlOffset=10314028;
 		};
 		class Item198
 		{
