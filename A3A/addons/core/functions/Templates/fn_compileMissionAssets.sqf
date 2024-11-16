@@ -93,6 +93,7 @@ Info("Identifying vehicle types");
 //Occ&Inv X vehicles
 //Antistasi Ultimate stuff
 setVar("vehiclesDropPod", OccAndInv("vehiclesDropPod"));
+setVar("vehiclesSDV", OccAndInv("vehiclesSDV"));
 ///
 setVar("vehiclesPolice", OccAndInv("vehiclesPolice"));
 setVar("vehiclesAttack", OccAndInv("vehiclesAttack"));
@@ -112,6 +113,8 @@ setVar("vehiclesHelisAttack", OccAndInv("vehiclesHelisAttack") );
 setVar("vehiclesHelisTransport", OccAndInv("vehiclesHelisTransport") );
 setVar("vehiclesPlanesAA", OccAndInv("vehiclesPlanesAA") );
 setVar("vehiclesPlanesCAS", OccAndInv("vehiclesPlanesCAS") );
+setVar("vehiclesPlanesLargeAA", OccAndInv("vehiclesPlanesLargeAA") );
+setVar("vehiclesPlanesLargeCAS", OccAndInv("vehiclesPlanesLargeCAS") );
 setVar("vehiclesPlanesTransport", OccAndInv("vehiclesPlanesTransport"));
 setVar("staticMortars", OccAndInv("staticMortars") + Riv("staticMortars") + Reb("staticMortars") + ("STATICMORTAR" call _fnc_extractMarketClasses));
 setVar("staticAA", OccAndInv("staticAA") + Reb("staticAA") + ("STATICAA" call _fnc_extractMarketClasses));
@@ -147,12 +150,16 @@ setVar("vehiclesRivalsLight", _vehRivalsLight);
 private _vehRivalsStatics = Riv("staticMGs") + Riv("staticAT") + Riv("staticAA");
 setVar("vehiclesRivalsStatics", _vehRivalsStatics);
 
+private _vehRivalsAir = Riv("vehiclesRivalsHelis");
+setVar("vehiclesRivalsAir", _vehRivalsAir);
+
 private _vehRivals = Riv("vehiclesRivalsAPCs") 
 + Riv("vehiclesRivalsTanks") 
 + Riv("vehiclesRivalsTrucks") 
 + Riv("vehiclesRivalsCars") 
 + Riv("vehiclesRivalsLightArmed") 
-+ Riv("vehiclesRivalsUavs");
++ Riv("vehiclesRivalsUavs")
++ Riv("vehiclesRivalsHelis");
 setVar("vehiclesRivals", _vehRivals);
 
 private _vehMilitia = OccAndInv("vehiclesMilitiaCars")
@@ -178,6 +185,8 @@ setVar("vehiclesHelis", _vehHelis);
 private _vehFixedWing =
 OccAndInv("vehiclesPlanesCAS")
 + OccAndInv("vehiclesPlanesAA")
++ OccAndInv("vehiclesPlanesLargeAA")
++ OccAndInv("vehiclesPlanesLargeCAS")
 + OccAndInv("vehiclesPlanesTransport")
 + Reb("vehiclesPlane")
 + Reb("vehiclesCivPlane")

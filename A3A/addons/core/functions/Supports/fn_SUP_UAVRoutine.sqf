@@ -27,6 +27,7 @@ private _uav = createVehicle [_planeType, _spawnPos, [], 0, "FLY"];
 [_side, _uav] call A3A_fnc_createVehicleCrew;
 _groupVeh = group driver _uav;
 { [_x, nil, false, _resPool] call A3A_fnc_NATOinit } forEach (crew _uav);           // arguable
+[-10 * count units _groupVeh, _side, _resPool] call A3A_fnc_addEnemyResources;
 [_uav, _side, _resPool] call A3A_fnc_AIVEHinit;
 private _gunner = gunner _uav;
 
@@ -153,6 +154,7 @@ while {time < _timeout && canMove _uav} do
             _uav doWatch objNull; /// _gunner
             _uav setVariable ["currentTarget", nil];
             _suppTarget resize 0;
+	    deleteVehicle _laser;
             Debug_1("%1 skips target, as it is already dead", _supportName);
             continue;
         };
