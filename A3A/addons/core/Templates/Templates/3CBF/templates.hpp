@@ -19,7 +19,7 @@
     class 3CBF_NAPA : 3CBF_Base
     {
         side = "Reb";
-        flagTexture = "\UK3CB_Factions\addons\UK3CB_Factions_NAP\Flag\nap_flag_co.paa";
+        flagTexture = "Drift91_Moosestasi\textures\flags\Flag_FIA_CO.paa";
         name = "3CBF NAPA";
         file = "3CBF_Reb_NAPA";
         description = $STR_A3AP_setupFactionsTab_napa_3cbf;
