@@ -160,6 +160,8 @@ private _rebUniforms = [
     "rhsgref_uniform_woodland_olive"
 ];
 
+#include "VSM_Reb_Uniforms.sqf"
+
 ["uniforms", _rebUniforms] call _fnc_saveToTemplate;
 
 ["headgear", [
