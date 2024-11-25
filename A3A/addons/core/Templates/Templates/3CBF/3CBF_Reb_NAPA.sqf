@@ -4,11 +4,11 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 //   Rebel Information   //
 ///////////////////////////
 
-["name", "NAPA"] call _fnc_saveToTemplate; 						
+["name", "NAPA"] call _fnc_saveToTemplate;
 
-["flag", "Flag_NAP"] call _fnc_saveToTemplate; 						
-["flagTexture", "Drift91_Moosestasi\textures\flags\Flag_FIA_CO.paa"] call _fnc_saveToTemplate; 				
-["flagMarkerType", "UK3CB_Marker_NAP"] call _fnc_saveToTemplate; 
+["flag", "Flag_NAP"] call _fnc_saveToTemplate;
+["flagTexture", "Drift91_Moosestasi\textures\flags\Flag_FIA_CO.paa"] call _fnc_saveToTemplate;
+["flagMarkerType", "UK3CB_Marker_NAP"] call _fnc_saveToTemplate;
 
 ["vehiclesBasic", ["UK3CB_NAP_I_TT650"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["UK3CB_NAP_B_Hilux_Pkm"]] call _fnc_saveToTemplate;
