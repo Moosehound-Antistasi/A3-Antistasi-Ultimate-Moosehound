@@ -10,8 +10,8 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ["flagTexture", "Drift91_Moosestasi\textures\flags\Flag_FIA_CO.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "UK3CB_Marker_NAP"] call _fnc_saveToTemplate;
 
-["vehiclesBasic", ["UK3CB_NAP_I_TT650"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["UK3CB_NAP_B_Hilux_Pkm"]] call _fnc_saveToTemplate;
+["vehiclesBasic", ["UK3CB_NAP_I_TT650", "B_G_Quadbike_01_F"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["UK3CB_NAP_B_Hilux_Pkm", "UK3CB_NAP_B_Hilux_Open"]] call _fnc_saveToTemplate;
 ["vehiclesLightArmed", ["UK3CB_NAP_B_Hilux_M2"]] call _fnc_saveToTemplate;
 ["vehiclesTruck", ["UK3CB_I_G_V3S_Open"]] call _fnc_saveToTemplate;
 ["vehiclesAT", ["UK3CB_NAP_B_Hilux_Spg9"]] call _fnc_saveToTemplate;
