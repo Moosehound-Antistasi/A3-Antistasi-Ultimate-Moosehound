@@ -35,8 +35,8 @@ private _vests = (jna_dataList select IDC_RSCDISPLAYARSENAL_TAB_VEST) select {_x
     private _stockIndex = _stocks find _item;
 
     if (_stockIndex != -1) then {
-        _stocks deleteAt _stockIndex; //item
         _stocks deleteAt (_stockIndex + 1); //quantity
+        _stocks deleteAt _stockIndex; //item
     };
 } forEach _weapons + _explosives + _magazines + _backpacks + _items + _optics + _nv + _helmets + _vests;
 
