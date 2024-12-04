@@ -10,7 +10,7 @@
     class 3CBF_FIA : 3CBF_Base
     {
         side = "Reb";
-        flagTexture = "Drift91_Moosestasi\textures\flags\Flag_FIA_CO.paa";
+        flagTexture = "Drift91_Moosestasi\textures\flags\Flag_Moose_CO.paa";
         name = "3CBF FIA";
         file = "3CBF_Reb_FIA";
         description = $STR_A3AP_setupFactionsTab_fia_3cbf;
@@ -19,7 +19,7 @@
     class 3CBF_NAPA : 3CBF_Base
     {
         side = "Reb";
-        flagTexture = "Drift91_Moosestasi\textures\flags\Flag_FIA_CO.paa";
+        flagTexture = "Drift91_Moosestasi\textures\flags\Flag_Moose_CO.paa";
         name = "3CBF NAPA";
         file = "3CBF_Reb_NAPA";
         description = $STR_A3AP_setupFactionsTab_napa_3cbf;

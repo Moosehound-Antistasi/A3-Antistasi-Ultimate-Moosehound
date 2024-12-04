@@ -200,7 +200,7 @@ class Templates
     class Vanilla_FIA : Vanilla_Base
     {
         side = "Reb";
-        flagTexture = "Drift91_Moosestasi\textures\flags\Flag_FIA_CO.paa";
+        flagTexture = "a3\data_f\flags\flag_fia_co.paa";
         name = "A3 FIA";
         file = "Vanilla_Reb_FIA";
         climate[] = {"arid"};
