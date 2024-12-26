@@ -78,7 +78,7 @@ private _vehiclePool = [];
 
 switch (toLowerANSI _convoyType) do ///why? toLowerANSI
 {
-    case "ammunition": ///shouldn't they all start from the Capital?
+        case "ammunition": ///shouldn't they all start from the Capital?
     {
         _textX = format [localize "STR_A3A_Missions_AS_Convoy_task_dest_ammo",_nameOrigin,_displayTime,_nameDest];
         _taskTitle = localize "STR_A3A_Missions_AS_Convoy_task_header_ammo";
@@ -104,18 +104,14 @@ switch (toLowerANSI _convoyType) do ///why? toLowerANSI
         _textX = format [localize "STR_A3A_Missions_AS_Convoy_task_dest_armor",_nameOrigin,_displayTime,_nameDest];
         _taskTitle = localize "STR_A3A_Missions_AS_Convoy_task_header_armor";
         _taskIcon = "destroy";
-        _typeVehObj = selectRandom (_faction get "vehiclesArmor");
+        _typeVehObj = selectRandom (_faction get "vehiclesAA"); /// more vehicle variaty?
     };
     case "prisoners":
     {
         _textX = format [localize "STR_A3A_Missions_AS_Convoy_task_dest_prisoners",_nameOrigin,_displayTime,_nameDest];
         _taskTitle = localize "STR_A3A_Missions_AS_Convoy_task_header_prisoners";
         _taskIcon = "run";
-_typeVehObj = selectRandom ( switch true do {
-            case (tierWar < 5): { (_faction get "vehiclesMilitiaTrucks") };
-            case (tierWar < 7): { (_faction get "vehiclesMilitiaTrucks") + (_faction get "vehiclesTrucks") };
-            default { (_faction get "vehiclesTrucks") };
-        });
+        _typeVehObj = selectRandom (_faction get "vehiclesTrucks"); /// maybe add medical vehicles here
     };
     case "reinforcements":
     {
@@ -145,8 +141,9 @@ _typeVehObj = selectRandom ( switch true do {
         _vehiclePool = (_supplyVehicles + _medicalVehicles);
         _typeVehObj = selectRandom _vehiclePool;
     };
-};
-//_typeVehObj = selectRandom (if (tierWar < 5) then {FactionGet(_sideshort, "vehiclesMilitiaCargoTrucks")} else {_faction get "vehiclesTrucks"});
+};/// add case "repair"
+
+///look at this in detail
 
 // Find suitable nav points for origin/dest
 private _posOrigin = navGrid select ([_mrkOrigin] call A3A_fnc_getMarkerNavPoint) select 0;
