@@ -508,8 +508,8 @@ if (_convoyType isEqualTo "Reinforcements") then
 
 if (_convoyType isEqualTo "Money") then
 {
-    waitUntil {sleep 1; (time > _timeout) or (_vehObj distance _posDest < _arrivalDist) or (not alive _vehObj) or (side group driver _vehObj != _sideX)};
-    if ((time > _timeout) or (_vehObj distance _posDest < _arrivalDist) or (not alive _vehObj)) then
+    waitUntil {sleep 1; (time > _timeout) or (_supObj distance _posDest < _arrivalDist) or (not alive _supObj) or (side group driver attachedTo _supObj != _sideX)};
+    if ((time > _timeout) or (_supObj distance _posDest < _arrivalDist) or (not alive _supObj)) then
     {
         if ((time > _timeout) or (_vehObj distance _posDest < _arrivalDist)) then
         {
@@ -542,19 +542,15 @@ if (_convoyType isEqualTo "Money") then
 
 if (_convoyType isEqualTo "Supplies") then
 {
-    waitUntil {sleep 1; (time > _timeout) or (_vehObj distance _posDest < _arrivalDist) or (not alive _vehObj) or (side group driver _vehObj != _sideX)};
-    if (not alive _vehObj) then
+    waitUntil {sleep 1; (time > _timeout) or (_supObj distance _posDest < _arrivalDist) or (not alive _supObj) or (side group driver attachedTo _supObj != _sideX)};
+    if (not alive _supObj) then
     {
         [false, false, 0, -10, 0, 0, "supply"] call _fnc_applyResults;
     }
     else
     {
-        if (side group driver _vehObj != _sideX) then
-        {
-            waitUntil {sleep 1; (_vehObj distance _posDest < _arrivalDist) or (not alive _vehObj) or (time > _timeout)};
-            if (_vehObj distance _posDest < _arrivalDist) then
+        if (side group driver attachedTo _supObj != _sideX) then
             {
-                [true, false, 200*_bonus, 10*_bonus, 5, 120, "supply"] call _fnc_applyResults;
                 [0,15*_bonus,_mrkDest] remoteExec ["A3A_fnc_citySupportChange",2];
                 {if (_x distance _vehObj < 500) then {
                     [10*_bonus,_x] call A3A_fnc_addScorePlayer;
