@@ -13,3 +13,4 @@ _militiaLightArmed append ["B_UN_Pickup_mmg_rf"];
 _militiaCars append ["B_UN_Pickup_rf"];
 
 _basic pushBack "B_Truck_01_FFT_rf";
+_airPatrol append ["B_Heli_light_03_unarmed_RF","a3a_Heli_light_03_dynamicLoadout_RF","a3a_black_Heli_light_03_dynamicLoadout_RF","B_Heli_EC_03_RF"]

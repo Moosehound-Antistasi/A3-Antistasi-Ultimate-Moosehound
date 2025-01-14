@@ -12,3 +12,4 @@ _helisLightAttack append ["a3a_Heli_light_03_dynamicLoadout_RF","a3a_black_Heli_
 _helisAttack pushBack "a3a_black_Heli_EC_02_RF";
 
 _basic pushBack "B_T_Truck_01_FFT_rf";
+_airPatrol append ["B_Heli_light_03_unarmed_RF","a3a_Heli_light_03_dynamicLoadout_RF","a3a_black_Heli_light_03_dynamicLoadout_RF","B_Heli_EC_03_RF"];
