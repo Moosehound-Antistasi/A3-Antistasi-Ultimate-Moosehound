@@ -63,7 +63,7 @@ private _gunBoat = ["B_T_Boat_Armed_01_minigun_F","a3a_Boat_Armed_01_hmg_blufor_
 private _planesCAS = ["B_Plane_CAS_01_dynamicLoadout_F","B_UAV_02_dynamicLoadout_F"];
 private _planesLargeCAS = [];
 
-private _planesAA = ["B_Plane_CAS_01_dynamicLoadout_F","B_UAV_02_dynamicLoadout_F"];
+private _planesAA = ["B_Plane_CAS_01_dynamicLoadout_F"];
 private _planesLargeAA = [];
 private _planesTransport = ["B_T_VTOL_01_infantry_F"];
 private _gunship = ["B_T_VTOL_01_armed_F"];

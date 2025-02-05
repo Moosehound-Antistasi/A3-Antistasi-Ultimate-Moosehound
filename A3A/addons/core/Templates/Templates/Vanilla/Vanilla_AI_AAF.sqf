@@ -56,7 +56,7 @@ private _transportBoat = ["I_Boat_Transport_01_F"];
 private _gunBoat = ["I_Boat_Armed_01_minigun_F"];
 
 private _planesCAS = ["I_Plane_Fighter_03_dynamicLoadout_F","I_UAV_02_dynamicLoadout_F"];
-private _planesAA = ["I_Plane_Fighter_03_dynamicLoadout_F","I_UAV_02_dynamicLoadout_F"];
+private _planesAA = ["I_Plane_Fighter_03_dynamicLoadout_F"];
 
 private _planesTransport = [];
 private _gunship = [];
