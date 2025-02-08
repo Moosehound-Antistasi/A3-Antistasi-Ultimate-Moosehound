@@ -1,5 +1,5 @@
 _planesCAS append ["B_Plane_Fighter_01_F"];
-_planesLargeCAS append ["B_UAV_05_F"];
+//_planesLargeCAS append ["B_UAV_05_F"];
 _planesAA append ["B_Plane_Fighter_01_Stealth_F"];
 _planesLargeAA append ["B_UAV_05_F"];
 _radar pushback "B_Radar_System_01_F";
