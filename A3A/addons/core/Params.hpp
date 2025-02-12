@@ -315,13 +315,6 @@ class Params
         texts[] = {"100", "300", "500", "1000", "1500", "2000"};
         default = 500;
     };
-    class blackMarketIgnoreRequirements: UltimateParams
-    {
-        title = $STR_A3AU_blackmarket_ignore_requirements;
-        values[] = {0,1};
-        texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
-        default = 0;
-    };
     class useDownedNotification: UltimateParams
     {
         title = $STR_A3AU_use_downed_notification;
