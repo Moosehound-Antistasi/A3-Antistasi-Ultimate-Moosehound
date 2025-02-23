@@ -600,13 +600,6 @@ class Params
     {
         type = "Experimental";
     };
-    class recruitToPlayerSquad: ExperimentalParams
-    {
-        title = $STR_params_recruitToPlayerSquad;
-        values[] = {1,0};
-        texts[] = {$STR_params_afk_enabled, $STR_params_afk_disabled};
-        default = 1;
-    };
     class enableSpectrumDevice: ExperimentalParams
     {
         title = $STR_params_enableSpectrumDevice;
@@ -643,6 +636,13 @@ class Params
         values[] = {0,1};
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
         default = 1;
+    };
+    class recruitToPlayerSquad: ExperimentalParams
+    {
+        title = $STR_params_recruitToPlayerSquad;
+        values[] = {0,1};
+        texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
+        default = 0;
     };
 
     class BalanceParams
