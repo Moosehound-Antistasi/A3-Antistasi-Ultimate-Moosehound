@@ -607,6 +607,13 @@ class Params
         texts[] = {$STR_params_afk_disabled, $STR_params_afk_enabled};
         default = 1;
     };
+    class vehicleLockpickTime: ExperimentalParams
+    {
+        title = $STR_params_vehicleLockpickTime;
+        values[] = {30,60,120};
+        texts[] = {"30s", "60s", "120s"};
+        default = 60;
+    };
     class enableSpectrumDevice: ExperimentalParams
     {
         title = $STR_params_enableSpectrumDevice;
