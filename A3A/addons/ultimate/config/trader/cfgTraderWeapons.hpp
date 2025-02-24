@@ -164,11 +164,11 @@
         };
         class weapons_projinf : weapons_base
         {
-            prefix = "projinf_stock"
+            prefix = "projinf_stock";
         };
         class weapons_jca : weapons_base
         {
-            prefix = "jca_stock"
+            prefix = "jca_stock";
         };
         class weapons_ef : weapons_base
         {
