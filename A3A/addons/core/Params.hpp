@@ -607,6 +607,13 @@ class Params
     {
         type = "Experimental";
     };
+    class allowCivDialog: ExperimentalParams
+    {
+        title = $STR_params_allowCivDialog;
+        values[] = {0,1};
+        texts[] = {$STR_antistasi_dialogs_generic_button_no_text, $STR_antistasi_dialogs_generic_button_yes_text};
+        default = 1;
+    };
     class enableSpectrumDevice: ExperimentalParams
     {
         title = $STR_params_enableSpectrumDevice;
