@@ -600,6 +600,20 @@ class Params
     {
         type = "Experimental";
     };
+    class enableVehicleAutoLock: ExperimentalParams
+    {
+        title = $STR_params_enableVehicleAutoLock;
+        values[] = {0,1};
+        texts[] = {$STR_params_afk_disabled, $STR_params_afk_enabled};
+        default = 1;
+    };
+    class vehicleLockpickTime: ExperimentalParams
+    {
+        title = $STR_params_vehicleLockpickTime;
+        values[] = {30,60,120};
+        texts[] = {"30s", "60s", "120s"};
+        default = 60;
+    };
     class allowCivDialog: ExperimentalParams
     {
         title = $STR_params_allowCivDialog;
