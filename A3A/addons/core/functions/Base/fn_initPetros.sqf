@@ -98,5 +98,6 @@ petros addMPEventHandler ["mpkilled",
 }];
 
 [] spawn {sleep 120; petros allowDamage true;};
+[petros] call A3A_fnc_unitAmbient; // adds ambient sounds and animations to petros
 
 Info("initPetros completed");

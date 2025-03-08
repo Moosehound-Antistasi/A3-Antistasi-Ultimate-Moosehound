@@ -308,6 +308,13 @@ class Params
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
         default = 0;
     };
+    class createAmbientSounds: UltimateParams
+    {
+        title = $STR_A3AU_ambient_sounds;
+        values[] = {0,1};
+        texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
+        default = 1;
+    };
     class hideEnemyMarkersReconPlaneDistance: UltimateParams
     {
         title = $STR_A3AU_hide_enemy_markers_recon_plane_distance;
@@ -592,6 +599,13 @@ class Params
     class ExperimentalParams
     {
         type = "Experimental";
+    };
+    class allowCivDialog: ExperimentalParams
+    {
+        title = $STR_params_allowCivDialog;
+        values[] = {0,1};
+        texts[] = {$STR_antistasi_dialogs_generic_button_no_text, $STR_antistasi_dialogs_generic_button_yes_text};
+        default = 1;
     };
     class blackMarketIgnoreRequirements : ExperimentalParams
     {
