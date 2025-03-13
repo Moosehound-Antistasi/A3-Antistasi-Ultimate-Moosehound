@@ -54,6 +54,7 @@ class cfgHALsStore
 		#include "config\sfp.hpp"
 		#include "config\sma.hpp"
 		#include "config\spearhead.hpp"
+		#include "config\spex.hpp"
 		#include "config\tow.hpp"
 		#include "config\unsung.hpp"
 		#include "config\vanilla.hpp"
@@ -67,6 +68,7 @@ class cfgHALsStore
 		#include "config\artofwar.hpp"
 		#include "config\kkiv2035.hpp"
 		#include "config\vn.hpp"
+		#include "config\nickelsteel.hpp"
 		#include "config\wrs.hpp"
 		#include "config\ws.hpp"
 		#include "config\braf.hpp"
@@ -79,6 +81,7 @@ class cfgHALsStore
 		#include "config\ylarms.hpp"
 		#include "config\ProjInfAD.hpp"
 		#include "config\JCAArsenal.hpp"
+		#include "config\hafm.hpp"
 	};
 
 	class stores 
@@ -215,7 +218,9 @@ class cfgHALsStore
 				"riflesRF", 
 				"sniperRiflesRF", 
 				"smgRF", 
-				"handgunsRF", 
+				"handgunsRF",
+				"launchersRF", 
+				"launcherMagazinesRF",
 				"magazinesRF", 
 				"navigationRF", 
 				"pointersRF", 
@@ -427,6 +432,21 @@ class cfgHALsStore
 				"untilityvn"
 			};
 		};
+
+		class nickelsteel
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"handgunsnickelsteel",
+				"smgnickelsteel",
+				"mgnickelsteel",
+				"riflesnickelsteel",
+				"opticsnickelsteel",
+				"magazinesnickelsteel",
+				"helmetsnickelsteel",
+				"uniformsnickelsteel"
+			};
+		};
 		
 		class cup		
 		{
@@ -513,6 +533,15 @@ class cfgHALsStore
 				"backpacksspe",
 				"vestsspe",
 				"facewearspe"
+			};
+		};
+
+		class spex
+		{
+			displayName = $STR_ARMS_DEALER_STORE;
+			categories[] = {
+				"helmetsspex",
+				"launchersspex"
 			};
 		};
 		
