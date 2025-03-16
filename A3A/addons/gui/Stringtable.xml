@@ -628,30 +628,37 @@
                 <Korean>민간용</Korean>
                 <Spanish>Civil</Spanish>
                 <French>Civils</French>
+                <Chinesesimp>平民</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_civall">
                 <Original>All Civilian</Original>
                 <Russian>Вся гражданская техника</Russian>
+                <Chinesesimp>所有平民</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_civcars">
                 <Original>Civilian Cars</Original>
                 <Russian>Гражданские машины</Russian>
+                <Chinesesimp>平民车辆</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_civtrucks">
                 <Original>Civilian Trucks</Original>
                 <Russian>Гражданские грузовики</Russian>
+                <Chinesesimp>平民卡车</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_civboats">
                 <Original>Civilian Boats</Original>
                 <Russian>Гражданские лодки</Russian>
+                <Chinesesimp>平民船只</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_civheli">
                 <Original>Civilian Heli</Original>
                 <Russian>Гражданские вертолёты</Russian>
+                <Chinesesimp>平民直升机</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_civplanes">
                 <Original>Civilian Planes</Original>
                 <Russian>Гражданские самолёты</Russian>
+                <Chinesesimp>平民飞机</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_reb">
                 <Original>Rebel</Original>
@@ -659,130 +666,161 @@
                 <Korean>반군용</Korean>
                 <Spanish>Rebelde</Spanish>
                 <French>Rebelle</French>
+                <Chinesesimp>反抗军</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_reball">
                 <Original>All Rebel</Original>
                 <Russian>Вся техника повстанцев</Russian>
+                <Chinesesimp>所有反抗军</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_rebbasic">
                 <Original>Rebel Basics</Original>
                 <Russian>Базовая техника повстанцев</Russian>
+                <Chinesesimp>反抗军基础</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_rebtrucks">
                 <Original>Rebel Trucks</Original>
                 <Russian>Грузовики повстанцев</Russian>
+                <Chinesesimp>反抗军卡车</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_reblightunarmed">
                 <Original>Rebel Unarmed</Original>
                 <Russian>Неворуженные машины повстанцев</Russian>
+                <Chinesesimp>反抗军无武装</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_rebboats">
                 <Original>Rebel Boats</Original>
                 <Russian>Лодки повстанцев</Russian>
+                <Chinesesimp>反抗军船只</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_rebmedical">
                 <Original>Rebel Medical</Original>
                 <Russian>Медицинский транспорт повстанцев</Russian>
+                <Chinesesimp>反抗军医疗</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_reblightarmed">
                 <Original>Rebel Armed</Original>
                 <Russian>Вооруженные машины повстанцев</Russian>
+                <Chinesesimp>反抗军有武装</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_rebat">
                 <Original>Rebel AT</Original>
                 <Russian>ПТ техника повстанцев</Russian>
+                <Chinesesimp>反抗军反坦克</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_rebaa">
                 <Original>Rebel AA</Original>
                 <Russian>ПВО техника повстанцев</Russian>
+                <Chinesesimp>反抗军对空</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_rebplane">
                 <Original>Rebel Plane</Original>
                 <Russian>Самолёты повстанцев</Russian>
+                <Chinesesimp>反抗军飞机</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_statics">
                 <Original>All Statics</Original>
                 <Russian>Все турели</Russian>
+                <Chinesesimp>所有静态</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_staticMG">
                 <Original>MG Statics</Original>
                 <Russian>Пулеметные турели</Russian>
+                <Chinesesimp>静态机枪</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_staticAT">
                 <Original>AT Statics</Original>
                 <Russian>ПТ турели</Russian>
+                <Chinesesimp>静态反坦克</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_staticAA">
                 <Original>AA Statics</Original>
                 <Russian>ПВО турели</Russian>
+                <Chinesesimp>静态对空</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_staticmortars">
                 <Original>Mortars</Original>
                 <Russian>Миномёты</Russian>
+                <Chinesesimp>迫击炮</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_buy_vehicle_med_tooltip">
                 <Original>This station will help you heal up</Original>
                 <Russian>Эта станция поможет вам вылечиться</Russian>
+                <Chinesesimp>这个将帮助你医疗</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_buy_vehicle_ammo_tooltip">
                 <Original>Ammo station</Original>
                 <Russian>Склад боеприпасов</Russian>
+                <Chinesesimp>弹药站</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_buy_vehicle_repair_tooltip">
                 <Original>This station can repair vehicles</Original>
                 <Russian>Эта станция может чинить технику</Russian>
+                <Chinesesimp>这个可以维修载具</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_select">
                 <Original>Select</Original>
                 <Russian>Выбрать</Russian>
+                <Chinesesimp>选择</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_all">
                 <Original>All vehicles</Original>
                 <Russian>Вся техника</Russian>
+                <Chinesesimp>所有车辆</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_arty">
                 <Original>Artillery</Original>
                 <Russian>Артиллерия</Russian>
+                <Chinesesimp>炮兵</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_apc">
                 <Original>APC</Original>
                 <Russian>Бронетранспортёры</Russian>
+                <Chinesesimp>APC</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_AA">
                 <Original>AA</Original>
                 <Russian>ПВО</Russian>
+                <Chinesesimp>AA</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_uav">
                 <Original>UAV/UGV</Original>
                 <Russian>БПЛА/БПА</Russian>
+                <Chinesesimp>无人机/无人车</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_tank">
                 <Original>Tanks</Original>
                 <Russian>Танки</Russian>
+                <Chinesesimp>坦克</Chinesesimp>
             </Key>
-            <Key ID="STR_antistasi_dialogs_vehicle_tab_statics">
+            <!-- <Key ID="STR_antistasi_dialogs_vehicle_tab_statics">
                 <Original>Statics</Original>
                 <Russian>Стационарные оружия</Russian>
-            </Key>
+            </Key> -->
             <Key ID="STR_antistasi_dialogs_vehicle_tab_heli">
                 <Original>Helicopters</Original>
                 <Russian>Вертолёты</Russian>
+                <Chinesesimp>直升机</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_plane">
                 <Original>Planes</Original>
                 <Russian>Самолёты</Russian>
+                <Chinesesimp>飞机</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_armedcar">
                 <Original>Armed cars</Original>
                 <Russian>Вооруженные автомобили</Russian>
+                <Chinesesimp>武装车辆</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_unarmedcar">
                 <Original>Unarmed cars</Original>
                 <Russian>Безоружные автомобили</Russian>
+                <Chinesesimp>无武装车辆</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_boat">
                 <Original>Boats</Original>
                 <Russian>Лодки</Russian>
+                <Chinesesimp>船只</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_static">
                 <Original>Statics</Original>
@@ -790,6 +828,7 @@
                 <Korean>고정화기</Korean>
                 <Spanish>Estáticas</Spanish>
                 <French>Statique</French>
+                <Chinesesimp>静态</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_vehicle_tab_other">
                 <Original>Other</Original>
@@ -797,6 +836,7 @@
                 <Korean>그 외</Korean>
                 <Spanish>Otras</Spanish>
                 <French>Autres</French>
+                <Chinesesimp>其他</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_buy_vehicle_refuel_tooltip">
                 <Original>This item can refuel others.\n%1 max fuel is %2.</Original>
@@ -1082,15 +1122,15 @@
                 <Polish>Funkcja tylko dla członków serwera</Polish>
             </Key>
             <Key ID="STR_antistasi_dialogs_main_player_money_text">
-                <Original>Current money:\n€ %1</Original>
-                <French>Monnaie actuelle:\n€ %1</French>
+                <Original>Current money:\n%1 %2</Original>
+                <French>Monnaie actuelle:\n%1 %2</French>
                 <Korean>현재 자금:\n%1€</Korean>
-                <Russian>Текущий баланс:\n€ %1</Russian>
-                <Chinesesimp>当前资金:\n€ %1</Chinesesimp>
-                <Czech>Aktuální peníze: \ n € %1</Czech>
-                <Italian>Denaro attuale:\n€ %1</Italian>
-                <Spanish>Dinero:\n€ %1</Spanish>
-                <Polish>Aktualne pieniądze:\n€ %1</Polish>
+                <Russian>Текущий баланс:\n%1 %2</Russian>
+                <Chinesesimp>当前资金:\n%1 %2</Chinesesimp>
+                <Czech>Aktuální peníze: \ n %1 %2</Czech>
+                <Italian>Denaro attuale:\n%1 %2</Italian>
+                <Spanish>Dinero:\n%1 %2</Spanish>
+                <Polish>Aktualne pieniądze:\n%1 %2</Polish>
             </Key>
             <Key ID="STR_antistasi_dialogs_main_ai_management_sl_tooltip">
                 <Original>Only available to squad leaders</Original>
@@ -1515,7 +1555,7 @@
                 <Polish>Nie można strzelać. Moździerz nie jest rozstawiony.</Polish>
             </Key>
             <Key ID="STR_antistasi_dialogs_main_hc_has_medic">
-                <Original>Has operative medic</Original>
+                <Original>Has medic capability</Original>
                 <French>A un médecin disponible</French>
                 <Korean>활동 가능한 의무병 있음</Korean>
                 <Russian>Есть доступный медик</Russian>
@@ -1805,7 +1845,7 @@
                 <Polish>To zajmie</Polish>
             </Key>
             <Key ID="STR_antistasi_dialogs_main_fast_travel_vehicle">
-                <Original>You will bring your vehicle along as well as any cargo and passengers along with you.</Original>
+                <Original>You will bring your vehicle as well as any cargo and passengers along with you.</Original>
                 <French>Vous apporterez votre véhicule ainsi que toute cargaison et passagers avec vous.</French>
                 <Korean>차량은 물론 화물과 승객도 함께 가지고 갈 것입니다다.</Korean>
                 <Russian>Вы возьмете с собой свою технику, а также груз и пассажиров.</Russian>
@@ -1952,7 +1992,7 @@
                 <Polish>Przenieś Kwaterę Główną</Polish>
             </Key>
             <Key ID="STR_antistasi_dialogs_hq_clear_trees_button">
-                <Original>Clear Trees</Original>
+                <Original>Clear Foliage</Original>
                 <French>Effacer les arbres</French>
                 <Korean>나무 없애기</Korean>
                 <Russian>Очистить от деревьев</Russian>
@@ -2963,15 +3003,15 @@
                 <Polish>Nie masz wystarczających zasobów ludzkich dla tego żądania (wymagany %1)</Polish>
             </Key>
             <Key ID="STR_antistasi_recruit_squad_hint_insufficient_money">
-                <Original>You do not have enough money for this request (%1 € required)</Original>
-                <French>Vous n'avez pas assez d'argent pour cette demande (%1 € requis)</French>
-                <Korean>이 요청을 수행할 자금이 부족합니다 (%1 € 필요)</Korean>
-                <Russian>У вас недостаточно денег для этого (%1 € необходимо)</Russian>
+                <Original>You do not have enough money for this request (%1 %2 required)</Original>
+                <French>Vous n'avez pas assez d'argent pour cette demande (%1 %2 requis)</French>
+                <Korean>이 요청을 수행할 자금이 부족합니다 (%1 %2 필요)</Korean>
+                <Russian>У вас недостаточно денег для этого (%1 %2 необходимо)</Russian>
                 <Chinesesimp>您没有足够的金钱来处理此请求（需要 %1 ）</Chinesesimp>
-                <Czech>Na tuto žádost nemáte dostatek peněz (vyžadováno%1 €)</Czech>
-                <Italian>Non hai abbastanza denaro per questa richiesta (%1 € necessari)</Italian>
-                <Spanish>No tienes suficiente Dinero para esto (1% requerido)</Spanish>
-                <Polish>Nie masz wystarczającej ilości pieniędzy na to żądanie (wymagane %1 €)</Polish>
+                <Czech>Na tuto žádost nemáte dostatek peněz (vyžadováno%1 %2)</Czech>
+                <Italian>Non hai abbastanza denaro per questa richiesta (%1 %2 necessari)</Italian>
+                <Spanish>No tienes suficiente Dinero para esto (1% %2requerido)</Spanish>
+                <Polish>Nie masz wystarczającej ilości pieniędzy na to żądanie (wymagane %1 %2)</Polish>
             </Key>
             <Key ID="STR_antistasi_recruit_squad_hint_vehicle_purchased">
                 <Original>Vehicle Purchased</Original>
@@ -3108,6 +3148,50 @@
                 <Polish>Parametry</Polish>
                 <Portuguese>Parametros</Portuguese>
                 <Chinesesimp>参数</Chinesesimp>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_setup_params_basic_label">
+                <Original>Basic Parameters</Original>
+                <Czech>Základní parametry</Czech>
+                <French>Paramètres de base</French>
+                <Italian>Parametri di base</Italian>
+                <Korean>기본 매개 변수</Korean>
+                <Russian>Основные параметры</Russian>
+                <Polish>Podstawowe parametry</Polish>
+                <Portuguese>Parâmetros fundamentais</Portuguese>
+                <Chinesesimp>基本参数</Chinesesimp>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_setup_params_adv_label">
+                <Original>Advanced Parameters</Original>
+                <Czech>Pokročilé parametry</Czech>
+                <French>Paramètres avancés</French>
+                <Italian>Parametri avanzati</Italian>
+                <Korean>고급 매개 변수</Korean>
+                <Russian>Расширенные параметры</Russian>
+                <Polish>Parametry zaawansowane</Polish>
+                <Portuguese>Parâmetros avançados</Portuguese>
+                <Chinesesimp>高级参数</Chinesesimp>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_setup_params_exp_label">
+                <Original>Experimental Parameters</Original>
+                <Czech>Experimentální parametry</Czech>
+                <French>Paramètres expérimentaux</French>
+                <Italian>Parametri sperimentali</Italian>
+                <Korean>실험적 매개 변수</Korean>
+                <Russian>Параметры эксперимента</Russian>
+                <Polish>Parametry eksperymentalne</Polish>
+                <Portuguese>Parâmetros experimentais</Portuguese>
+                <Chinesesimp>实验参数</Chinesesimp>
+            </Key>
+            <Key ID="STR_antistasi_dialogs_setup_params_dev_label">
+                <Original>Development Parameters</Original>
+                <Czech>Parametry vývoje</Czech>
+                <French>Paramètres de développement</French>
+                <Italian>Parametri di sviluppo</Italian>
+                <Korean>개발 매개 변수</Korean>
+                <Russian>Параметры разработки</Russian>
+                <Polish>Parametry rozwojowe</Polish>
+                <Portuguese>Parâmetros de desenvolvimento</Portuguese>
+                <Chinesesimp>开发参数</Chinesesimp>
             </Key>
             <Key ID="STR_antistasi_dialogs_setup_content_tab_button">
                 <Original>Additional Content</Original>
