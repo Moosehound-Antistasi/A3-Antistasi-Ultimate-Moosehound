@@ -33,7 +33,11 @@ HR_GRG_CP_closeCnd = {
     }
 };
 
-HR_GRG_Cnd_canAccessAir = {
+HR_GRG_Cnd_canAccessHeli = {
+    count (airportsX select {(sidesX getVariable [_x,sideUnknown] == teamPlayer) and (HR_GRG_accessPoint inArea _x)}) > 0 || count (milbases select {(sidesX getVariable [_x,sideUnknown] == teamPlayer) and (HR_GRG_accessPoint inArea _x)}) > 0
+};
+
+HR_GRG_Cnd_canAccessPlane = {
     count (airportsX select {(sidesX getVariable [_x,sideUnknown] == teamPlayer) and (HR_GRG_accessPoint inArea _x)}) > 0 || count (milbases select {(sidesX getVariable [_x,sideUnknown] == teamPlayer) and (HR_GRG_accessPoint inArea _x)}) > 0
 };
 
@@ -85,6 +89,15 @@ HR_GRG_onOpenEvent = {
 HR_GRG_onCloseEvent = {
     //show Antistasi's top information string
     ["GARAGE", false] call A3A_fnc_disableInfoBar;
+};
+
+// Function to check if the vehicle class is undercover
+HR_GRG_isCivilian = {
+    params [
+        ["_class", ""]
+    ];
+
+    [1, 0] select (_class in undercoverVehicles);
 };
 
 //CBA settings
