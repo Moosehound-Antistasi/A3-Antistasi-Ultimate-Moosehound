@@ -26,7 +26,7 @@ if (isNull _group) then
 };
 
 // Hard kill for Moosehound Edition
-exitWith {};
+if (true) exitWith {};
 
 Debug_3("Pausing for %1 minutes before cleaning victim: %2 and group: %3", round cleantime/60, _victim, _group);
 sleep cleantime;
