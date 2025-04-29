@@ -41,6 +41,8 @@ class CfgVehicles
 		{
 			init = "(_this select 0) setFlagTexture '\Drift91_Moosestasi\textures\flags\Flag_Moose_CO.paa'";
 		};
+		scope = 2;
+		scopeCurator = 2;
 	};
 	class D91_Flag_NAP: FlagCarrier
 	{
@@ -48,6 +50,8 @@ class CfgVehicles
 		{
 			init = "(_this select 0) setFlagTexture '\Drift91_Moosestasi\textures\flags\Flag_Moose_CO.paa'";
 		};
+		scope = 2;
+		scopeCurator = 2;
 	};
 };
 

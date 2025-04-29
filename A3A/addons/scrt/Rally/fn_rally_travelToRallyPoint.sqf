@@ -37,7 +37,7 @@ if ([position _rallyPoint, 50] call A3A_fnc_enemyNearCheck) exitWith {
     [localize "STR_A3AP_rally_header", localize "STR_A3AP_rally_enemy_surrounding"] call SCRT_fnc_misc_deniedHint;
 };
 
-private _positionX = [_rallyPosition, 10, random 360] call BIS_fnc_relPos;
+private _positionX = _rallyPosition getPos [10, random 360];
 private _distanceX = round (((player distance2D _positionX)/400)/2);
 
 disableUserInput true; 

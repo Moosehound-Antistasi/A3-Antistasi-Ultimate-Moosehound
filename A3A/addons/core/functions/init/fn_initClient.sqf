@@ -115,6 +115,12 @@ if (enableSpectrumDevice) then {
 	[] execVM QPATHTOFOLDER(Scripts\SpectumDevice\sa_ewar.sqf);
 };
 
+if (RRTurretMagazines) then {
+    [] execVM QPATHTOFOLDER(Scripts\RRTurretMagazines\scripts\fn_monitorMagazines.sqf);
+    addUserActionEventHandler ["ReloadMagazine", "Activate", A3A_fnc_reloadTurret];
+    [] execVM QPATHTOFOLDER(Scripts\RRTurretMagazines\scripts\fn_reloadTurret.sqf);
+};
+
 // Placeholders, should get replaced globally by the server
 player setVariable ["score",0];
 player setVariable ["moneyX",0];
@@ -187,7 +193,7 @@ stragglers = creategroup teamPlayer;
 (group player) enableAttack false;
 
 if (isNil "ace_noradio_enabled" or {!ace_noradio_enabled}) then {
-    [player, nil, selectRandom (A3A_faction_reb get "voices")] call A3A_fnc_setIdentity
+    [player, createHashMapFromArray [["speaker", selectRandom (A3A_faction_reb get "voices")]]] call A3A_fnc_setIdentity;
 };
 //Give the player the base loadout.
 [player] call A3A_fnc_dress;
@@ -459,8 +465,7 @@ cutText ["","BLACK IN", 3];
 
 [] remoteExecCall ["A3A_fnc_assignBossIfNone", 2];
 
-
-if (isServer || player isEqualTo theBoss || (call BIS_fnc_admin) > 0) then {  // Local Host || Commander || Dedicated Admin
+if (isServer || (!isNil "theBoss" && {player isEqualTo theBoss}) || (call BIS_fnc_admin) > 0) then {  // Local Host || Commander || Dedicated Admin
     private _modsAndLoadText = [
         [A3A_hasTFAR || A3A_hasTFARBeta,"TFAR",localize "STR_A3A_initClient_mods_TFAR"],
         [A3A_hasACRE,"ACRE",localize "STR_A3A_initClient_mods_ACRE"],

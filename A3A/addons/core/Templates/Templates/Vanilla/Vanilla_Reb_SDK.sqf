@@ -13,6 +13,7 @@ private _hasCSLA = "csla" in A3A_enabledDLC;
 private _hasRF = "rf" in A3A_enabledDLC;
 private _hasSOG = "vn" in A3A_enabledDLC;
 private _hasSPE = "spe" in A3A_enabledDLC;
+private _hasEF = "ef" in A3A_enabledDLC;
 
 ///////////////////////////
 //   Rebel Information   //
@@ -34,6 +35,12 @@ private _vehicleAA = [];
 private _vehiclesBoat = ["I_C_Boat_Transport_02_F" , "I_SDV_01_F" , "I_Boat_Armed_01_minigun_F" , "O_Boat_Armed_01_hmg_F"];
 
 private _vehiclePlane = ["C_Plane_Civil_01_F","C_Plane_Civil_01_racing_F"];
+
+private _vehiclesMedical = [];
+
+private _vehiclesSupply = ["C_Van_01_box_F"];
+
+private _vehicleCivPlane = ["C_Plane_Civil_01_F","C_Plane_Civil_01_racing_F"];
 
 private _vehiclesCivCar = ["C_Offroad_01_F", "C_Hatchback_01_F", "C_Hatchback_01_sport_F", "C_Offroad_02_unarmed_F", "C_SUV_01_F"];
 private _CivTruck = ["C_Truck_02_transport_F", "C_Van_01_transport_F", "C_Van_02_transport_F", "C_Van_02_vehicle_F"];
@@ -92,6 +99,17 @@ if (_hasSPE) then {
   #include "..\DLC_content\vehicles\SPE\Vanilla_FIA.sqf"
 };
 
+if (isClass (configFile >> "cfgVehicles" >> "SPEX_M2_60")) then {
+	#include "..\MOD_content\SPEX\vehicles\Vanilla_FIA.sqf"
+};
+
+if (isClass (configFile >> "cfgVehicles" >> "vnx_b_air_ac119_02_01")) then {
+	#include "..\MOD_content\Nickelsteel\vehicles\Vanilla_FIA.sqf"
+};
+
+["vehiclesCivPlane", _vehicleCivPlane] call _fnc_saveToTemplate;
+["vehiclesCivSupply", _vehiclesSupply] call _fnc_saveToTemplate;
+["vehiclesMedical", _vehiclesMedical] call _fnc_saveToTemplate;
 ["vehiclesBoat", _vehiclesBoat] call _fnc_saveToTemplate;
 ["staticMGs", _staticMG] call _fnc_saveToTemplate;
 ["staticAT", _staticAT] call _fnc_saveToTemplate;
@@ -157,6 +175,8 @@ private _rebUniforms = [
 private _dlcUniforms = [];
 
 ["uniforms", _rebUniforms + _dlcUniforms] call _fnc_saveToTemplate;
+
+"TanoanMen" call _fnc_saveNames;
 
 private _headgear = [
   "H_Booniehat_khk_hs",
@@ -285,6 +305,10 @@ if (_hasSOG) then {
 
 if (_hasSPE) then {
   #include "..\DLC_content\gear\SPE\Vanilla_FIA.sqf"
+};
+
+if (isClass (configFile >> "cfgVehicles" >> "vnx_b_air_ac119_02_01")) then {
+	#include "..\MOD_content\Nickelsteel\gear\Vanilla_FIA.sqf"
 };
 
 _loadoutData set ["items_medical_basic", ["BASIC"] call A3A_fnc_itemset_medicalSupplies];
