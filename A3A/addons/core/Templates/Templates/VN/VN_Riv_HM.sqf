@@ -2,131 +2,106 @@
 //   Rivals Information   //
 ///////////////////////////
 
-["name", "SV Resistance"] call _fnc_saveToTemplate;
-["nameLeader", "Nguyễn Cao Kỳ"] call _fnc_saveToTemplate;
+["name", "Hmong Secret Army"] call _fnc_saveToTemplate;
+["nameLeader", "Vang Pao"] call _fnc_saveToTemplate;
 
 //////////////////////////////////////
 //       	Identities    			//
 //////////////////////////////////////
-["voices", ["Male01CHI", "Male02CHI", "Male03CHI"]] call _fnc_saveToTemplate;
-["faces", ["AsianHead_A3_01", "AsianHead_A3_01_cfaces_vccamo01", "AsianHead_A3_01_cfaces_vccamo02", "AsianHead_A3_02",
-"AsianHead_A3_03", "AsianHead_A3_03_cfaces_vccamo01", "AsianHead_A3_03_cfaces_vccamo02",
-"AsianHead_A3_04", "AsianHead_A3_04_cfaces_vccamo01", "AsianHead_A3_05", "AsianHead_A3_05_cfaces_vccamo02",
-"AsianHead_A3_06", "AsianHead_A3_07", "AsianHead_A3_07_cfaces_vccamo01", "AsianHead_A3_07_cfaces_vccamo02"]] call _fnc_saveToTemplate;
-"VietnameseMen" call _fnc_saveNames;
+["faces", ["AsianHead_A3_01", "AsianHead_A3_02", "AsianHead_A3_03", "AsianHead_A3_04", "AsianHead_A3_05", "AsianHead_A3_06", "AsianHead_A3_07"]] call _fnc_saveToTemplate;
+["voices", ["vie"]] call _fnc_saveToTemplate;
+"LaoMen" call _fnc_saveNames;
 
 //////////////////////////
 //       Vehicles       //
 //////////////////////////
 ["ammobox", "Box_FIA_Support_F"] call _fnc_saveToTemplate; 	//Don't touch or you die a sad and lonely death!
-["surrenderCrate", "Box_IND_Wps_F"] call _fnc_saveToTemplate;
+["surrenderCrate", "Box_East_Wps_F"] call _fnc_saveToTemplate;
 
-["vehiclesRivalsLightArmed", ["uns_Type55_LMG"]] call _fnc_saveToTemplate;
-["vehiclesRivalsTrucks", ["uns_nvatruck_open"]] call _fnc_saveToTemplate;
-["vehiclesRivalsCars", ["uns_m274", "uns_Type55"]] call _fnc_saveToTemplate;
-["vehiclesRivalsAPCs", ["uns_Type55_MG", "uns_BTR152_DSHK"]] call _fnc_saveToTemplate;
-["vehiclesRivalsTanks", ["uns_t34_85_nva"]] call _fnc_saveToTemplate;
-["vehiclesRivalsHelis", ["uns_Mi8T_VPAF"]] call _fnc_saveToTemplate;			
+["vehiclesRivalsLightArmed", ["vn_i_wheeled_m151_mg_01", "vn_i_wheeled_m151_mg_02_marines", "vn_i_wheeled_m151_mg_01", "vn_i_wheeled_m151_mg_02_marines", "vn_i_wheeled_m151_mg_06", "vn_i_wheeled_m151_mg_05_marines", "vn_i_armor_m132_01"]] call _fnc_saveToTemplate;
+["vehiclesRivalsTrucks", ["vn_i_wheeled_m54_01", "vn_i_wheeled_m54_02"]] call _fnc_saveToTemplate;
+["vehiclesRivalsCars", ["vn_i_wheeled_m151_01", "vn_i_wheeled_m151_02"]] call _fnc_saveToTemplate;
+["vehiclesRivalsAPCs", ["vn_i_armor_m113_01"]] call _fnc_saveToTemplate;
+["vehiclesRivalsTanks", ["vn_i_armor_m48_01_01", "vn_i_armor_m67_01_01"]] call _fnc_saveToTemplate;
+["vehiclesRivalsHelis", ["vn_i_air_ch34_02_01"]] call _fnc_saveToTemplate;			
 ["vehiclesRivalsUavs", []] call _fnc_saveToTemplate;			
 
-["staticLowWeapons", [
-	"uns_dshk_armoured_VC", 
-	"uns_dshk_high_VC", 
-	"uns_pk_bunker_closed_VC", 
-	"uns_pk_bunker_low_VC", 
-	"uns_pk_bunker_open_VC", 
-	"uns_dshk_twin_bunker_open_VC", 
-	"uns_Type36_56mm_VC"
-]] call _fnc_saveToTemplate;
-["staticMortars", ["uns_m1941_82mm_mortarNVA"]] call _fnc_saveToTemplate;
+["staticMGs", ["vn_i_marines_static_m1919a4_high", "vn_i_marines_static_m2_high"]] call _fnc_saveToTemplate;
+["staticMortars", ["vn_i_static_mortar_m2"]] call _fnc_saveToTemplate;
 
-["mortarMagazineHE", "uns_8Rnd_82mmHE_M1941"] call _fnc_saveToTemplate;
+["mortarMagazineHE", "vn_mortar_m2_mag_he_x8"] call _fnc_saveToTemplate;
 
-["handGrenadeAmmo", ["GrenadeHand"]] call _fnc_saveToTemplate;
-["mortarAmmo", ["Sh_82mm_AMOS"]] call _fnc_saveToTemplate;
+["handGrenadeAmmo", []] call _fnc_saveToTemplate;
+["mortarAmmo", []] call _fnc_saveToTemplate;
 
-["minefieldAT", ["uns_mine_t59"]] call _fnc_saveToTemplate;
-["minefieldAPERS", ["uns_mine_md82"]] call _fnc_saveToTemplate;
+["minefieldAT", ["vn_mine_m15"]] call _fnc_saveToTemplate;
+["minefieldAPERS", ["vn_mine_m14"]] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Loadouts       //
 //////////////////////////
 private _loadoutData = call _fnc_createLoadoutData;
 
-_loadoutData set ["ATMines", ["uns_mine_AT_mag"]];
-_loadoutData set ["APMines", ["uns_mine_AP_mag"]];
-_loadoutData set ["lightExplosives", ["uns_M118_mag_remote"]];
-_loadoutData set ["heavyExplosives", ["DemoCharge_Remote_Mag"]];
+_loadoutData set ["ATMines", ["vn_mine_m15_mag"]];
+_loadoutData set ["APMines", ["vn_mine_m14_mag"]];
+_loadoutData set ["lightExplosives", ["vn_mine_m112_remote_mag"]];
+_loadoutData set ["heavyExplosives", ["vn_mine_satchel_remote_02_mag"]];
 
-_loadoutData set ["antiTankGrenades", ["uns_molotov_mag", "uns_rkg3gren"]];
-_loadoutData set ["antiInfantryGrenades", ["uns_f1gren", "uns_rg42gren", "uns_rgd33gren", "uns_rgd5gren"]];
-_loadoutData set ["smokeGrenades", ["uns_rdg2"]];
-_loadoutData set ["signalsmokeGrenades", ["uns_rdg2"]];
+_loadoutData set ["antiInfantryGrenades", ["vn_m67_grenade_mag", "vn_m61_grenade_mag", "vn_m34_grenade_mag", "vn_m14_early_grenade_mag", "vn_m14_grenade_mag"]];
+_loadoutData set ["smokeGrenades", ["vn_m18_white_mag"]];
 
-_loadoutData set ["facewear", []];
-_loadoutData set ["fullmask", []];
+_loadoutData set ["facewear", [
+	"vn_b_aviator", 
+	"vn_o_bandana_g", 
+	"vn_o_bandana_b", 
+	"vn_b_bandana_a", 
+	"vn_o_acc_goggles_02",
+	"vn_g_spectacles_01"
+]];
 
 _loadoutData set ["headgear", [
-    "UNS_Boonie_VC",
-    "UNS_Headband_VC",
-    "UNS_Conehat_VC",
-    "uns_vc_headband_blue",
-    "UNS_Boonie2_VC",
-    "UNS_Boonie3_VC",
-    "UNS_Boonie4_VC",
-    "uns_sas_booniehat_vc_tan",
-    "uns_sas_booniehat_vc",
-    "uns_H_Simc_nasi"
+    "vn_o_pl_cap_01_01",
+    "vn_o_pl_cap_02_02",
+    "vn_o_pl_cap_02_01",
+    "H_Bandanna_sand",
+    "H_Beret_blk"
 ]];
 
 _loadoutData set ["maps", ["ItemMap"]];
 _loadoutData set ["watches", ["ItemWatch"]];
 _loadoutData set ["compasses", ["ItemCompass"]];
-_loadoutData set ["radios", ["UNS_ItemRadio_T884_TFAR"]];
-_loadoutData set ["gpses", []];
-_loadoutData set ["NVGs", []];
-_loadoutData set ["binoculars", ["Binocular"]];
-_loadoutData set ["Rangefinder", ["uns_ANPVS2"]];
+_loadoutData set ["radios", ["vn_o_item_radio_m252"]];
+_loadoutData set ["binoculars", ["vn_mk21_binocs"]];
 
 _loadoutData set ["uniforms", [
-    "UNS_VC_U",
-    "UNS_VC_S",
-    "UNS_VC_K",
-    "UNS_VC_B",
-    "UNS_VC_G",
-    "uns_U_Simc_vc_black_1",
-    "uns_U_Simc_vc_black_1_trop",
-    "uns_U_Simc_vc_black_2",
-    "uns_U_Simc_vc_black_2_trop",
-    "uns_U_Simc_vc_blau_1_trop",
-    "uns_U_Simc_vc_blau_2",
-    "uns_U_Simc_vc_blau_2_trop",
-    "uns_U_Simc_vc_blau_1",
-    "uns_U_Simc_vc_grun_1",
-    "uns_U_Simc_vc_grun_1_trop",
-    "uns_U_Simc_vc_grun_2",
-    "uns_U_Simc_vc_grun_2_trop"
+	"vn_o_uniform_pl_army_01_11",
+	"vn_o_uniform_pl_army_01_12",
+	"vn_o_uniform_pl_army_01_13",
+	"vn_o_uniform_pl_army_01_14",
+	"vn_o_uniform_pl_army_02_11",
+	"vn_o_uniform_pl_army_02_12",
+	"vn_o_uniform_pl_army_02_13",
+	"vn_o_uniform_pl_army_02_14",
+	"vn_o_uniform_pl_army_03_11",
+	"vn_o_uniform_pl_army_03_12",
+	"vn_o_uniform_pl_army_03_13",
+	"vn_o_uniform_pl_army_03_14",
+	"vn_o_uniform_pl_army_04_11",
+	"vn_o_uniform_pl_army_04_12",
+	"vn_o_uniform_pl_army_04_13",
+	"vn_o_uniform_pl_army_04_14"
 ]];
 
-_loadoutData set ["offuniforms", [    
-	"uns_U_Simc_vc_black_1",
-    "uns_U_Simc_vc_black_1_trop",
-    "uns_U_Simc_vc_black_2",
-    "uns_U_Simc_vc_black_2_trop",
-    "uns_U_Simc_vc_blau_1_trop",
-    "uns_U_Simc_vc_blau_2",
-    "uns_U_Simc_vc_blau_2_trop",
-    "uns_U_Simc_vc_blau_1",
-    "uns_U_Simc_vc_grun_1",
-    "uns_U_Simc_vc_grun_1_trop",
-    "uns_U_Simc_vc_grun_2",
-    "uns_U_Simc_vc_grun_2_trop"]];
-_loadoutData set ["vests", ["uns_Simc_garlan", "uns_Simc_garlan_M56", "uns_Simc_garlan_M56_zusp"]];
-_loadoutData set ["heavyVests", ["uns_Simc_garlan", "uns_Simc_garlan_M56", "uns_Simc_garlan_M56_zusp"]];
-_loadoutData set ["atBackpacks", ["UNS_NVA_R1", "UNS_NVA_R3"]];
-_loadoutData set ["backpacks", ["UNS_NVA_R1", "UNS_NVA_R3"]];
-_loadoutData set ["helmets", ["UNS_NVA_HK", "UNS_NVA_HKG", "UNS_PAVN_HN"]];
-_loadoutData set ["heavyHelmets", ["UNS_NVA_HK", "UNS_NVA_HKG", "UNS_PAVN_HN"]];
+_loadoutData set ["vests",["vn_b_vest_usarmy_09", "vn_b_vest_usarmy_11"]];
+_loadoutData set ["atBackpacks", ["vn_o_pack_03"]];
+_loadoutData set ["backpacks", ["vn_b_pack_lw_01", "vn_b_pack_lw_03"]];
+_loadoutData set ["helmets", [	
+	"vn_b_helmet_m1_01_01", 
+	"vn_b_bandana_04", 
+	"vn_b_headband_02", 
+	"vn_b_helmet_m1_01_01", 
+	"vn_b_bandana_06"
+]];
 
 //Item *set* definitions. These are added in their entirety to unit loadouts. No randomisation is applied.
 _loadoutData set ["items_medical_basic", ["BASIC"] call A3A_fnc_itemset_medicalSupplies]; //this line defines the basic medical loadout for vanilla
@@ -134,17 +109,15 @@ _loadoutData set ["items_medical_standard", ["STANDARD"] call A3A_fnc_itemset_me
 _loadoutData set ["items_medical_medic", ["MEDIC"] call A3A_fnc_itemset_medicalSupplies]; //this line defines the medic medical loadout for vanilla
 _loadoutData set ["items_miscEssentials", [] call A3A_fnc_itemset_miscEssentials];
 
-private _slItems = ["Laserbatteries", "Laserbatteries", "Laserbatteries"];
-private _eeItems = ["ToolKit", "MineDetector"];
+private _eeItems = ["vn_b_item_toolkit", "vn_b_item_trapkit"];
 private _mmItems = [];
 
 if (A3A_hasACE) then {
-    _slItems append ["ACE_microDAGR", "ACE_DAGR"];
     _eeItems append ["ACE_Clacker", "ACE_DefusalKit"];
-    _mmItems append ["ACE_RangeCard", "ACE_ATragMX", "ACE_Kestrel4500"];
+    _mmItems append ["ACE_RangeCard"];
 };
 
-_loadoutData set ["items_squadleader_extras", _slItems];
+_loadoutData set ["items_squadleader_extras", []];
 _loadoutData set ["items_rifleman_extras", []];
 _loadoutData set ["items_medic_extras", []];
 _loadoutData set ["items_grenadier_extras", []];
@@ -161,71 +134,60 @@ _loadoutData set ["items_crew_extras", []];
 _loadoutData set ["items_unarmed_extras", []];
 
 _loadoutData set ["rifles", [
-	["uns_type99", "", "", "", ["uns_type99mag"], [], ""],
-    ["uns_smle", "", "", "", ["uns_smlemag"], [], ""],
-    ["uns_m1903", "", "", "", ["uns_springfieldmag"], [], ""],
-    ["uns_mas36", "", "", "", ["uns_mas36mag"], [], ""],
-    ["uns_kar98k", "", "", "", ["uns_kar98kmag"], [], ""],
-    ["uns_mosin", "", "", "", ["uns_mosinmag"], [], ""]
+	["vn_xm16e1", "", "", "", ["vn_m16_20_mag", "vn_m16_20_mag", "vn_m16_20_t_mag"], [], ""],
+	["vn_xm16e1", "", "vn_b_m16", "", ["vn_m16_20_mag", "vn_m16_20_mag", "vn_m16_20_t_mag"], [], ""]
 ]];
 _loadoutData set ["tunedRifles", [
-	["uns_type99", "", "", "", ["uns_type99mag"], [], ""],
-    ["uns_smle", "", "", "", ["uns_smlemag"], [], ""],
-    ["uns_m1903", "", "", "", ["uns_springfieldmag"], [], ""],
-    ["uns_mas36", "", "", "", ["uns_mas36mag"], [], ""],
-    ["uns_kar98k", "", "", "", ["uns_kar98kmag"], [], ""],
-    ["uns_mosin", "", "", "", ["uns_mosinmag"], [], ""]
+	["vn_xm16e1", "", "", "vn_o_4x_m16", ["vn_m16_30_mag", "vn_m16_30_mag", "vn_m16_30_t_mag"], [], ""],
+	["vn_xm16e1", "", "", "", ["vn_m16_30_mag", "vn_m16_30_mag", "vn_m16_30_t_mag"], [], ""],
+	["vn_xm16e1_xm148", "", "", "", ["vn_m16_20_mag", "vn_m16_20_mag", "vn_m16_20_t_mag"], ["vn_40mm_m583_flare_w_mag", "vn_40mm_m661_flare_g_mag", "vn_40mm_m662_flare_r_mag", "vn_40mm_m680_smoke_w_mag", "vn_40mm_m682_smoke_r_mag", "vn_40mm_m715_smoke_g_mag", "vn_40mm_m716_smoke_y_mag", "vn_40mm_m717_smoke_p_mag"], ""],
+	["vn_xm16e1_xm148", "", "", "", ["vn_m16_20_mag", "vn_m16_20_mag", "vn_m16_20_t_mag"], ["vn_40mm_m583_flare_w_mag", "vn_40mm_m661_flare_g_mag", "vn_40mm_m662_flare_r_mag", "vn_40mm_m680_smoke_w_mag", "vn_40mm_m682_smoke_r_mag", "vn_40mm_m715_smoke_g_mag", "vn_40mm_m716_smoke_y_mag", "vn_40mm_m717_smoke_p_mag"], ""]
 ]];
 _loadoutData set ["enforcerRifles", [
-	["uns_sks", "", "", "", ["uns_sksmag"], [], ""],
-    ["uns_sks", "", "", "", ["uns_sksmag_NT"], [], ""],
-    ["uns_svt", "", "", "", ["uns_svtmag"], [], ""],
-    ["uns_STG_44", "", "", "", ["uns_30Rnd_kurtz_stg"], [], ""],
-    ["uns_mas36short", "", "", "", ["uns_mas36mag"], [], ""],
-    ["uns_mas4956", "", "", "", ["uns_mas4956mag"], [], ""]
+	["vn_m2carbine", "", "vn_b_carbine", "", ["vn_carbine_30_mag", "vn_carbine_30_mag", "vn_carbine_30_t_mag"], [], ""],
+	["vn_m2carbine", "", "", "", ["vn_carbine_30_mag", "vn_carbine_30_mag", "vn_carbine_30_t_mag"], [], ""],
+	["vn_m45", "", "", "", ["vn_m45_mag", "vn_m45_mag", "vn_m45_t_mag"], [], ""],
+	["vn_m45", "", "", "", ["vn_m45_mag", "vn_m45_mag", "vn_m45_t_mag"], [], ""],
+	["vn_xm177e1", "", "", "", ["vn_m16_20_mag", "vn_m16_20_mag", "vn_m16_20_t_mag"], [], ""],
+	["vn_xm177e1", "", "", "", ["vn_m16_20_mag", "vn_m16_20_mag", "vn_m16_20_t_mag"], [], ""]
 ]];
 _loadoutData set ["carbines", [
-	["uns_sks", "", "", "", ["uns_sksmag"], [], ""],
-    ["uns_sks", "", "", "", ["uns_sksmag_NT"], [], ""],
-    ["uns_svt", "", "", "", ["uns_svtmag"], [], ""],
-    ["uns_STG_44", "", "", "", ["uns_30Rnd_kurtz_stg"], [], ""],
-    ["uns_mas36short", "", "", "", ["uns_mas36mag"], [], ""],
-    ["uns_mas4956", "", "", "", ["uns_mas4956mag"], [], ""]
+	["vn_m2carbine", "", "vn_b_carbine", "", ["vn_carbine_30_mag", "vn_carbine_30_mag", "vn_carbine_30_t_mag"], [], ""],
+	["vn_m2carbine", "", "", "", ["vn_carbine_30_mag", "vn_carbine_30_mag", "vn_carbine_30_t_mag"], [], ""],
+	["vn_m45", "", "", "", ["vn_m45_mag", "vn_m45_mag", "vn_m45_t_mag"], [], ""],
+	["vn_m45", "", "", "", ["vn_m45_mag", "vn_m45_mag", "vn_m45_t_mag"], [], ""],
+	["vn_xm177e1", "", "", "", ["vn_m16_20_mag", "vn_m16_20_mag", "vn_m16_20_t_mag"], [], ""],
+	["vn_xm177e1", "", "", "", ["vn_m16_20_mag", "vn_m16_20_mag", "vn_m16_20_t_mag"], [], ""]
 ]];
 _loadoutData set ["grenadeLaunchers", [
-	["uns_type99_gl", "", "", "", ["uns_type99mag"], ["Uns_1Rnd_30mm_FRAG"], ""],
-    ["uns_mas36_gl", "", "", "", ["uns_mas36mag"], ["Uns_1Rnd_22mm_AT", "Uns_1Rnd_22mm_smoke", "Uns_1Rnd_22mm_WP"], ""],
-    ["uns_mas36short_gl", "", "", "", ["uns_mas36mag"], ["Uns_1Rnd_22mm_AT", "Uns_1Rnd_22mm_smoke", "Uns_1Rnd_22mm_WP"], ""]
+	["vn_m2carbine_gl", "", "", "", ["vn_carbine_30_mag", "vn_carbine_30_mag", "vn_carbine_30_t_mag"], ["vn_22mm_m17_frag_mag", "vn_22mm_m17_frag_mag", "vn_22mm_m9_heat_mag", "vn_22mm_m19_wp_mag"], ""],
+	["vn_xm16e1_xm148", "", "", "", ["vn_m16_20_mag", "vn_m16_20_mag", "vn_m16_20_t_mag"], ["vn_40mm_m381_he_mag", "vn_40mm_m433_hedp_mag", "vn_40mm_m397_ab_mag", "vn_40mm_m680_smoke_w_mag"], ""],
+	["vn_xm16e1_xm148", "", "", "", ["vn_m16_20_mag", "vn_m16_20_mag", "vn_m16_20_t_mag"], ["vn_40mm_m381_he_mag", "vn_40mm_m680_smoke_w_mag", "vn_40mm_m661_flare_g_mag"], ""]
 ]];
 _loadoutData set ["machineGuns", [
-	["uns_MG42", "", "", "", ["uns_50Rnd_792x57_Mg42"], [], ""],
-    ["uns_mg42_bakelite", "", "", "", ["uns_50Rnd_792x57_Mg42"], [], ""],
-    ["uns_m1919a6", "", "", "", ["uns_100Rnd_m1919"], [], ""]
+	["vn_m60", "", "", "", [], [], ""]
 ]];
 _loadoutData set ["marksmanRifles", [
-	["uns_kar98k", "", "", "uns_o_zf41", ["uns_kar98kmag"], [], ""],
-    ["uns_type99", "", "", "uns_o_Akatihi4x", ["uns_type99mag"], [], ""],
-    ["uns_m1903", "", "", "uns_o_Unertl8x", ["uns_springfieldmag"], [], ""]
+	["vn_xm16e1", "", "", "vn_o_9x_m16", ["vn_m16_20_mag", "vn_m16_20_mag", "vn_m16_20_t_mag"], [], ""],
+	["vn_xm16e1", "", "", "vn_o_4x_m16", ["vn_m16_20_mag", "vn_m16_20_mag", "vn_m16_20_t_mag"], [], ""],
+	["vn_xm16e1", "", "", "vn_o_anpvs2_m16", ["vn_m16_20_mag", "vn_m16_20_mag", "vn_m16_20_t_mag"], [], ""],
+	["vn_m14_camo", "", "", "vn_o_9x_m14", ["vn_m14_mag", "vn_m14_mag", "vn_m14_t_mag"], [], ""],
+	["vn_m14_camo", "", "", "vn_o_9x_m14", ["vn_m14_mag", "vn_m14_mag", "vn_m14_t_mag"], [], "vn_b_camo_m14"],
+	["vn_m14_camo", "", "", "vn_o_anpvs2_m14", ["vn_m14_mag", "vn_m14_mag", "vn_m14_t_mag"], [], "vn_b_camo_m14"]
 ]];
-_loadoutData set ["lightATLaunchers", ["uns_rpg2"]];
-_loadoutData set ["ATLaunchers", [
-["uns_rpg7", "", "", "", ["uns_rpg7grenade"], [], ""]
-]];
-_loadoutData set ["lightHELaunchers", ["uns_B40"]];
-_loadoutData set ["AALaunchers", ["uns_sa7b"]];
-_loadoutData set ["sidearms", ["uns_Tt33", "uns_tt30", "uns_p64"]];
+_loadoutData set ["ATLaunchers", ["vn_m72"]];
+_loadoutData set ["AALaunchers", ["vn_sa7"]];
+_loadoutData set ["sidearms", ["vn_pm", "vn_m10", "vn_m712", "vn_m1911", "vn_izh54_p", "vn_type64"]];
 
 //////////////////////////
 //    Misc Loadouts     //
 //////////////////////////
 
 private _crewLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_crewLoadoutData set ["vests", ["uns_Simc_garlan"]];
-_crewLoadoutData set ["helmets", ["UNS_NVA_HK"]];
+_crewLoadoutData set ["helmets", ["vn_b_helmet_t56_01_01", "vn_b_helmet_t56_02_01", "vn_b_helmet_t56_01_02", "vn_b_helmet_t56_02_02", "vn_b_helmet_t56_01_03", "vn_b_helmet_t56_02_03"]];
 
 private _pilotLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_pilotLoadoutData set ["vests", ["uns_Simc_garlan"]];
-_pilotLoadoutData set ["helmets", ["UNS_NVA_HK"]];
+_pilotLoadoutData set ["helmets", ["vn_b_helmet_svh4_02_01", "vn_b_helmet_svh4_01_01", "vn_b_helmet_svh4_01_04", "vn_b_helmet_svh4_02_04"]];
 
 
 // ##################### DO NOT TOUCH ANYTHING BELOW THIS LINE #####################
@@ -243,51 +205,41 @@ _pilotLoadoutData set ["helmets", ["UNS_NVA_HK"]];
 private _cellLeaderTemplate = {
 	if (random 100 > 60) then {
 		["helmets"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "fullmask", 1]] call _fnc_setFacewear;
 	} else {
 		["headgear"] call _fnc_setHelmet;
 		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
 	};
 	["vests"] call _fnc_setVest;
-	[["offuniforms", "uniforms"] call _fnc_fallback] call _fnc_setUniform;
+	["uniforms"] call _fnc_setUniform;
 
 	[selectRandom ["grenadeLaunchers", "rifles"]] call _fnc_setPrimary;
 	["primary", 6] call _fnc_addMagazines;
 	["primary", 5] call _fnc_addAdditionalMuzzleMagazines;
 
-	if (random 1 < 0.15) then {
-		["lightATLaunchers"] call _fnc_setLauncher;
-		["launcher", 1] call _fnc_addMagazines;
-	} else {
-		["sidearms"] call _fnc_setHandgun;
-		["handgun", 2] call _fnc_addMagazines;
-	};
+	["sidearms"] call _fnc_setHandgun;
+	["handgun", 2] call _fnc_addMagazines;
 
 	["items_medical_standard"] call _fnc_addItemSet;
 	["items_squadLeader_extras"] call _fnc_addItemSet;
 	["items_miscEssentials"] call _fnc_addItemSet;
 	["antiInfantryGrenades", 2] call _fnc_addItem;
 	["smokeGrenades", 2] call _fnc_addItem;
-	["signalsmokeGrenades", 1] call _fnc_addItem;
 
 	["maps"] call _fnc_addMap;
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
 	["radios"] call _fnc_addRadio;
-	["gpses"] call _fnc_addGPS;
 	["binoculars"] call _fnc_addBinoculars;
-	["NVGs"] call _fnc_addNVGs;
 };
 
 private _mercenaryTemplate = {
 	if (random 100 > 60) then {
-		["heavyHelmets"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "fullmask", 1]] call _fnc_setFacewear;
+		["helmets"] call _fnc_setHelmet;
 	} else {
 		["headgear"] call _fnc_setHelmet;
 		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
 	};
-	["heavyVests"] call _fnc_setVest;
+	["vests"] call _fnc_setVest;
 	["uniforms"] call _fnc_setUniform;
 
 	[selectRandom ["grenadeLaunchers", "rifles", "tunedRifles"]] call _fnc_setPrimary;
@@ -301,21 +253,17 @@ private _mercenaryTemplate = {
 	["items_miscEssentials"] call _fnc_addItemSet;
 	["antiInfantryGrenades", 2] call _fnc_addItem;
 	["smokeGrenades", 2] call _fnc_addItem;
-	["signalsmokeGrenades", 1] call _fnc_addItem;
 
 	["maps"] call _fnc_addMap;
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
 	["radios"] call _fnc_addRadio;
-	["gpses"] call _fnc_addGPS;
 	["binoculars"] call _fnc_addBinoculars;
-	["NVGs"] call _fnc_addNVGs;
 };
 
 private _enforcerTemplate = {
 	if (random 100 < 30) then {
 		["helmets"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "fullmask", 1]] call _fnc_setFacewear;
 	} else {
 		["headgear"] call _fnc_setHelmet;
 		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
@@ -326,34 +274,25 @@ private _enforcerTemplate = {
 	[["enforcerRifles", "rifles"] call _fnc_fallback] call _fnc_setPrimary;
 	["primary", 4] call _fnc_addMagazines;
 
-	if (random 1 < 0.15) then {
-		["lightHELaunchers"] call _fnc_setLauncher;
-		["launcher", 1] call _fnc_addMagazines;
-	} else {
-		["sidearms"] call _fnc_setHandgun;
-		["handgun", 2] call _fnc_addMagazines;
-	};
+	["sidearms"] call _fnc_setHandgun;
+	["handgun", 2] call _fnc_addMagazines;
 
 	["items_medical_standard"] call _fnc_addItemSet;
 	["items_squadLeader_extras"] call _fnc_addItemSet;
 	["items_miscEssentials"] call _fnc_addItemSet;
 	["antiInfantryGrenades", 2] call _fnc_addItem;
 	["smokeGrenades", 2] call _fnc_addItem;
-	["signalsmokeGrenades", 1] call _fnc_addItem;
 
 	["maps"] call _fnc_addMap;
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
 	["radios"] call _fnc_addRadio;
-	["gpses"] call _fnc_addGPS;
 	["binoculars"] call _fnc_addBinoculars;
-	["NVGs"] call _fnc_addNVGs;
 };
 
 private _partisanTemplate = {
 	if (random 100 < 30) then {
 		["helmets"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "fullmask", 1]] call _fnc_setFacewear;
 	} else {
 		["headgear"] call _fnc_setHelmet;
 		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
@@ -361,13 +300,8 @@ private _partisanTemplate = {
 	["vests"] call _fnc_setVest;
 	["uniforms"] call _fnc_setUniform;
 
-	if (random 1 < 0.15) then {
-		["lightHELaunchers"] call _fnc_setLauncher;
-		["launcher", 1] call _fnc_addMagazines;
-	} else {
-		["sidearms"] call _fnc_setHandgun;
-		["handgun", 2] call _fnc_addMagazines;
-	};
+	["sidearms"] call _fnc_setHandgun;
+	["handgun", 2] call _fnc_addMagazines;
 
 	[selectRandom ["rifles", "carbines"]] call _fnc_setPrimary;
 	["primary", 6] call _fnc_addMagazines;
@@ -382,13 +316,11 @@ private _partisanTemplate = {
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
 	["radios"] call _fnc_addRadio;
-	["NVGs"] call _fnc_addNVGs;
 };
 
 private _minutemanTemplate = {
 	if (random 100 < 30) then {
 		["helmets"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "fullmask", 1]] call _fnc_setFacewear;
 	} else {
 		["headgear"] call _fnc_setHelmet;
 		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
@@ -396,13 +328,8 @@ private _minutemanTemplate = {
 	["vests"] call _fnc_setVest;
 	["uniforms"] call _fnc_setUniform;
 
-	if (random 1 < 0.15) then {
-		["lightATLaunchers"] call _fnc_setLauncher;
-		["launcher", 1] call _fnc_addMagazines;
-	} else {
-		["sidearms"] call _fnc_setHandgun;
-		["handgun", 2] call _fnc_addMagazines;
-	};
+	["sidearms"] call _fnc_setHandgun;
+	["handgun", 2] call _fnc_addMagazines;
 
 	[selectRandom ["rifles", "carbines"]] call _fnc_setPrimary;
 	["primary", 6] call _fnc_addMagazines;
@@ -417,13 +344,11 @@ private _minutemanTemplate = {
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
 	["radios"] call _fnc_addRadio;
-	["NVGs"] call _fnc_addNVGs;
 };
 
 private _medicTemplate = {
 	if (random 100 < 30) then {
 		["helmets"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "fullmask", 1]] call _fnc_setFacewear;
 	} else {
 		["headgear"] call _fnc_setHelmet;
 		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
@@ -448,13 +373,11 @@ private _medicTemplate = {
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
 	["radios"] call _fnc_addRadio;
-	["NVGs"] call _fnc_addNVGs;
 };
 
 private _saboteurTemplate = {
 	if (random 100 < 30) then {
 		["helmets"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "fullmask", 1]] call _fnc_setFacewear;
 	} else {
 		["headgear"] call _fnc_setHelmet;
 		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
@@ -467,13 +390,8 @@ private _saboteurTemplate = {
 	["primary", 6] call _fnc_addMagazines;
 	["primary", 10] call _fnc_addAdditionalMuzzleMagazines;
 
-	if (random 1 < 0.15) then {
-		["lightHELaunchers"] call _fnc_setLauncher;
-		["launcher", 1] call _fnc_addMagazines;
-	} else {
-		["sidearms"] call _fnc_setHandgun;
-		["handgun", 2] call _fnc_addMagazines;
-	};
+	["sidearms"] call _fnc_setHandgun;
+	["handgun", 2] call _fnc_addMagazines;
 
 	["items_medical_standard"] call _fnc_addItemSet;
 	["items_grenadier_extras"] call _fnc_addItemSet;
@@ -485,13 +403,11 @@ private _saboteurTemplate = {
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
 	["radios"] call _fnc_addRadio;
-	["NVGs"] call _fnc_addNVGs;
 };
 
 private _explosivesExpertTemplate = {
 	if (random 100 < 30) then {
 		["helmets"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "fullmask", 1]] call _fnc_setFacewear;
 	} else {
 		["headgear"] call _fnc_setHelmet;
 		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
@@ -522,13 +438,11 @@ private _explosivesExpertTemplate = {
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
 	["radios"] call _fnc_addRadio;
-	["NVGs"] call _fnc_addNVGs;
 };
 
 private _atTemplate = {
 	if (random 100 < 30) then {
 		["helmets"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "fullmask", 1]] call _fnc_setFacewear;
 	} else {
 		["headgear"] call _fnc_setHelmet;
 		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
@@ -557,13 +471,11 @@ private _atTemplate = {
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
 	["radios"] call _fnc_addRadio;
-	["NVGs"] call _fnc_addNVGs;
 };
 
 private _aaTemplate = {
 	if (random 100 < 30) then {
 		["helmets"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "fullmask", 1]] call _fnc_setFacewear;
 	} else {
 		["headgear"] call _fnc_setHelmet;
 		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
@@ -592,13 +504,11 @@ private _aaTemplate = {
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
 	["radios"] call _fnc_addRadio;
-	["NVGs"] call _fnc_addNVGs;
 };
 
 private _oppressorTemplate = {
 	if (random 100 < 30) then {
 		["helmets"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "fullmask", 1]] call _fnc_setFacewear;
 	} else {
 		["headgear"] call _fnc_setHelmet;
 		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
@@ -623,13 +533,11 @@ private _oppressorTemplate = {
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
 	["radios"] call _fnc_addRadio;
-	["NVGs"] call _fnc_addNVGs;
 };
 
 private _sharpshooterTemplate = {
 	if (random 100 < 30) then {
 		["helmets"] call _fnc_setHelmet;
-		[selectRandomWeighted [[], 1.5, "fullmask", 1]] call _fnc_setFacewear;
 	} else {
 		["headgear"] call _fnc_setHelmet;
 		[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
@@ -654,13 +562,11 @@ private _sharpshooterTemplate = {
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
 	["radios"] call _fnc_addRadio;
-	["Rangefinder"] call _fnc_addBinoculars;
-	["NVGs"] call _fnc_addNVGs;
 };
 
 private _crewTemplate = {
 	["helmets"] call _fnc_setHelmet;
-	[selectRandomWeighted [[], 1.5, "fullmask", 1.25, "facewear", 1]] call _fnc_setFacewear;
+	[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
 	["vests"] call _fnc_setVest;
 	["uniforms"] call _fnc_setUniform;
 
@@ -679,13 +585,11 @@ private _crewTemplate = {
 	["watches"] call _fnc_addWatch;
 	["compasses"] call _fnc_addCompass;
 	["radios"] call _fnc_addRadio;
-	["gpses"] call _fnc_addGPS;
-	["NVGs"] call _fnc_addNVGs;
 };
 
 private _unarmedTemplate = {
 	["vests"] call _fnc_setVest;
-	[selectRandomWeighted [[], 1.5, "facewear", 1, "fullmask", 1]] call _fnc_setFacewear;
+	[selectRandomWeighted [[], 1.5, "facewear", 1]] call _fnc_setFacewear;
 	["uniforms"] call _fnc_setUniform;
 
 	["items_medical_basic"] call _fnc_addItemSet;
@@ -704,7 +608,7 @@ private _commanderTemplate = {
 	["handgun", 2] call _fnc_addMagazines;
 
 	["vests"] call _fnc_setVest;
-	[["offuniforms", "uniforms"] call _fnc_fallback] call _fnc_setUniform;
+	["uniforms"] call _fnc_setUniform;
 
 	["items_medical_basic"] call _fnc_addItemSet;
 	["items_unarmed_extras"] call _fnc_addItemSet;
