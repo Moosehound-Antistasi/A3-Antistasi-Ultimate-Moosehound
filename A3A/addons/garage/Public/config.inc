@@ -179,6 +179,3 @@ HR_GRG_getVehicleSellPrice = {
     params ["_veh"];
     [_veh] call A3A_fnc_getVehicleSellPrice;
 };
-
-
-
