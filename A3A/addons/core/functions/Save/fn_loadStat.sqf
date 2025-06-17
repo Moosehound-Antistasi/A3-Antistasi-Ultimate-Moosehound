@@ -37,7 +37,7 @@ if (isNil "specialVarLoads") then {
         "supportPoints",
         "constructionsX",
         "watchpostsFIA", "roadblocksFIA", "aapostsFIA", "atpostsFIA", "hmgpostsFIA",
-        "traderDiscount", "isTraderQuestCompleted","traderPosition",
+        "traderDiscount", "isTraderQuestAssigned", "isTraderQuestCompleted","traderPosition",
         "areOccupantsDefeated", "areInvadersDefeated",
         "destroyedMilAdmins",
         "rebelLoadouts", "randomizeRebelLoadoutUniforms",
@@ -385,6 +385,9 @@ if (_varName in specialVarLoads) then {
                     if (_veh isKindOf "StaticWeapon") exitWith { staticsToSave pushBack _veh };
                     if (_veh isKindOf "Building") exitWith {
                         _veh setVariable ["A3A_building", true, true];
+                        if (typeOf _veh in ["A3AU_RebHelipad_Square_F","A3AU_RebHelipad_Circle_F"]) then {
+                            [_veh] call A3A_fnc_terrainCleaner;
+                        };
                         A3A_buildingsToSave pushBack _veh;
                     };
                 };
@@ -445,6 +448,11 @@ if (_varName in specialVarLoads) then {
             testingTimerIsActive = _varValue;
         };
 
+        case 'isTraderQuestAssigned': {
+            isTraderQuestAssigned = _varvalue;  
+            publicVariable "isTraderQuestAssigned";
+        };
+
         case 'isTraderQuestCompleted': {
             isTraderQuestCompleted = _varvalue;  
             publicVariable "isTraderQuestCompleted";
@@ -465,9 +473,7 @@ if (_varName in specialVarLoads) then {
 
         case 'traderPosition': {
 			if(count _varvalue > 0) then {
-                isTraderQuestAssigned = true;
-                publicVariable "isTraderQuestAssigned";
-				traderX = [_varvalue] call SCRT_fnc_trader_createTrader; 
+                traderX = [_varvalue] call SCRT_fnc_trader_createTrader; 
 				publicVariable "traderX";
 				[traderX] call SCRT_fnc_trader_setStockType;
 				[traderX] remoteExecCall ["SCRT_fnc_trader_addVehicleMarketAction", 0, true];

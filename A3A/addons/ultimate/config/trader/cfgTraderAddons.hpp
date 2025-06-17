@@ -61,6 +61,12 @@
         weapons = "weapons_sogpf";
         vehicles = "vehicles_sog";
     };
+    class addons_nickelsteel : addons_base
+    {
+        addons[] = {"air_f_vietnam_04"};
+        weapons = "weapons_nickelsteel";
+        vehicles = "vehicles_nickelsteel";
+    };
     class addons_3cbf : addons_base
     {
         addons[] = {"UK3CB_Factions_Vehicles_SUV"};
@@ -78,6 +84,12 @@
         addons[] = {"ww2_spe_assets_c_characters_germans_c"};
         weapons = "weapons_spe";
         vehicles = "vehicles_spe";
+    };
+    class addons_spex : addons_base
+    {
+        addons[] = {"ww2_spex_assets_c_characters_americans_c"};
+        weapons = "weapons_spex";
+        vehicles = "vehicles_spex";
     };
     class addons_ffaa : addons_base
     {
@@ -142,6 +154,7 @@
     {
         addons[] = {"CSLA"};
         weapons = "weapons_csla";
+        vehicles = "vehicles_csla";
     };
     class addons_3cbbaf : addons_base
     {
@@ -289,10 +302,15 @@
         addons[] = {"bnae_core"};
         weapons = "weapons_projinf";
     };
-    class addons_jca : addons_base
+    class addons_jcaia : addons_base
     {
         addons[] = {"Weapons_F_JCA_IA","Weapons_F_JCA_IA_Accessories","Weapons_F_JCA_IA_LongRangeRifles_AWM","Weapons_F_JCA_IA_Pistols_P226","Weapons_F_JCA_IA_Pistols_P320","Weapons_F_JCA_IA_Rifles_M4A1","Weapons_F_JCA_IA_Rifles_M4A4","Weapons_F_JCA_IA_Rifles_SR10","Weapons_F_JCA_IA_Rifles_SR25","Weapons_F_JCA_IA_SMGs_MP5"};
-        weapons = "weapons_jca";
+        weapons = "weapons_jcaia";
+    };
+    class addons_jcaie : addons_base
+    {
+        addons[] = {"vests_f_JCA_IE"};
+        weapons = "equipment_jcaie";
     };
     class addons_FlexNorAF : addons_base
     {

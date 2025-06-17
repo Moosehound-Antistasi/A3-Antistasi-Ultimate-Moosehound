@@ -98,6 +98,7 @@ class CfgFunctions
             class launcherInfo {};
             class loot {};
             class randomRifle {};
+            class randomHandgun {};
             class transfer {};
             class unlockEquipment {};
             class vehicleSort {};
@@ -142,6 +143,7 @@ class CfgFunctions
             class getVehiclesAirSupport {};
             class getVehiclesGroundSupport {};
             class getVehiclesGroundTransport {};
+            class getVehicleSellPrice {};
             class vehicleBoxRestore {};
             class initPetros {};
             class isFrontline {};
@@ -204,6 +206,8 @@ class CfgFunctions
             class lockBuilderBox {};
             class placeBuilderObjects {};
             class processBuildingTimeouts {};
+            class terrainCleaner {};
+            class terrainSmoother {};
         };
 
         class Collections {
@@ -425,6 +429,7 @@ class CfgFunctions
             class LOG_Bank {};
             class SUPP_Supplies {};
             class LOG_Salvage {};
+            class findIfNearAndHostile {};
             class LOG_Airdrop {};
             class LOG_Crashsite {};
             class LOG_Crashsite_Satellite{};
@@ -686,6 +691,9 @@ class CfgFunctions
             class SUP_UAV {};
             class SUP_UAVRoutine {};
             class SUP_UAVAvailable {};
+            class SUP_UAVAttack {};
+            class SUP_UAVAttackRoutine {};
+            class SUP_UAVAttackAvailable {};
             class SUP_QRFVehAirdrop {};
             class SUP_QRFVehAirdropAvailable {};
             class SUP_howitzer {};
@@ -745,6 +753,7 @@ class CfgFunctions
             class secondsToTimeSpan {};
             class systemTime_format_S {};
             class timeSpan_format {};
+            class systemTimeDurationToTimeSpan {};
         };
 
         class UI {

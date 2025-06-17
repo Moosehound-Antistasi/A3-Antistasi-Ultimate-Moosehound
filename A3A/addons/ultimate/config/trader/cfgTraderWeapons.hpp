@@ -34,6 +34,10 @@
         {
             prefix = "vn";
         };
+        class weapons_nickelsteel : weapons_base
+        {
+            prefix = "nickelsteel";
+        };
         class weapons_3cbf : weapons_base
         {
             prefix = "3cbf";
@@ -45,6 +49,10 @@
         class weapons_spe : weapons_base
         {
             prefix = "ww2cdlc";
+        };
+        class weapons_spex : weapons_base
+        {
+            prefix = "spex";
         };
         class weapons_ffaa : weapons_base
         {
@@ -156,11 +164,15 @@
         };
         class weapons_projinf : weapons_base
         {
-            prefix = "projinf_stock"
+            prefix = "projinf_stock";
         };
-        class weapons_jca : weapons_base
+        class weapons_jcaia : weapons_base
         {
-            prefix = "jca_stock"
+            prefix = "jcaia_stock";
+        };
+        class equipment_jcaie : weapons_base
+        {
+            prefix = "jcaie_stock";
         };
         class weapons_ef : weapons_base
         {

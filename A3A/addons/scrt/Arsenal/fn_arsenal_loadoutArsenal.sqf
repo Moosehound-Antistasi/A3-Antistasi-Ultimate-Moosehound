@@ -140,8 +140,9 @@ _arrayContains = {
 // Calculate the minimum number of an item needed before non-members can take it
 private _minItemsMember = {
 	params ["_index", "_item"];					// Arsenal tab index, item classname
+	if (_index in [IDC_RSCDISPLAYARSENAL_TAB_LOADEDMAG, IDC_RSCDISPLAYARSENAL_TAB_LOADEDMAG2]) then { _index = IDC_RSCDISPLAYARSENAL_TAB_CARGOMAG };
 	private _min = jna_minItemMember select _index;
-	if (_index in [IDC_RSCDISPLAYARSENAL_TAB_LOADEDMAG, IDC_RSCDISPLAYARSENAL_TAB_LOADEDMAG2, IDC_RSCDISPLAYARSENAL_TAB_CARGOMAG, IDC_RSCDISPLAYARSENAL_TAB_CARGOMAGALL]) then {
+	if (_index in [IDC_RSCDISPLAYARSENAL_TAB_CARGOMAG, IDC_RSCDISPLAYARSENAL_TAB_CARGOMAGALL]) then {
 		_min = _min * getNumber (configfile >> "CfgMagazines" >> _item >> "count");
 	};
 	_min;
@@ -1257,6 +1258,32 @@ switch _mode do {
 				{
 					if(_index == _x call jn_fnc_arsenal_itemType)exitwith{_return1 = _x};
 				}foreach assignedItems player;
+				_return1;
+			};
+			case IDC_RSCDISPLAYARSENAL_TAB_LOADEDMAG;
+			case IDC_RSCDISPLAYARSENAL_TAB_LOADEDMAG2;
+			case IDC_RSCDISPLAYARSENAL_TAB_ITEMOPTIC;
+			case IDC_RSCDISPLAYARSENAL_TAB_ITEMACC;
+			case IDC_RSCDISPLAYARSENAL_TAB_ITEMMUZZLE;
+			case IDC_RSCDISPLAYARSENAL_TAB_ITEMBIPOD: {
+				private _weapon = switch true do {
+					case (ctrlEnabled (_display displayCtrl IDC_RSCDISPLAYARSENAL_LIST + IDC_RSCDISPLAYARSENAL_TAB_PRIMARYWEAPON)): { primaryWeapon player };
+					case (ctrlEnabled (_display displayCtrl IDC_RSCDISPLAYARSENAL_LIST + IDC_RSCDISPLAYARSENAL_TAB_SECONDARYWEAPON)): { secondaryWeapon player };
+					case (ctrlEnabled (_display displayCtrl IDC_RSCDISPLAYARSENAL_LIST + IDC_RSCDISPLAYARSENAL_TAB_HANDGUN)): { handgunWeapon player };
+				};
+				private _weaponItems = weaponsItems player select { _x select 0 isEqualTo _weapon } select 0;
+
+				_return1 = switch (_index) do {
+					case IDC_RSCDISPLAYARSENAL_TAB_LOADEDMAG: { _weaponItems select 4 };
+					case IDC_RSCDISPLAYARSENAL_TAB_LOADEDMAG2: { _weaponItems select 5 };
+					case IDC_RSCDISPLAYARSENAL_TAB_ITEMOPTIC: { _weaponItems select 3 };
+					case IDC_RSCDISPLAYARSENAL_TAB_ITEMACC: { _weaponItems select 2 };
+					case IDC_RSCDISPLAYARSENAL_TAB_ITEMMUZZLE: { _weaponItems select 1 };
+					case IDC_RSCDISPLAYARSENAL_TAB_ITEMBIPOD: { _weaponItems select 6 };
+				};
+				if (_return1 isEqualType []) then { 
+					_return1 = if (count _return1 > 0) then { _return1 select 0 } else { "" };
+				};
 				_return1;
 			};
 		};
@@ -2484,13 +2511,15 @@ switch _mode do {
 					if(_amount != -1)then{
 						if(_amount<_count)then{_count = _amount};
 					};
-					_canAdd = false;
+
 					_container = switch _selected do{
-						case IDC_RSCDISPLAYARSENAL_TAB_UNIFORM: {_canAdd = player canAddItemToUniform _item; uniformContainer player};
-						case IDC_RSCDISPLAYARSENAL_TAB_VEST: {_canAdd = player canAddItemToVest _item; vestContainer player;};
-						case IDC_RSCDISPLAYARSENAL_TAB_BACKPACK: {_canAdd = player canAddItemToBackpack _item; backpackContainer player;};
+						case IDC_RSCDISPLAYARSENAL_TAB_UNIFORM: { uniformContainer player };
+						case IDC_RSCDISPLAYARSENAL_TAB_VEST: { vestContainer player };
+						case IDC_RSCDISPLAYARSENAL_TAB_BACKPACK: { backpackContainer player };
+						default { objNull };
 					};
-					if(_canAdd)then{
+
+					if ([_container, _item] call SCRT_fnc_misc_canAddItemToContainer) then{
 						_container addMagazineAmmoCargo [_item,1,_count];
 					};
 				}else{
