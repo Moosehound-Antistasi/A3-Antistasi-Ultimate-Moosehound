@@ -14199,10 +14199,6 @@
                 <Korean>차량은 본부 마커로부터 반경 50m 이하에 있어야 합니다.</Korean>
                 <French>Le véhicule doit être à moins de 50 mètres du quartier général.</French>
             </Key>
-            <Key ID="STR_A3A_Base_sellVehicle_err0.1">
-                <Original>Vehicle must be within 50 meters of the HQ marker or airfield.</Original>
-                <Russian>Техника должна быть ближе 50 метров от маркера штаба или аэродрома чтобы её можно было продать.</Russian>
-            </Key>
             <Key ID="STR_A3A_Base_sellVehicle_err1">
                 <Original>Vehicle must be empty.</Original>
                 <Russian>Техника должна быть пустой.</Russian>
