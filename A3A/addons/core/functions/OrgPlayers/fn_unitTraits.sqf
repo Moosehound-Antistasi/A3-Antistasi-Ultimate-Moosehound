@@ -74,6 +74,16 @@ if(roleDescription player isEqualTo "@STR_role_default_commander_role_name" || {
     };
 };
 
+// for Moosehound Edition fork
+// Everyone is a medic and engineer!
+player setUnitTrait ["camouflageCoef",0.8];
+player setUnitTrait ["audibleCoef",0.8];
+player setUnitTrait ["loadCoef",1.4];
+player setUnitTrait ["medic", true];
+player setUnitTrait ["explosiveSpecialist", true];
+if (missionNamespace getVariable ["ace_repair_enabled", false]) then { player setVariable ["ace_isEngineer", true, true] } else { player setUnitTrait ["engineer", true] };
+// End Moosehound edit
+
 if (isDiscordRichPresenceActive) then {
 	if(player != theBoss) then {
 		private _roleName = getText (configFile >> "CfgVehicles" >> _type >> "displayName");
