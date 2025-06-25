@@ -56,6 +56,9 @@ switch (true) do {
 			[_x] remoteExec ["A3A_fnc_repairRuinedBuilding", 2];
 		} forEach _militaryBuildings;
 
+		destroyedSites deleteAt(destroyedSites find _site);
+		publicVariable "destroyedSites";
+
 		private _name = [_site] call A3A_fnc_localizar;
 		[
 			localize "STR_notifiers_success_type",
