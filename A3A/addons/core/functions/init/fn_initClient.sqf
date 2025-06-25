@@ -29,10 +29,6 @@ private _isEnglish = ((localize "STR_antistasi_dialogs_generic_button_yes_text")
 isDiscordRichPresenceActive = if (isNil "_richPresenceFunc") then {false} else {true};
 Info_1("Discord Rich Presence: %1", str isDiscordRichPresenceActive);
 
-//Disables rabbits and snakes, because they cause the log to be filled with "20:06:39 Ref to nonnetwork object Agent 0xf3b4a0c0"
-//Can re-enable them if we find the source of the bug.
-enableEnvironment [false, true];
-
 // TODO: May need to strip players?
 // TODO: May need to disable damage, but tricky if we're not sure when the player exists?
 
@@ -107,6 +103,10 @@ if (!isServer and !hasInterface) exitWith {
 };
 
 waitUntil {local player};
+
+//Disables rabbits and snakes, because they cause the log to be filled with "20:06:39 Ref to nonnetwork object Agent 0xf3b4a0c0"
+//Can re-enable them if we find the source of the bug.
+enableEnvironment [false, true];
 
 [] spawn A3A_fnc_briefing;
 
