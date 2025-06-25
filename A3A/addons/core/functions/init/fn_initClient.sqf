@@ -31,10 +31,7 @@ Info_1("Discord Rich Presence: %1", str isDiscordRichPresenceActive);
 
 //Disables rabbits and snakes, because they cause the log to be filled with "20:06:39 Ref to nonnetwork object Agent 0xf3b4a0c0"
 //Can re-enable them if we find the source of the bug.
-[] spawn {
-	waitUntil { sleep 0.1; time > 0 };
-	enableEnvironment [false, true];
-};
+enableEnvironment [false, true];
 
 // TODO: May need to strip players?
 // TODO: May need to disable damage, but tricky if we're not sure when the player exists?
