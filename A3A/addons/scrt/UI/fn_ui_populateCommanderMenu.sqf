@@ -6,9 +6,12 @@ FIX_LINE_NUMBERS()
 disableSerialization;
 
 private _fnc_checkIfAppropriateLocation = {
+	/*
 	if (theBoss distance2D (getMarkerPos "Synd_HQ") < 50) exitWith {true};
 	if (!isNil "traderMarker" && {theBoss distance2D (getMarkerPos traderMarker) < 50}) exitWith {true};
 	false;
+	*/
+	true;
 };
 
 private _hqMarkerPos = getMarkerPos "Synd_HQ";
