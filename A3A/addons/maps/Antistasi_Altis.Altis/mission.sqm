@@ -8,7 +8,7 @@ class EditorData
 	toggles=1537;
 	class ItemIDProvider
 	{
-		nextID=3064;
+		nextID=3068;
 	};
 	class MarkerIDProvider
 	{
@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=749;
+		nextID=757;
 	};
 	class Camera
 	{
-		pos[]={10350.199,152.92059,17983.555};
-		dir[]={0.022185653,-0.7524327,0.65829676};
-		up[]={0.025343811,0.65866882,0.75200647};
-		aside[]={0.99943376,-7.5306161e-09,-0.033682499};
+		pos[]={10352.504,152.58121,17974.426};
+		dir[]={0,-0.70710671,0.70710689};
+		up[]={0,0.70710683,0.70710665};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
-sourceName="playerslotantistasi";
+sourceName="Antistasi_Altis";
 addons[]=
 {
 	"A3_Ui_F",
@@ -209,6 +209,27 @@ class ScenarioData
 {
 	author="Antistasi Ultimate Dev Team";
 };
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="cba_settings_hasSettingsFile";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=1;
+				};
+			};
+		};
+		nAttributes=1;
+	};
+};
 class Mission
 {
 	assetType="Free";
@@ -228,7 +249,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=617;
+		items=619;
 		class Item0
 		{
 			dataType="Marker";
@@ -596,7 +617,7 @@ class Mission
 				class Attribute0
 				{
 					property="groupID";
-					expression="_this setGroupIdGlobal [_value];";
+					expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
 					class Value
 					{
 						class data
@@ -3518,7 +3539,7 @@ class Mission
 					colorName="ColorGreen";
 					a=19.902;
 					b=11.292349;
-					angle=113.47628;
+					angle=113.47627;
 					id=2491;
 				};
 				class Item17
@@ -6412,6 +6433,7 @@ class Mission
 					};
 					id=2976;
 					type="I_G_Soldier_TL_F";
+					atlOffset=-7.6293945e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -6861,6 +6883,7 @@ class Mission
 					};
 					id=2997;
 					type="I_G_Soldier_F";
+					atlOffset=-7.6293945e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7453,6 +7476,7 @@ class Mission
 					};
 					id=3011;
 					type="I_G_Soldier_GL_F";
+					atlOffset=7.6293945e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7502,6 +7526,7 @@ class Mission
 					};
 					id=3012;
 					type="I_G_medic_F";
+					atlOffset=7.6293945e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7649,6 +7674,7 @@ class Mission
 					};
 					id=3018;
 					type="I_G_medic_F";
+					atlOffset=-7.6293945e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -7747,6 +7773,7 @@ class Mission
 					};
 					id=3023;
 					type="I_G_engineer_F";
+					atlOffset=7.6293945e-06;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10259,7 +10286,7 @@ class Mission
 			colorName="ColorGreen";
 			a=5;
 			b=5;
-			angle=179.40892;
+			angle=179.40891;
 			id=2477;
 			atlOffset=254.0981;
 		};
@@ -10553,7 +10580,7 @@ class Mission
 			colorName="ColorGreen";
 			a=5;
 			b=5;
-			angle=56.488979;
+			angle=56.488976;
 			id=2505;
 			atlOffset=238.07205;
 		};
@@ -14905,7 +14932,7 @@ class Mission
 			colorName="ColorGreen";
 			a=5;
 			b=5;
-			angle=179.40891;
+			angle=179.40889;
 			id=2958;
 			atlOffset=254.1105;
 		};
@@ -14919,7 +14946,7 @@ class Mission
 			colorName="ColorGreen";
 			a=5;
 			b=5;
-			angle=179.40891;
+			angle=179.40889;
 			id=2959;
 			atlOffset=254.09816;
 		};
@@ -14933,7 +14960,7 @@ class Mission
 			colorName="ColorGreen";
 			a=5;
 			b=5;
-			angle=179.40891;
+			angle=179.40889;
 			id=2960;
 			atlOffset=254.09814;
 		};
@@ -14947,7 +14974,7 @@ class Mission
 			colorName="ColorGreen";
 			a=5;
 			b=5;
-			angle=179.40891;
+			angle=179.40889;
 			id=2961;
 			atlOffset=254.09816;
 		};
@@ -14961,7 +14988,7 @@ class Mission
 			colorName="ColorGreen";
 			a=5;
 			b=5;
-			angle=179.40891;
+			angle=179.40889;
 			id=2962;
 			atlOffset=254.10115;
 		};
@@ -14975,7 +15002,7 @@ class Mission
 			colorName="ColorGreen";
 			a=5;
 			b=5;
-			angle=179.40891;
+			angle=179.40889;
 			id=2963;
 			atlOffset=254.09193;
 		};
@@ -14989,7 +15016,7 @@ class Mission
 			colorName="ColorGreen";
 			a=5;
 			b=5;
-			angle=56.488976;
+			angle=56.488972;
 			id=2964;
 			atlOffset=238.07205;
 		};
@@ -15003,7 +15030,7 @@ class Mission
 			colorName="ColorGreen";
 			a=5;
 			b=5;
-			angle=56.488976;
+			angle=56.488972;
 			id=2965;
 			atlOffset=238.07204;
 		};
@@ -15017,7 +15044,7 @@ class Mission
 			colorName="ColorGreen";
 			a=5;
 			b=5;
-			angle=56.488976;
+			angle=56.488972;
 			id=2966;
 			atlOffset=238.07207;
 		};
@@ -15031,7 +15058,7 @@ class Mission
 			colorName="ColorGreen";
 			a=5;
 			b=5;
-			angle=56.488976;
+			angle=56.488972;
 			id=2967;
 			atlOffset=238.07205;
 		};
@@ -15045,7 +15072,7 @@ class Mission
 			colorName="ColorGreen";
 			a=5;
 			b=5;
-			angle=56.488976;
+			angle=56.488972;
 			id=2968;
 			atlOffset=238.07205;
 		};
@@ -15059,7 +15086,7 @@ class Mission
 			colorName="ColorGreen";
 			a=5;
 			b=5;
-			angle=56.488976;
+			angle=56.488972;
 			id=2969;
 			atlOffset=238.07205;
 		};
@@ -15153,6 +15180,142 @@ class Mission
 			name="antistasi player slots";
 			id=3063;
 			atlOffset=185.97;
+		};
+		class Item617
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={10377.821,125.48721,18026.33};
+				angles[]={0.050623242,0.56222296,0.0039967569};
+			};
+			name="curatorDrift";
+			id=3065;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="76561197996287940";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="Drift_91";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=3;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item618
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={10379.667,125.47437,18026.729};
+				angles[]={0.050623242,0.56222296,0.0039967569};
+			};
+			name="curatorErik";
+			id=3066;
+			type="ModuleCurator_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="76561197975720248";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="MoosehoundActual";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=3;
+						};
+					};
+				};
+				nAttributes=4;
+			};
 		};
 	};
 	class Connections
