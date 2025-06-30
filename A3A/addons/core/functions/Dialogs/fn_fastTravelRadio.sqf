@@ -146,7 +146,7 @@ if (_positionTel distance2D getMarkerPos _base < 150) then {
 
 	// Extra debug logging for zero travel time bug
 	private _timer = (((position _boss) distance2D _positionX)/400);
-	[2, format ["Time=%1 | Rounded=%2 | Origin=%3 | Target=%4", _timer, _distanceX, position _boss, _positionX], _fnc_scriptName, true] call A3A_fnc_log;
+	[2, format ["Time=%1 | Rounded=%2 | Origin=%3 | Target=%4 | Player=%5", _timer, _distanceX, position _boss, _positionX, profileName], _fnc_scriptName] remoteExec ["A3A_fnc_log", 2];
 
 	if (!_esHC) then {
 		disableUserInput true; 
