@@ -33,7 +33,7 @@ if (_message isEqualTo "") then {
     _message = selectRandom
     [
         "Civilians sympathetic to our cause gave us some intel on enemy zones.", // To-Do: Localize
-        "A map marked with enemy locations was found by one of our comrades." // To-Do: Localize
+        "A map marked with enemy locations was found by one of our guys." // To-Do: Localize
     ];
 };
 

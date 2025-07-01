@@ -2788,14 +2788,14 @@
                 <French>Vous êtes prêt %1.</French>
             </Key>
             <Key ID="STR_chats_help_response">
-                <Original>Wait a minute comrade %1, I will patch you up.</Original>
+                <Original>Wait a minute %1, I will patch you up.</Original>
                 <Russian>Подожди немного, %1, я тебя подлатаю.</Russian>
                 <Chinesesimp>等一下,%1同志，我给你包扎一下。</Chinesesimp>
                 <Korean>잠깐 기다려시오 %1 동지, 내가 치료하겠소.</Korean>
                 <French>Attendez une minute camarade %1, je vais vous rafistoler.</French>
             </Key>
             <Key ID="STR_chats_help_ask">
-                <Original>Comrades, this is %1. I'm wounded!</Original>
+                <Original>Guys, this is %1. I'm wounded!</Original>
                 <Russian>Соотрядники, это %1. Я ранен!</Russian>
                 <Chinesesimp>同志们，这里是%1，我受伤了！</Chinesesimp>
                 <Korean>동지들, 여기는 %1이다. 부상당했다!</Korean>
@@ -2816,7 +2816,7 @@
                 <French>Aide médicale</French>
             </Key>
             <Key ID="STR_chats_autoloot_rearm_heal_in_progress">
-                <Original>I can't rearm right now. I'm healing a comrade!</Original>
+                <Original>I can't rearm right now. I'm healing someone!</Original>
                 <Russian>Я не могу перевооружиться прямо сейчас. Я лечу товарища!</Russian>
                 <Chinesesimp>我现在不能重新武装，我在治疗一个同志！</Chinesesimp>
                 <Korean>당장 재무장할 수 없습니다. 다른 사람을 치료 중입니다!</Korean>
@@ -3135,7 +3135,7 @@
                 <French>Largage de la cargaison</French>
             </Key>
             <Key ID="STR_chats_airdrop_pilot_drop_cargo_end">
-                <Original>Cargo has been dropped, I hope it will help the resistance. Good luck comrades!</Original>
+                <Original>Cargo has been dropped, I hope it will help the resistance. Good luck friends!</Original>
                 <Russian>Груз сброшен, надеюсь, это поможет сопротивлению. Удачи, парни!</Russian>
                 <Chinesesimp>货物已经卸下，希望能帮助抵抗军，祝你们好运，小伙子们！</Chinesesimp>
                 <Korean>화물이 떨어졌다, 그게 당신들에게 도움이 됐으면 좋겠군. 행운을 빈다, 친구들!</Korean>
@@ -9916,7 +9916,7 @@
                 <French>Sauver les prisonniers</French>
             </Key>
             <Key ID="STR_A3A_Missions_RIV_RES_Prisoners_task_desc">
-                <Original>%1 are about to execute our comrades at the %2. We must rescue them before %3. Bring them to HQ.</Original>
+                <Original>%1 are about to execute our friends at the %2. We must rescue them before %3. Bring them to HQ.</Original>
                 <Russian>%1 собираются казнить наших товарищей в %2. Мы должны спасти их до %3. Привезите их в штаб.</Russian>
                 <Chinesesimp>%1 即将处决我们在 %2 的同志。 我们必须在 %3 之前营救他们。 把他们带到总部。</Chinesesimp>
                 <Korean>%1이 %2에서 우리 동지들을 처형하려고 합니다. %3 이전까지 그들을 구출해야 합니다. 그들을 본부로 데려오십시오.</Korean>
@@ -10942,7 +10942,7 @@
                 <French>Pourquoi pas ? Cela ne peut pas être pire.</French>
             </Key>
             <Key ID="STR_release_request_text">
-                <Original>Go back to your base and tell your comrades we are not enemies. We just want to live in peace.</Original>
+                <Original>Go back to your base and tell your friends we are not enemies. We just want to live in peace.</Original>
                 <Russian>Возвращайся на свою базу и скажи товарищам, что мы не враги. Мы просто хотим жить в мире.</Russian>
                 <Chinesesimp>回到你的基地，告诉你的战友我们不是敌人。 我们只想和平相处。</Chinesesimp>
                 <Korean>기지로 돌아가서 네 동지들에게 우린 적이 아니라고 말해라. 우린 그저 평화롭게 살고 싶을 뿐이다.</Korean>
@@ -10991,7 +10991,7 @@
                 <French>Racontez tout ce que vous savez ou vous mourrez.</French>
             </Key>
             <Key ID="STR_reveal_text">
-                <Original>Tell me where your comrades are!</Original>
+                <Original>Tell me where your friends are!</Original>
                 <Russian>Скажи мне - где твои товарищи?</Russian>
                 <Chinesesimp>告诉我，你的战友们在哪里！</Chinesesimp>
                 <Korean>네놈의 동지들이 어딨는지 불어!</Korean>
@@ -11237,7 +11237,7 @@
                 <Turkish>Hey! Senin isyancı arkadaşlarından biri zaten benimle konuştu! Beni rahat bırak!</Turkish>
             </Key>
             <Key ID="STR_antistasi_actions_talk_with_civ_fail_alreadyspoken2">
-                <Original>Haven't you heard? I already spoke to one of your Comrades.</Original>
+                <Original>Haven't you heard? I already spoke to one of your friends.</Original>
                 <Russian>Ты разве не слышал? Я уже поговорил с одним из твоих товарищей.</Russian>
                 <German>Hast du es nicht gehört? Ich habe bereits mit einem deiner Kameraden gesprochen.</German>
                 <Italian>Non hai sentito? Ho già parlato con uno dei tuoi compagni.</Italian>
@@ -13365,7 +13365,7 @@
                 <French>%1 vous a fait du mal!</French>
             </Key>
             <Key ID="STR_A3A_punishment_injured_comrade">
-                <Original>Injured comrade: </Original>
+                <Original>Injured buddy: </Original>
                 <Russian>Раненый товарищ: </Russian>
                 <Chinesesimp>受伤的同志： </Chinesesimp>
                 <Korean>부상당한 아군: </Korean>

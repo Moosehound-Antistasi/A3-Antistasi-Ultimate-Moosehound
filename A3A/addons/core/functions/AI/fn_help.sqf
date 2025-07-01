@@ -55,13 +55,13 @@ if (_medicX != _unit) then
     // Is this one even used? Never seen it
     if !(_unit getVariable ["incapacitated",false]) then
     {
-        if (_isPlayerGroup) then {_unit groupChat format ["Comrades, this is %1. I'm hurt!", name _unit]};
+        if (_isPlayerGroup) then {_unit groupChat format ["Guys, this is %1. I'm hurt!", name _unit]};
         playSound3D [(selectRandom injuredSounds),_unit,false, getPosASL _unit, 1, 1, 50];
     };
 
     // Fire helping message if in player group
     if (_isPlayerGroup) then {
-        _medicX groupChat format ["Wait a minute comrade %1, I will patch you up.", name _unit]
+        _medicX groupChat format ["Wait a minute %1, I will patch you up.", name _unit]
     };
 
     // Actual helping hint for player
