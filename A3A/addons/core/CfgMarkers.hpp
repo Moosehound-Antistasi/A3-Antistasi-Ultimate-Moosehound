@@ -1,7 +1,86 @@
-class CfgMarkers 
+class CfgMarkers
 {
-	class flag_NATO;
+	// Inheriting classes to keep them at the top
+	class hd_dot;
+	class hd_objective;
+	class hd_flag;
+	class hd_arrow;
+	class hd_ambush;
+	class hd_destroy;
+	class hd_start;
+	class hd_end;
+	class hd_pickup;
+	class hd_join;
+	class hd_warning;
+	class hd_unknown;
+
+	// Inheriting more classes to keep them at the top
+	class b_unknown;
+	class o_unknown;
+	class n_unknown;
+	class b_inf;
+	class o_inf;
 	class n_inf;
+	class b_motor_inf;
+	class o_motor_inf;
+	class n_motor_inf;
+	class b_mech_inf;
+	class o_mech_inf;
+	class n_mech_inf;
+	class b_armor;
+	class o_armor;
+	class n_armor;
+	class b_recon;
+	class o_recon;
+	class n_recon;
+	class b_air;
+	class o_air;
+	class n_air;
+	class b_plane;
+	class o_plane;
+	class n_plane;
+	class b_uav;
+	class o_uav;
+	class n_uav;
+	class b_naval;
+	class o_naval;
+	class n_naval;
+	class b_med;
+	class o_med;
+	class n_med;
+	class b_art;
+	class o_art;
+	class n_art;
+	class b_mortar;
+	class o_mortar;
+	class n_mortar;
+	class b_hq;
+	class o_hq;
+	class n_hq;
+	class b_support;
+	class o_support;
+	class n_support;
+	class b_maint;
+	class o_maint;
+	class n_maint;
+	class b_service;
+	class o_service;
+	class n_service;
+	class b_installation;
+	class o_installation;
+	class n_installation;
+	class u_installation;
+	class b_antiair;
+	class o_antiair;
+	class n_antiair;
+	class c_unknown;
+	class c_car;
+	class c_ship;
+	class c_air;
+	class c_plane;
+
+	class flag_NATO;
+	//class n_inf;
 
 	class A3AU_Total_Victory : n_inf
 	{
