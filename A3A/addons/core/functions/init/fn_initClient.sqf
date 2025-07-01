@@ -106,7 +106,10 @@ waitUntil {local player};
 
 //Disables rabbits and snakes, because they cause the log to be filled with "20:06:39 Ref to nonnetwork object Agent 0xf3b4a0c0"
 //Can re-enable them if we find the source of the bug.
-enableEnvironment [false, true];
+[] spawn {
+	while {environmentEnabled select 0} do {enableEnvironment [false, true]; sleep 0.001};
+	[2, "Environment disabled at time: " + (str time), "fn_initClient.sqf"] call A3A_fnc_log;
+};
 
 [] spawn A3A_fnc_briefing;
 
