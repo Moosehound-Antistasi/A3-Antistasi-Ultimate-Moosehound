@@ -109,8 +109,6 @@ waitUntil {local player};
 [] spawn {
 	while {environmentEnabled select 0} do {enableEnvironment [false, true]; sleep 0.001};
 	[2, "Environment disabled at time: " + (str time), "fn_initClient.sqf"] call A3A_fnc_log;
-	waitUntil {environmentEnabled select 0}; enableEnvironment [false, true];
-	[2, "Environment re-disabled at time: " + (str time), "fn_initClient.sqf"] call A3A_fnc_log;
 };
 
 [] spawn A3A_fnc_briefing;
