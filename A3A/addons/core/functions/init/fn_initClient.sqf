@@ -29,10 +29,6 @@ private _isEnglish = ((localize "STR_antistasi_dialogs_generic_button_yes_text")
 isDiscordRichPresenceActive = if (isNil "_richPresenceFunc") then {false} else {true};
 Info_1("Discord Rich Presence: %1", str isDiscordRichPresenceActive);
 
-//Disables rabbits and snakes, because they cause the log to be filled with "20:06:39 Ref to nonnetwork object Agent 0xf3b4a0c0"
-//Can re-enable them if we find the source of the bug.
-enableEnvironment [false, true];
-
 // TODO: May need to strip players?
 // TODO: May need to disable damage, but tricky if we're not sure when the player exists?
 
@@ -480,6 +476,10 @@ if (isServer || (!isNil "theBoss" && {player isEqualTo theBoss}) || (call BIS_fn
     private _textXML = "<t align='left'>" + ((_modsAndLoadText apply { "<t color='#f0d498'>" + _x#1 + ":</t>" + _x#2 }) joinString "<br/>") + "</t>";
     [localize "STR_A3A_initClient_mods_header",_textXML] call A3A_fnc_customHint;
 };
+
+//Disables rabbits and snakes, because they cause the log to be filled with "20:06:39 Ref to nonnetwork object Agent 0xf3b4a0c0"
+//Can re-enable them if we find the source of the bug.
+enableEnvironment [false, true];
 
 // uh, what's this for exactly? What are we doing that needs the main display?
 waituntil {!isnull (finddisplay 46)};
