@@ -13,7 +13,7 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 ["vehiclesBasic", ["UK3CB_NAP_I_TT650", "B_G_Quadbike_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["UK3CB_NAP_B_Hilux_Pkm", "UK3CB_NAP_B_Hilux_Open"]] call _fnc_saveToTemplate;
 ["vehiclesLightArmed", ["UK3CB_NAP_B_Hilux_M2"]] call _fnc_saveToTemplate;
-["vehiclesTruck", ["UK3CB_I_G_V3S_Open", "UK3CB_I_G_Ural_Open"]] call _fnc_saveToTemplate;
+["vehiclesTruck", ["UK3CB_I_G_V3S_Open", "UK3CB_I_G_Ural_Open", "UK3CB_CHC_C_Kamaz_Open"]] call _fnc_saveToTemplate;
 ["vehiclesAT", ["UK3CB_NAP_B_Hilux_Spg9"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["UK3CB_I_G_V3S_Zu23", "rhsgref_nat_ural_Zu23"]] call _fnc_saveToTemplate;
 
@@ -28,7 +28,7 @@ private _hasLawsOfWar = "orange" in A3A_enabledDLC;
 
 ["staticMGs", ["UK3CB_LDF_I_M2_TriPod"]] call _fnc_saveToTemplate;
 ["staticAT", ["rhsgref_nat_SPG9"]] call _fnc_saveToTemplate;
-["staticAA", ["rhsgref_nat_ZU23"]] call _fnc_saveToTemplate;
+["staticAA", ["rhsgref_nat_ZU23", "rhsgref_nat_Igla_AA_pod"]] call _fnc_saveToTemplate;
 ["staticMortars", ["rhsgref_nat_2b14"]] call _fnc_saveToTemplate;
 ["staticMortarMagHE", "rhs_mag_3vo18_10"] call _fnc_saveToTemplate;
 ["staticMortarMagSmoke", "rhs_mag_d832du_10"] call _fnc_saveToTemplate;
