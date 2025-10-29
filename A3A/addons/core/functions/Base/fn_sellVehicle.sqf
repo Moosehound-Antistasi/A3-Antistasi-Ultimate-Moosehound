@@ -57,18 +57,8 @@ if (isNull _veh) exitWith {
     [localize "STR_A3A_Base_sellVehicle_header", localize "STR_A3A_reinf_airstrike_not_looking_at_veh"] remoteExecCall ["SCRT_fnc_misc_deniedHint",_player];
 };
 
-/*
 if (_veh distance getMarkerPos respawnTeamPlayer > 50) exitWith {
     [localize "STR_A3A_Base_sellVehicle_header", localize "STR_A3A_Base_sellVehicle_err0"] remoteExecCall ["SCRT_fnc_misc_deniedHint",_player];
-};
-*/
-private _friendlyMarkers = (["Synd_HQ"] + outposts + seaports + airportsX + factories + resourcesX + milbases) select {sidesX getVariable [_x,sideUnknown] == teamPlayer};
-if (!isNil "traderMarker") then {
-	_friendlyMarkers pushBack traderMarker;
-};
-private _inArea = _friendlyMarkers findIf { count ([_player, _veh] inAreaArray _x) > 1 || {count ([_player, _veh] inAreaArray [(getMarkerPos _x), 50, 50]) > 1} };
-if !(_inArea > -1) exitWith {
-	[localize "STR_A3A_Base_sellVehicle_header", localize "STR_A3A_Base_sellVehicle_err0"] remoteExecCall ["SCRT_fnc_misc_deniedHint",_player];
 };
 
 if ({isPlayer _x} count crew _veh > 0) exitWith {
