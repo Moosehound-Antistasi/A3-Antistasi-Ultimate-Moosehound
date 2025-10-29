@@ -139,15 +139,11 @@ if ([getMarkerPos _base] call A3A_fnc_enemyNearCheck) exitWith {
 	openMap [false,false];
 };
 
-if (_positionTel distance2D getMarkerPos _base < 150) then {
+if (_positionTel distance getMarkerPos _base < 50) then {
 	private _positionX = [getMarkerPos _base, 10, random 360] call BIS_Fnc_relPos;
-	private _distanceX = round (((position _boss) distance2D _positionX)/400);
+	private _distanceX = round (((position _boss) distance _positionX)/400);
 	private _forcedX = false;
-
-	// Extra debug logging for zero travel time bug
-	private _timer = (((position _boss) distance2D _positionX)/400);
-	[2, format ["Time=%1 | Rounded=%2 | Origin=%3 | Target=%4 | Player=%5", _timer, _distanceX, position _boss, _positionX, profileName], _fnc_scriptName] remoteExec ["A3A_fnc_log", 2];
-
+	
 	if (!_esHC) then {
 		disableUserInput true; 
 		cutText [format [localize "STR_hints_FT_timer", _distanceX],"BLACK",1]; 
