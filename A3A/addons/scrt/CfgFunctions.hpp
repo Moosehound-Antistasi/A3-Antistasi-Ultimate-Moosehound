@@ -203,7 +203,6 @@ class CfgFunctions {
 			class ui_populateVehicleBox {};
 			class ui_populateBlackMarket {};
 
-			class ui_editParamsMenu {};
 			class ui_createRebelLoadoutMenu {};
 
 			class ui_launchSupport {};

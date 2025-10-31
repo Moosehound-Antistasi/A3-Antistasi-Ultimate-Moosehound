@@ -71,15 +71,10 @@ class Params
 
     */
 
-    class AllParams
-    {
-        lockOnSave = 0;
-        lockInGame = 0;
-    };
-
-    class BasicParams: AllParams
+    class BasicParams
     {
         type = "Basic";
+        lockOnSave = 0;
     };
     class gameMode: BasicParams
     {
@@ -124,7 +119,6 @@ class Params
         values[] = {0,1,2,3};
         texts[] = {$STR_params_allowFT_0, $STR_params_allowFT_1, $STR_params_allowFT_2, $STR_params_civ_traffic_none};
         default = 0;
-        lockInGame = 1; // Causes issues in commander menu dialog when changed. Haven't investigated yet.
     };
     class civTraffic: BasicParams
     {
@@ -235,9 +229,10 @@ class Params
         default = 0;
     };
 
-    class UltimateParams: AllParams
+    class UltimateParams
     {
         type = "Ultimate";
+        lockOnSave = 0;
     };
     class Spacer102: UltimateParams
     {
@@ -309,7 +304,6 @@ class Params
         values[] = {0,1};
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
         default = 0;
-        lockInGame = 1;
     };
     class radiomanSupport: UltimateParams
     {
@@ -324,7 +318,6 @@ class Params
         values[] = {0,1};
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
         default = 0;
-        lockInGame = 1;
     };
     class createAmbientSounds: UltimateParams
     {
@@ -377,9 +370,10 @@ class Params
         default = 100;
     };
     
-    class ScriptParams: AllParams
+    class ScriptParams
     {
         type = "Script";
+        lockOnSave = 0;
     };
     class Spacer67: ScriptParams
     {
@@ -394,7 +388,6 @@ class Params
         values[] = {0,1};
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
         default = 1;
-        lockInGame = 1;
     };
     class RRTurretMagazines: ScriptParams
     {
@@ -402,12 +395,12 @@ class Params
         values[] = {0,1};
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text,$STR_antistasi_dialogs_generic_button_yes_text};
         default = 0;
-        lockInGame = 1;
     };
 
-    class PlusParams: AllParams
+    class PlusParams
     {
         type = "Plus";
+        lockOnSave = 0;
     };
     class Spacer51: PlusParams
     {
@@ -464,7 +457,6 @@ class Params
         values[] = {1, 2, 3, 4, 6, 8, 12, 24};
         texts[] = {$STR_params_timeMultiplier_0, $STR_params_timeMultiplier_1, $STR_params_timeMultiplier_2,$STR_params_timeMultiplier_3,$STR_params_timeMultiplier_4,$STR_params_timeMultiplier_5,$STR_params_timeMultiplier_6,$STR_params_timeMultiplier_7};
         default = 1;
-        lockInGame = 1;
     };
     class unflipPersonCount: PlusParams
     {
@@ -538,10 +530,10 @@ class Params
         default = 2;
     };
     
-    class MemberParams: AllParams
+    class MemberParams
     {
         type = "Member";
-        lockInGame = 1;
+        lockOnSave = 0;
     };
     class TitleMembership: MemberParams
     {
@@ -571,18 +563,18 @@ class Params
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text, $STR_antistasi_dialogs_generic_button_yes_text};
         default = 1;
     };
-    class disableAutoSmokeCover: MemberParams // ? Why is this in this section?
+    class disableAutoSmokeCover: MemberParams
     {
         title = $STR_params_disableAutoSmokeCover;
         values[] = {0,1};
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text, $STR_antistasi_dialogs_generic_button_yes_text};
         default = 0;
-        lockInGame = 0;
     };
 
-    class BuilderParams: AllParams
+    class BuilderParams
     {
         type = "Builder";
+        lockOnSave = 0;
     };
     class TitleBuilder: BuilderParams
     {
@@ -620,9 +612,10 @@ class Params
         default = 0;
     };
 
-    class ExperimentalParams: AllParams
+    class ExperimentalParams
     {
         type = "Experimental";
+        lockOnSave = 0; // ! Nothing in this section should ever have to be locked. We wouldn't want an *experimental* param to bork a save.
     };
     class enableVehicleAutoLock: ExperimentalParams
     {
@@ -723,7 +716,6 @@ class Params
         values[] = {0, 1};
         texts[] = {$STR_antistasi_dialogs_generic_button_no_text, $STR_antistasi_dialogs_generic_button_yes_text};
         default = 0;
-        lockInGame = 1;
     };
     class loadoutsToGenerate: ExperimentalParams
     {
@@ -731,7 +723,6 @@ class Params
         values[] = {5, 10, 15, 20};
         texts[] = {"5", "10", "15", "20"};
         default = 5;
-        lockInGame = 1;
     };
     class A3U_HelipadTerrainSmoothing: ExperimentalParams
     {
@@ -741,9 +732,10 @@ class Params
         default = 0;
     };
 
-    class BalanceParams: AllParams
+    class BalanceParams
     {
         type = "Balance";
+        lockOnSave = 0;
     };
     class TitleBalance: BalanceParams
     {
@@ -758,7 +750,6 @@ class Params
         values[] = {4,6,8,10,11,12,13,14,17,20,24,28};
         texts[] =  {"0.4x","0.6x","0.8x","1.0x","1.1x", "1.2x","1.3x", "1.4x","1.7x","2.0x","2.4x","2.8x"};
         default = 11;
-        lockInGame = 1;
     };
     class A3A_enemyAttackMul: BalanceParams
     {
@@ -767,7 +758,6 @@ class Params
         values[] = {4,6,8,10,12,14,17,20,24,28};
         texts[] =  {"0.4x","0.6x","0.8x","1.0x","1.2x","1.4x","1.7x","2.0x","2.4x","2.8x"};
         default = 10;
-        lockInGame = 1;
     };
     class A3A_invaderBalanceMul: BalanceParams
     {
@@ -776,7 +766,6 @@ class Params
         values[] = {10,11,12,13,14,15,16,17,18,19,20};
         texts[] =  {"1.0x","1.1x","1.2x","1.3x","1.4x","1.5x","1.6x","1.7x","1.8x","1.9x","2.0x"};
         default = 12;
-        lockInGame = 1;
     };
     class A3A_enemyResponseTime: BalanceParams
     {
@@ -855,9 +844,10 @@ class Params
         default = 20;
     };
     
-    class EquipmentParams: AllParams
+    class EquipmentParams
     {
         type = "Equipment";
+        lockOnSave = 0;
     };
     class TitleEquipment: EquipmentParams
     {
@@ -950,9 +940,10 @@ class Params
         default = 1;
     };
 
-    class LootParams: AllParams
+    class LootParams
     {
         type = "Loot";
+        lockOnSave = 0;
     };
     class TitleLoot: LootParams
     {
@@ -1088,14 +1079,16 @@ class Params
         default = 3;
     };
 
-    class ExtenderParams: AllParams
+    class ExtenderParams
     {
         type = "Extender";
+        lockOnSave = 0;
     };
 
-    class DevelopmentParams: AllParams
+    class DevelopmentParams
     {
         type = "Development";
+        lockOnSave = 0;
     };
     class LogLevel: DevelopmentParams
     {
@@ -1110,5 +1103,12 @@ class Params
         values[] = {-1,1,2};
         texts[] = {$STR_params_A3A_logDebugConsole_none, $STR_params_A3A_logDebugConsole_allnondev, $STR_params_A3A_logDebugConsole_all};
         default = 1;
+    };
+    class A3A_GUIDevPreview: DevelopmentParams
+    {
+        title = $STR_params_A3A_GUIDevPreview;
+        values[] = {0};
+        texts[] = {$STR_antistasi_dialogs_generic_button_no_text};
+        default = 0;
     };
 };
