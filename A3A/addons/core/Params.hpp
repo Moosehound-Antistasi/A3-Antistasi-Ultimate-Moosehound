@@ -850,8 +850,8 @@ class Params
     {
         title = $STR_params_UAVSpawnChance;
         tooltip = $STR_params_UAVSpawnChance_desc;
-        values[] = {0.0, 0.1, 0.2, 0.3, 0.5, 1.0, 2.0};
-        texts[] = {"0%", "10%", "20%", "30%", "50%", "100%", "200%"};
+        values[] = {0, 0.1, 0.2, 0.3, 0.5, 1, 2};
+        texts[] = {"0", "10%", "20%", "30%", "50%", "100%", "200%"};
         default = 0.2;
     };
     
