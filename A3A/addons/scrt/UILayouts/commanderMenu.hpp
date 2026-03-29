@@ -955,6 +955,7 @@ class commanderMenu
 					action = QUOTE(while {dialog} do {closeDialog 0}; [] call FUNCMAIN(toggleTeardownMode));
 				};
 
+				/*
 				class EditParamsButton: ButtonBase
 				{			
 					idc = 5200;
@@ -968,6 +969,7 @@ class commanderMenu
 					shadow = 2;			
 					action = "['onLoad'] spawn SCRT_fnc_ui_editParamsMenu;";
 				};
+				*/
 
 				class saveGameButton: ButtonBase
 				{		

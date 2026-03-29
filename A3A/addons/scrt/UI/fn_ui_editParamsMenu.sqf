@@ -5,6 +5,7 @@ FIX_LINE_NUMBERS()
 params ["_mode"];
 
 switch (_mode) do {
+	/*
 	case ("onLoad"): {
 		closeDialog 0;
 		createDialog "A3A_SetupDialog_InGame";
@@ -18,6 +19,7 @@ switch (_mode) do {
 		waitUntil {sleep 0.1; !isNil {_paramsTable getVariable "allTextCtrls"}};
 		["fillParams"] call A3A_fnc_setupParamsTab;
 	};
+	*/
 	case ("ResetParams"): {
 		["fillParams"] call A3A_fnc_setupParamsTab;
 	};
