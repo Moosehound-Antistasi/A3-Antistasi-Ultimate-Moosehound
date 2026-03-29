@@ -755,8 +755,8 @@ class Params
     class A3A_enemyBalanceMul: BalanceParams
     {
         title = $STR_params_overall_enemy_res_balance;
-        values[] = {4,6,8,9,10,11,12,13,14,15,17,20,24,28};
-        texts[] =  {"0.4x","0.6x","0.8x","0.9x","1.0x","1.1x","1.2x","1.3x","1.4x","1.5x","1.7x","2.0x","2.4x","2.8x"};
+        values[] = {4,6,8,10,11,12,13,14,17,20,24,28};
+        texts[] =  {"0.4x","0.6x","0.8x","1.0x","1.1x", "1.2x","1.3x", "1.4x","1.7x","2.0x","2.4x","2.8x"};
         default = 11;
         lockInGame = 1;
     };
@@ -764,8 +764,8 @@ class Params
     {
         attr[] = {"server"};
         title = $STR_params_response_balance;
-        values[] = {4,6,8,9,10,11,12,13,14,15,17,20,24,28};
-        texts[] =  {"0.4x","0.6x","0.8x","0.9x","1.0x","1.1x","1.2x","1.3x","1.4x","1.5x","1.7x","2.0x","2.4x","2.8x"};
+        values[] = {4,6,8,10,12,14,17,20,24,28};
+        texts[] =  {"0.4x","0.6x","0.8x","1.0x","1.2x","1.4x","1.7x","2.0x","2.4x","2.8x"};
         default = 10;
         lockInGame = 1;
     };
