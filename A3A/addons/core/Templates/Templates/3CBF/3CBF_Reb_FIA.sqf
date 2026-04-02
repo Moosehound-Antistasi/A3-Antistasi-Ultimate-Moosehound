@@ -120,6 +120,9 @@ private _initialRebelEquipment = [
     "UK3CB_CHC_C_B_MED", "B_AssaultPack_blk"
 ];
 
+if (isClass (configfile >> "CfgWeapons" >> "Armband_Black_NVG")) then {
+	#include "..\MOD_content\Armbands\Armbands_Reb_Gear.sqf"
+};
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};
 if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment append ["tf_anprc155","tf_anprc155_coyote"]};
 if (A3A_hasTFARBeta) then {_initialRebelEquipment append ["TFAR_microdagr","TFAR_anprc154"]};
