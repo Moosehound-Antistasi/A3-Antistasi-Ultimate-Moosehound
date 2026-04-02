@@ -128,7 +128,6 @@ if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment append 
 if (A3A_hasTFARBeta) then {_initialRebelEquipment append ["TFAR_microdagr","TFAR_anprc154"]};
 if (A3A_hasTFARBeta && startWithLongRangeRadio) then {_initialRebelEquipment append ["TFAR_anprc155","TFAR_anprc155_coyote"]};
 _initialRebelEquipment append ["Chemlight_blue","Chemlight_green","Chemlight_red","Chemlight_yellow"];
-["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
 private _rebUniforms = [
     "U_IG_Guerilla2_1",
@@ -165,6 +164,12 @@ private _rebUniforms = [
     "UK3CB_LSM_I_U_CombatUniform_03",
     "UK3CB_LSM_I_U_CombatUniform_01"
 ];
+
+private _dlcUniforms = [];
+
+if (_hasArtOfWar) then {
+  #include "..\DLC_content\gear\Artofwar\Vanilla_FIA.sqf"
+};
 if (isClass (configfile >> "CfgPatches" >> "VSM_Multicam_Config")) then {
 	#include "..\MOD_content\VSM\VSM_Reb_Uniforms.sqf"
 	
@@ -173,7 +178,7 @@ if (isClass (configfile >> "CfgPatches" >> "VSM_Multicam_Config")) then {
 	};
 };
 
-private _dlcUniforms = [];
+["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
 ["uniforms", _rebUniforms + _dlcUniforms] call _fnc_saveToTemplate;
 
@@ -223,14 +228,11 @@ _loadoutData set ["watches", ["ItemWatch"]];
 _loadoutData set ["compasses", ["ItemCompass"]];
 _loadoutData set ["binoculars", ["Binocular"]];
 
-_loadoutData set ["uniforms", _rebUniforms + _dlcUniforms];
+_loadoutData set ["uniforms", _rebUniforms];
 
 _loadoutData set ["glasses", ["G_Shades_Black", "G_Shades_Blue", "G_Shades_Green", "G_Shades_Red", "G_Aviator", "G_Spectacles", "G_Spectacles_Tinted", "G_Sport_BlackWhite", "G_Sport_Blackyellow", "G_Sport_Greenblack", "G_Sport_Checkered", "G_Sport_Red", "G_Squares", "G_Squares_Tinted"]];
 _loadoutData set ["goggles", ["G_Lowprofile"]];
 _loadoutData set ["facemask", ["rhssaf_veil_Green", "G_Bandanna_blk", "G_Bandanna_oli", "G_Bandanna_khk", "G_Bandanna_tan", "G_Bandanna_beast", "G_Bandanna_shades", "G_Bandanna_sport", "G_Bandanna_aviator"]];
-if (_hasArtOfWar) then {
-  #include "..\DLC_content\gear\Artofwar\Vanilla_FIA.sqf"
-};
 
 _loadoutData set ["items_medical_basic", ["BASIC"] call A3A_fnc_itemset_medicalSupplies];
 _loadoutData set ["items_medical_standard", ["STANDARD"] call A3A_fnc_itemset_medicalSupplies];

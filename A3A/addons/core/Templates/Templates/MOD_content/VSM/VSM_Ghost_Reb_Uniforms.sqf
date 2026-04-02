@@ -1,5 +1,5 @@
 
-_rebUniforms append [
+_dlcUniforms append [
 	"VSM_OGA_od_tan_pants_Camo_SS",
 	"VSM_Scorpion_od_shirt_Camo",
 	"VSM_Scorpion_od_shirt_Camo_SS",

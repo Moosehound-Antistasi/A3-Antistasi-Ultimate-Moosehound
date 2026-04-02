@@ -1,5 +1,5 @@
 
-_rebUniforms append [
+_dlcUniforms append [
 	"VSM_AOR1_Crye_Camo",
 	"VSM_AOR1_Crye_SS_Camo",
 	"VSM_AOR1_Crye_od_pants_Camo",
