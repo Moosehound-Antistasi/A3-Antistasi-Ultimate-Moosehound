@@ -160,8 +160,13 @@ private _rebUniforms = [
     "rhsgref_uniform_woodland",
     "rhsgref_uniform_woodland_olive"
 ];
-
-#include "VSM_Reb_Uniforms.sqf"
+if (isClass (configfile >> "CfgPatches" >> "VSM_Multicam_Config")) then {
+	#include "..\MOD_content\VSM\VSM_Reb_Uniforms.sqf"
+	
+	if (isClass (configfile >> "CfgPatches" >> "MLO_Ghost")) then {
+		#include "..\MOD_content\VSM\VSM_Ghost_Reb_Uniforms.sqf"
+	};
+};
 
 private _dlcUniforms = [];
 

@@ -162,8 +162,13 @@ private _rebUniforms = [
     "UK3CB_LSM_I_U_CombatUniform_03",
     "UK3CB_LSM_I_U_CombatUniform_01"
 ];
-
-#include "VSM_Reb_Uniforms.sqf"
+if (isClass (configfile >> "CfgPatches" >> "VSM_Multicam_Config")) then {
+	#include "..\MOD_content\VSM\VSM_Reb_Uniforms.sqf"
+	
+	if (isClass (configfile >> "CfgPatches" >> "MLO_Ghost")) then {
+		#include "..\MOD_content\VSM\VSM_Ghost_Reb_Uniforms.sqf"
+	};
+};
 
 private _dlcUniforms = [];
 
