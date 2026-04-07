@@ -25,6 +25,15 @@
         description = $STR_A3AP_setupFactionsTab_napa_3cbf;
     };
 
+    class 3CBF_MHG : 3CBF_Base
+    {
+        side = "Reb";
+        flagTexture = "Drift91_Moosestasi\textures\flags\Flag_Moose_CO.paa";
+        name = "3CBF MHG";
+        file = "3CBF_Reb_MHG";
+        description = Run thy shit, G.;
+    };
+
     class 3CBF_CCM : 3CBF_Base
     {
         side = "Reb";
