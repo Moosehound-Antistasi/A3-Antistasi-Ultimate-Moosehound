@@ -95,7 +95,7 @@ private _initialRebelEquipment = [
     "UK3CB_CZ550", "uk3cb_optic_sro", "UK3CB_CZ550_5rnd_Mag", "UK3CB_CZ550_5rnd_Mag_RT",
     "rhs_weap_Izh18", "rhsgref_1Rnd_00Buck", "rhsgref_1Rnd_Slug",
     "rhs_weap_kar98k", "rhsgref_5Rnd_792x57_kar98k",
-    "rhs_weap_panzerfaust60",
+    "rhs_weap_panzerfaust60", "rhs_panzerfaust60_mag",
     "rhs_grenade_nbhgr39B_mag", "rhs_grenade_sthgr24_mag",
     ["IEDUrbanSmall_Remote_Mag", 10], ["IEDLandSmall_Remote_Mag", 10], ["IEDUrbanBig_Remote_Mag", 3], ["IEDLandBig_Remote_Mag", 3],
     "B_FieldPack_oli",
