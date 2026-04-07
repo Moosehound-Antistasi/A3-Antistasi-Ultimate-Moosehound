@@ -136,7 +136,7 @@ switch (true) do {
         _insignia = selectRandom (_faction getOrDefault ["eliteInsignia", _regularInsignia]);
     };
     case (_unitPrefix isEqualTo "SF"): {
-        _skill = _skill * 1.2;
+        _skill = _skill * 1.2 max 0.7; // make them actually scary early game
         _face = selectRandom (_faction getOrDefault ["sfFaces", _regularFaces]);
         _voice = selectRandom (_faction getOrDefault ["sfVoices", _regularVoices]);
         _insignia = selectRandom (_faction getOrDefault ["sfInsignia", _regularInsignia]);
