@@ -8,22 +8,22 @@ class EditorData
 	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=6016;
+		nextID=6019;
 	};
 	class LayerIndexProvider
 	{
-		nextID=363;
+		nextID=408;
 	};
 	class Camera
 	{
-		pos[]={6487.2153,433.62323,15701.509};
-		dir[]={-0.4564296,-0.46746215,0.75707078};
-		up[]={-0.24135864,0.88401222,0.40033719};
-		aside[]={0.85640037,1.0395888e-07,0.51631546};
+		pos[]={305.65958,77.37822,12982.368};
+		dir[]={-0.81264991,-0.57411981,-0.10009114};
+		up[]={-0.56982845,0.81876409,-0.070183679};
+		aside[]={-0.12224427,-2.6309863e-08,0.99251252};
 	};
 };
 binarizationWanted=0;
-sourceName="antistasi_green_sea_2023";
+sourceName="Antistasi_green_sea_2023";
 addons[]=
 {
 	"A3_Structures_F_Argo_Military_Turrets",
@@ -78,6 +78,7 @@ addons[]=
 	"A3_Structures_F_Heli_Ind_Cargo",
 	"A3_Structures_F_Dominants_WIP",
 	"A3_Structures_F_Ind_ReservoirTank",
+	"A3A_core",
 	"A3_Structures_F_Ind_Shed",
 	"A3_Structures_F_Civ_Constructions",
 	"A3_Structures_F_Civ_SportsGrounds",
@@ -102,7 +103,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=28;
+		items=29;
 		class Item0
 		{
 			className="A3_Structures_F_Argo";
@@ -251,38 +252,44 @@ class AddonsMetaData
 		};
 		class Item22
 		{
+			className="A3A_core";
+			name="A3A - core";
+			author="Antistasi Dev Team";
+		};
+		class Item23
+		{
 			className="A3_Structures_F_Bootcamp";
 			name="Arma 3 Bootcamp Update - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item23
+		class Item24
 		{
 			className="A3_Supplies_F_Heli";
 			name="Arma 3 Helicopters - Ammoboxes and Supplies";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item24
+		class Item25
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item25
+		class Item26
 		{
 			className="CUP_Buildings_Config";
 			name="CUP_Buildings_Config";
 		};
-		class Item26
+		class Item27
 		{
 			className="A3_Structures_F_Households";
 			name="Arma 3 - Houses";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item27
+		class Item28
 		{
 			className="CUP_CAStructures_PMC_Ruins";
 			name="CUP_CAStructures_PMC_Ruins";
@@ -335,6 +342,24 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
+	class Category1
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="cba_settings_hasSettingsFile";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					singleType="BOOL";
+					value=1;
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Mission
 {
@@ -363,7 +388,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1811;
+		items=1812;
 		class Item0
 		{
 			dataType="Object";
@@ -11565,7 +11590,7 @@ class Mission
 			colorName="ColorGreen";
 			a=5;
 			b=5;
-			angle=315.45193;
+			angle=315.4519;
 			id=716;
 			atlOffset=-0.00036621094;
 		};
@@ -25605,7 +25630,7 @@ class Mission
 					colorName="ColorWEST";
 					a=127.9091;
 					b=99.523102;
-					angle=0.055634368;
+					angle=0.055634364;
 					id=897;
 				};
 				class Item1
@@ -25713,7 +25738,7 @@ class Mission
 					colorName="ColorWEST";
 					a=143.94427;
 					b=36.70929;
-					angle=321.96301;
+					angle=321.96298;
 					id=4804;
 					atlOffset=-0.033084869;
 				};
@@ -28623,7 +28648,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=209.53288;
+					angle=209.53287;
 					id=2549;
 					atlOffset=0.00035476685;
 				};
@@ -28851,7 +28876,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=88.748322;
+					angle=88.748314;
 					id=4917;
 				};
 				class Item58
@@ -29012,7 +29037,7 @@ class Mission
 					colorName="ColorGreen";
 					a=100.3614;
 					b=31.057959;
-					angle=277.13138;
+					angle=277.13135;
 					id=5621;
 					atlOffset=-0.14328003;
 				};
@@ -29067,7 +29092,7 @@ class Mission
 					colorName="ColorGreen";
 					a=5;
 					b=5;
-					angle=323.22015;
+					angle=323.22012;
 					id=5666;
 					atlOffset=1.5258789e-05;
 				};
@@ -79520,7 +79545,7 @@ class Mission
 			colorName="ColorGreen";
 			a=5;
 			b=5;
-			angle=330.54663;
+			angle=330.5466;
 			id=6002;
 		};
 		class Item1799
@@ -79533,7 +79558,7 @@ class Mission
 			colorName="ColorGreen";
 			a=5;
 			b=5;
-			angle=330.5466;
+			angle=330.54657;
 			id=6003;
 		};
 		class Item1800
@@ -79546,7 +79571,7 @@ class Mission
 			colorName="ColorGreen";
 			a=5;
 			b=5;
-			angle=330.5466;
+			angle=330.54657;
 			id=6004;
 		};
 		class Item1801
@@ -79559,7 +79584,7 @@ class Mission
 			colorName="ColorGreen";
 			a=5;
 			b=5;
-			angle=330.5466;
+			angle=330.54657;
 			id=6005;
 		};
 		class Item1802
@@ -79707,6 +79732,153 @@ class Mission
 			id=6015;
 			type="Land_Statek_brana_ruins";
 			atlOffset=-0.010650635;
+		};
+		class Item1811
+		{
+			dataType="Layer";
+			name="Antistasi Plus Reb HQ and Game Logic";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={288.56339,62.365791,12980.329};
+						angles[]={6.2290711,0.56222296,6.1371498};
+					};
+					name="curatorDrift";
+					id=6017;
+					type="ModuleCurator_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ModuleCurator_F_Owner";
+							expression="_this setVariable ['Owner',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="76561197996287940";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ModuleCurator_F_Forced";
+							expression="_this setVariable ['Forced',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ModuleCurator_F_Name";
+							expression="_this setVariable ['Name',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Drift_91";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ModuleCurator_F_Addons";
+							expression="_this setVariable ['Addons',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=3;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item1
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={291.01727,61.907112,12978.523};
+						angles[]={6.2290711,0.56222296,6.1371498};
+					};
+					name="curatorErik";
+					id=6018;
+					type="ModuleCurator_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ModuleCurator_F_Owner";
+							expression="_this setVariable ['Owner',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="76561197975720248";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ModuleCurator_F_Forced";
+							expression="_this setVariable ['Forced',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ModuleCurator_F_Name";
+							expression="_this setVariable ['Name',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="MoosehoundActual";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ModuleCurator_F_Addons";
+							expression="_this setVariable ['Addons',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=3;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			id=6016;
+			atlOffset=3.8146973e-06;
 		};
 	};
 	class Connections
