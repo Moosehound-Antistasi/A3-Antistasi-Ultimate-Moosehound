@@ -15,7 +15,7 @@ private _hasArtOfWar = "aow" in A3A_enabledDLC;
 ["vehiclesBasic", ["I_G_Quadbike_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["UK3CB_ARD_I_Hilux_Open"]] call _fnc_saveToTemplate;
 ["vehiclesLightArmed", ["UK3CB_ARD_I_Hilux_M2"]] call _fnc_saveToTemplate;
-["vehiclesTruck", ["UK3CB_I_G_Ural_Open", "UK3CB_CHC_C_Kamaz_Open"]] call _fnc_saveToTemplate;
+["vehiclesTruck", ["UK3CB_I_G_Ural_Open", "UK3CB_I_Kamaz_Open_CDF"]] call _fnc_saveToTemplate;
 ["vehiclesAT", ["UK3CB_ARD_I_Hilux_Spg9"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["rhsgref_nat_ural_Zu23"]] call _fnc_saveToTemplate;
 
