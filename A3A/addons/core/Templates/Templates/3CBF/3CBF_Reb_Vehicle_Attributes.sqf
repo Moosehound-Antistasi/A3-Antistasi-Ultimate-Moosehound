@@ -33,7 +33,7 @@
 	
 	// Moosehound Edition
     ["UK3CB_I_G_V3S_Open", ["rebCost", 290]],
-    ["UK3CB_CHC_C_Kamaz_Open", ["rebCost", 350]],
+    ["UK3CB_I_Kamaz_Open_CDF", ["rebCost", 350]],
     ["UK3CB_NAP_I_TT650", ["rebCost", 90]],
     ["rhsgref_nat_Igla_AA_pod", ["rebCost", 1500]]
 ]] call _fnc_saveToTemplate;
