@@ -25,7 +25,7 @@ class A3AU_RebHelipad_Circle_F: A3AU_RebHelipad_base_F
     scope = 2;
     scopeCurator = 2;
 
-    displayName = $STR_A3_CFGVEHICLES_LAND_HELIPADCIRCLE_F0;
+    displayName = "$STR_A3_CFGVEHICLES_LAND_HELIPADCIRCLE_F0";
     editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_HelipadCircle_F.jpg";
     model = "\A3\Structures_F\Mil\Helipads\HelipadCircle_F.p3d";
 };
@@ -34,7 +34,7 @@ class A3AU_RebHelipad_Square_F: A3AU_RebHelipad_base_F
     scope = 2;
     scopeCurator = 2;
 
-    displayName = $STR_A3_CFGVEHICLES_LAND_HELIPADSQUARE_F0;
+    displayName = "$STR_A3_CFGVEHICLES_LAND_HELIPADSQUARE_F0";
     editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_HelipadSquare_F.jpg";
     mapSize = 11.92;
     model = "\A3\Structures_F\Mil\Helipads\HelipadSquare_F.p3d";

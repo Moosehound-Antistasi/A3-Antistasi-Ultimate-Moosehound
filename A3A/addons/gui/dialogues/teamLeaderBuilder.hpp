@@ -40,7 +40,7 @@ class A3A_teamLeaderBuilder
         class TitlebarText : A3A_TitlebarText
         {
             idc = -1;
-            // text = $STR_antistasi_teamleader_placer_title;
+            // text = "$STR_antistasi_teamleader_placer_title";
             text = "Teamleader Builder";
             x = safeZoneX;
             y = SCREEN_BOTTOM - PX_H(41);

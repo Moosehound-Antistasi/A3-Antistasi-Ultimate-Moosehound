@@ -9,7 +9,7 @@ class A3A_BlackMarketDialog : A3A_TabbedDialogBlackmarket
         class TitlebarText : A3A_TitlebarText
         {
             idc = -1;
-            text = $STR_trader_black_market_title;
+            text = "$STR_trader_black_market_title";
             x = DIALOG_X;
             y = DIALOG_Y - 10 * GRID_H;
             w = DIALOG_W * GRID_W;
@@ -29,7 +29,7 @@ class A3A_BlackMarketDialog : A3A_TabbedDialogBlackmarket
                 class VehicleTabButton : A3A_Button
                 {
                     idc = -1;
-                    text = $STR_antistasi_dialogs_vehicle_tab_select;
+                    text = "$STR_antistasi_dialogs_vehicle_tab_select";
                     onButtonClick = "[""switchTab"", [""all""]] call A3A_fnc_blackMarketDialog";
                     x = 125 * GRID_W;
                     y = 0;
@@ -270,7 +270,7 @@ class A3A_BlackMarketDialog : A3A_TabbedDialogBlackmarket
         class AboutText : A3A_TitlebarText
         {
             idc = -1;
-            text = $STR_trader_black_market_requirements;
+            text = "$STR_trader_black_market_requirements";
             font = A3A_NOTIFICATION_FONT;
             x = DIALOG_X;
             y = DIALOG_Y - 1 * GRID_H;

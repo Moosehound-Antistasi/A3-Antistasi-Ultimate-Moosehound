@@ -2,3 +2,5 @@ name = "Antistasi Ultimate"
 prefix = "A3A"
 [version]
 path = "addons/core/Includes/script_version.hpp"
+[preprocessor]
+runtime_macros = true

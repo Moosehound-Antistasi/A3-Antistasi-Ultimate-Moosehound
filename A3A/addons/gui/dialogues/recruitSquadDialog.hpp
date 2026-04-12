@@ -8,7 +8,7 @@ class A3A_RecruitSquadDialog : A3A_DefaultDialog
     class TitlebarText : A3A_TitlebarText
     {
       idc = -1;
-      text = $STR_antistasi_dialogs_recruit_squad_titlebar_text;
+      text = "$STR_antistasi_dialogs_recruit_squad_titlebar_text";
       x = DIALOG_X;
       y = DIALOG_Y - 5 * GRID_H;
       w = DIALOG_W * GRID_W;
@@ -48,7 +48,7 @@ class A3A_RecruitSquadDialog : A3A_DefaultDialog
         class InfSquadButton : A3A_Button
         {
           idc = A3A_IDC_RECRUITINFSQUADBUTTON;
-          text = $STR_antistasi_dialogs_recruit_squad_inf_squad;
+          text = "$STR_antistasi_dialogs_recruit_squad_inf_squad";
           onButtonClick = "[""buySquad"", [_this]] call A3A_fnc_recruitSquadDialog";
           size = GUI_TEXT_SIZE_LARGE;
           x = 36 * GRID_W;
@@ -83,7 +83,7 @@ class A3A_RecruitSquadDialog : A3A_DefaultDialog
         class InfTeamButton : A3A_Button
         {
           idc = A3A_IDC_RECRUITINFTEAMBUTTON;
-          text = $STR_antistasi_dialogs_recruit_squad_inf_team;
+          text = "$STR_antistasi_dialogs_recruit_squad_inf_team";
           onButtonClick = "[""buySquad"", [_this]] call A3A_fnc_recruitSquadDialog";
           size = GUI_TEXT_SIZE_LARGE;
           x = 36 * GRID_W;
@@ -118,7 +118,7 @@ class A3A_RecruitSquadDialog : A3A_DefaultDialog
         class MgTeamButton : A3A_Button
         {
           idc = A3A_IDC_RECRUITMGTEAMBUTTON;
-          text = $STR_antistasi_dialogs_recruit_squad_mg_team;
+          text = "$STR_antistasi_dialogs_recruit_squad_mg_team";
           onButtonClick = "[""buySquad"", [_this]] call A3A_fnc_recruitSquadDialog";
           size = GUI_TEXT_SIZE_LARGE;
           x = 36 * GRID_W;
@@ -153,7 +153,7 @@ class A3A_RecruitSquadDialog : A3A_DefaultDialog
         class AtTeamButton : A3A_Button
         {
           idc = A3A_IDC_RECRUITATTEAMBUTTON;
-          text = $STR_antistasi_dialogs_recruit_squad_at_team;
+          text = "$STR_antistasi_dialogs_recruit_squad_at_team";
           onButtonClick = "[""buySquad"", [_this]] call A3A_fnc_recruitSquadDialog";
           size = GUI_TEXT_SIZE_LARGE;
           x = 36 * GRID_W;
@@ -188,7 +188,7 @@ class A3A_RecruitSquadDialog : A3A_DefaultDialog
         class MortarTeamButton : A3A_Button
         {
           idc = A3A_IDC_RECRUITMORTARTEAMBUTTON;
-          text = $STR_antistasi_dialogs_recruit_squad_mortar_team;
+          text = "$STR_antistasi_dialogs_recruit_squad_mortar_team";
           onButtonClick = "[""buySquad"", [_this]] call A3A_fnc_recruitSquadDialog";
           size = GUI_TEXT_SIZE_LARGE;
           x = 88 * GRID_W;
@@ -224,7 +224,7 @@ class A3A_RecruitSquadDialog : A3A_DefaultDialog
         class SniperTeamButton : A3A_Button
         {
           idc = A3A_IDC_RECRUITSNIPERTEAMBUTTON;
-          text = $STR_antistasi_dialogs_recruit_squad_sniper_team;
+          text = "$STR_antistasi_dialogs_recruit_squad_sniper_team";
           onButtonClick = "[""buySquad"", [_this]] call A3A_fnc_recruitSquadDialog";
           size = GUI_TEXT_SIZE_LARGE;
           x = 88 * GRID_W;
@@ -259,7 +259,7 @@ class A3A_RecruitSquadDialog : A3A_DefaultDialog
         class AtCarButton : A3A_Button
         {
           idc = A3A_IDC_RECRUITATCARBUTTON;
-          text = $STR_antistasi_dialogs_recruit_squad_at_car;
+          text = "$STR_antistasi_dialogs_recruit_squad_at_car";
           onButtonClick = "[""buySquad"", [_this]] call A3A_fnc_recruitSquadDialog";
           size = GUI_TEXT_SIZE_LARGE;
           x = 88 * GRID_W;
@@ -294,7 +294,7 @@ class A3A_RecruitSquadDialog : A3A_DefaultDialog
         class AaTruckButton : A3A_Button
         {
           idc = A3A_IDC_RECRUITAATRUCKBUTTON;
-          text = $STR_antistasi_dialogs_recruit_squad_aa_truck;
+          text = "$STR_antistasi_dialogs_recruit_squad_aa_truck";
           onButtonClick = "[""buySquad"", [_this]] call A3A_fnc_recruitSquadDialog";
           size = GUI_TEXT_SIZE_LARGE;
           x = 88 * GRID_W;
@@ -306,7 +306,7 @@ class A3A_RecruitSquadDialog : A3A_DefaultDialog
         class IncludeVehicleLabel : A3A_Text
         {
           idc = -1;
-          text = $STR_antistasi_dialogs_recruit_squad_include_vehicle_label;
+          text = "$STR_antistasi_dialogs_recruit_squad_include_vehicle_label";
           sizeEx = GUI_TEXT_SIZE_LARGE;
           colorBackground[] = A3A_COLOR_BACKGROUND;
           x = 60 * GRID_W;

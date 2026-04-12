@@ -9,7 +9,7 @@ class A3A_BuyVehicleDialog : A3A_TabbedDialog
         class TitlebarText : A3A_TitlebarText
         {
             idc = -1;
-            text = $STR_antistasi_dialogs_buy_vehicle_titlebar;
+            text = "$STR_antistasi_dialogs_buy_vehicle_titlebar";
             x = DIALOG_X;
             y = DIALOG_Y - 10 * GRID_H;
             w = DIALOG_W * GRID_W;
@@ -18,7 +18,7 @@ class A3A_BuyVehicleDialog : A3A_TabbedDialog
         class TipText : A3A_TitlebarText
         {
           idc = -1;
-          text = $STR_antistasi_dialogs_war_level_tip;
+          text = "$STR_antistasi_dialogs_war_level_tip";
           font = A3A_NOTIFICATION_FONT;
           x = DIALOG_X;
           y = DIALOG_Y - 1 * GRID_H;
@@ -39,7 +39,7 @@ class A3A_BuyVehicleDialog : A3A_TabbedDialog
                 class civilianVehicleTabButton : A3A_Button
                 {
                     idc = -1;
-                    text = $STR_antistasi_dialogs_vehicle_tab_civ;
+                    text = "$STR_antistasi_dialogs_vehicle_tab_civ";
                     onButtonClick = "[""switchTab"", [""civil""]] call A3A_fnc_buyVehicleDialog";
                     x = 0;
                     y = 0;
@@ -50,7 +50,7 @@ class A3A_BuyVehicleDialog : A3A_TabbedDialog
                 class rebelVehicleTabButton : A3A_Button
                 {
                     idc = -1;
-                    text = $STR_antistasi_dialogs_vehicle_tab_reb;
+                    text = "$STR_antistasi_dialogs_vehicle_tab_reb";
                     onButtonClick = "[""switchTab"", [""rebel""]] call A3A_fnc_buyVehicleDialog";
                     x = 40 * GRID_W;
                     y = 0;
@@ -61,7 +61,7 @@ class A3A_BuyVehicleDialog : A3A_TabbedDialog
                 class staticsTabButton : A3A_Button
                 {
                     idc = -1;
-                    text = $STR_antistasi_dialogs_vehicle_tab_static;
+                    text = "$STR_antistasi_dialogs_vehicle_tab_static";
                     onButtonClick = "[""switchTab"", [""static""]] call A3A_fnc_buyVehicleDialog";
                     x = 80 * GRID_W;
                     y = 0;
@@ -72,7 +72,7 @@ class A3A_BuyVehicleDialog : A3A_TabbedDialog
                 class OthersTabButton : A3A_Button
                 {
                     idc = -1;
-                    text = $STR_antistasi_dialogs_vehicle_tab_other;
+                    text = "$STR_antistasi_dialogs_vehicle_tab_other";
                     onButtonClick = "[""switchTab"", [""other""]] call A3A_fnc_buyVehicleDialog";
                     x = 120 * GRID_W;
                     y = 0;

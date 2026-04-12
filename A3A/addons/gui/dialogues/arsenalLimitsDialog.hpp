@@ -30,7 +30,7 @@ class A3A_ArsenalLimitsDialog {
             colorBackground[]={0.7,0.3,0,1};
             style = ST_CENTER;
             sizeEx = 6*AL_GRID_H;
-            text = $STR_antistasi_arsenal_limits_dialog_title;
+            text = "$STR_antistasi_arsenal_limits_dialog_title";
             font = "TahomaB";
             x = AL_CENTER_X - 80*AL_GRID_W;
             y = safezoneY + 20*AL_GRID_H;
@@ -85,11 +85,11 @@ class A3A_ArsenalLimitsDialog {
             w = 50*AL_GRID_W;
             h = 6*AL_GRID_H;
             sizeEx = 5*AL_GRID_H;
-            text = $STR_antistasi_arsenal_limits_dialog_current;
+            text = "$STR_antistasi_arsenal_limits_dialog_current";
         };
         class HeaderLimit : HeaderCurrent {
             x = AL_CENTER_X - 60*AL_GRID_W + 104*AL_GRID_W;
-            text = $STR_antistasi_arsenal_limits_dialog_limit;
+            text = "$STR_antistasi_arsenal_limits_dialog_limit";
         };
 
         class CloseButton : RscButton {
@@ -104,7 +104,7 @@ class A3A_ArsenalLimitsDialog {
             y = safezoneY + safezoneH - 38*AL_GRID_H;
             w = 40*AL_GRID_W;
             h = 8*AL_GRID_H;
-            text = $STR_antistasi_arsenal_limits_dialog_close;
+            text = "$STR_antistasi_arsenal_limits_dialog_close";
             onButtonClick = "closeDialog 0";
         };
         class StepButton : CloseButton {
@@ -117,7 +117,7 @@ class A3A_ArsenalLimitsDialog {
         class ResetButton : CloseButton {
             idc = A3A_IDC_ARSLIMRESETBUTTON;
             x = AL_CENTER_X + 40*AL_GRID_W;
-            text = $STR_antistasi_arsenal_limits_dialog_reset;
+            text = "$STR_antistasi_arsenal_limits_dialog_reset";
             onButtonClick = "['resetButton'] call A3A_fnc_arsenalLimitsDialog";
         };
 

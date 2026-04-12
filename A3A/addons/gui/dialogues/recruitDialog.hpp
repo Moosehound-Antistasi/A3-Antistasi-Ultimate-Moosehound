@@ -8,7 +8,7 @@ class A3A_RecruitDialog : A3A_DefaultDialog
     class TitlebarText : A3A_TitlebarText
     {
       idc = -1;
-      text = $STR_antistasi_dialogs_recruit_units_titlebar;
+      text = "$STR_antistasi_dialogs_recruit_units_titlebar";
       x = DIALOG_X;
       y = DIALOG_Y - 5 * GRID_H;
       w = DIALOG_W * GRID_W;
@@ -48,7 +48,7 @@ class A3A_RecruitDialog : A3A_DefaultDialog
         class MilitiamanButton : A3A_Button
         {
           idc = A3A_IDC_RECRUITMILITIAMANBUTTON;
-          text = $STR_antistasi_dialogs_recruit_units_militiaman;
+          text = "$STR_antistasi_dialogs_recruit_units_militiaman";
           onButtonClick = "[A3A_faction_reb get 'unitRifle'] spawn A3A_fnc_reinfPlayer; [""onLoad""] spawn A3A_fnc_recruitDialog;";
           x = 36 * GRID_W;
           y = 11 * GRID_H;
@@ -82,7 +82,7 @@ class A3A_RecruitDialog : A3A_DefaultDialog
         class AutoriflemanButton : A3A_Button
         {
           idc = A3A_IDC_RECRUITAUTORIFLEMANBUTTON;
-          text = $STR_antistasi_dialogs_recruit_units_autorifleman;
+          text = "$STR_antistasi_dialogs_recruit_units_autorifleman";
           onButtonClick = "[A3A_faction_reb get 'unitMG'] spawn A3A_fnc_reinfPlayer; [""onLoad""] spawn A3A_fnc_recruitDialog;";
           x = 36 * GRID_W;
           y = 32 * GRID_H;
@@ -116,7 +116,7 @@ class A3A_RecruitDialog : A3A_DefaultDialog
         class GrenadierButton : A3A_Button
         {
           idc = A3A_IDC_RECRUITGRENADIERBUTTON;
-          text = $STR_antistasi_dialogs_recruit_units_grenadier;
+          text = "$STR_antistasi_dialogs_recruit_units_grenadier";
           onButtonClick = "[A3A_faction_reb get 'unitGL'] spawn A3A_fnc_reinfPlayer; [""onLoad""] spawn A3A_fnc_recruitDialog;";
           x = 36 * GRID_W;
           y = 53 * GRID_H;
@@ -150,7 +150,7 @@ class A3A_RecruitDialog : A3A_DefaultDialog
         class AntitankButton : A3A_Button
         {
           idc = A3A_IDC_RECRUITANTITANKBUTTON;
-          text = $STR_antistasi_dialogs_recruit_units_antitank;
+          text = "$STR_antistasi_dialogs_recruit_units_antitank";
           onButtonClick = "[A3A_faction_reb get 'unitLAT'] spawn A3A_fnc_reinfPlayer; [""onLoad""] spawn A3A_fnc_recruitDialog;";
           x = 36 * GRID_W;
           y = 74 * GRID_H;
@@ -184,7 +184,7 @@ class A3A_RecruitDialog : A3A_DefaultDialog
         class MedicButton : A3A_Button
         {
           idc = A3A_IDC_RECRUITMEDICBUTTON;
-          text = $STR_antistasi_dialogs_recruit_units_medic;
+          text = "$STR_antistasi_dialogs_recruit_units_medic";
           onButtonClick = "[A3A_faction_reb get 'unitMedic'] spawn A3A_fnc_reinfPlayer; [""onLoad""] spawn A3A_fnc_recruitDialog;";
           x = 88 * GRID_W;
           y = 11 * GRID_H;
@@ -218,7 +218,7 @@ class A3A_RecruitDialog : A3A_DefaultDialog
         class MarksmanButton : A3A_Button
         {
           idc = A3A_IDC_RECRUITMARKSMANBUTTON;
-          text = $STR_antistasi_dialogs_recruit_units_marksman;
+          text = "$STR_antistasi_dialogs_recruit_units_marksman";
           onButtonClick = "[A3A_faction_reb get 'unitSniper'] spawn A3A_fnc_reinfPlayer; [""onLoad""] spawn A3A_fnc_recruitDialog;";
           x = 88 * GRID_W;
           y = 32 * GRID_H;
@@ -252,7 +252,7 @@ class A3A_RecruitDialog : A3A_DefaultDialog
         class EngineerButton : A3A_Button
         {
           idc = A3A_IDC_RECRUITENGINEERBUTTON;
-          text = $STR_antistasi_dialogs_recruit_units_engineer;
+          text = "$STR_antistasi_dialogs_recruit_units_engineer";
           onButtonClick = "[A3A_faction_reb get 'unitEng'] spawn A3A_fnc_reinfPlayer; [""onLoad""] spawn A3A_fnc_recruitDialog;";
           x = 88 * GRID_W;
           y = 53 * GRID_H;
@@ -286,7 +286,7 @@ class A3A_RecruitDialog : A3A_DefaultDialog
         class BombSpecialistButton : A3A_Button
         {
           idc = A3A_IDC_RECRUITBOMBSPECIALISTBUTTON;
-          text = $STR_antistasi_dialogs_recruit_units_bomb_specialist;
+          text = "$STR_antistasi_dialogs_recruit_units_bomb_specialist";
           onButtonClick = "[A3A_faction_reb get 'unitExp'] spawn A3A_fnc_reinfPlayer; [""onLoad""] spawn A3A_fnc_recruitDialog;";
           x = 88 * GRID_W;
           y = 74 * GRID_H;

@@ -82,7 +82,7 @@ class ScrtRscCloseButton
 	colorActive[] = {1, 1, 1, 1};
 	color[] = {1, 1, 1, 1};
 	text = "\a3\3DEN\Data\ControlsGroups\Tutorial\close_ca.paa";
-	tooltip = $STR_antistasi_dialogs_generic_button_close_text;
+	tooltip = "$STR_antistasi_dialogs_generic_button_close_text";
 	sizeEx = "4.32 * (1 / (getResolution select 3)) * pixelGrid * 0.5";
 	colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R', 0])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0])", 0};
 };
@@ -918,18 +918,18 @@ class ScrtRscSimpleMenuButton
 class ArsenalButton : ScrtRscSimpleMenuButton
 {
 	text = "\a3\3den\data\displays\display3den\entitymenu\arsenal_ca.paa";
-	tooltip = $STR_antistasi_dialogs_hq_button_rebel_set_loadout_button_tooltip;
+	tooltip = "$STR_antistasi_dialogs_hq_button_rebel_set_loadout_button_tooltip";
 };
 
 class ResetButton : ScrtRscSimpleMenuButton
 {
 	text = "\a3\3den\data\displays\display3den\toolbar\undo_ca.paa";
-	tooltip = $STR_antistasi_dialogs_hq_button_rebel_reset_button_tooltip;
+	tooltip = "$STR_antistasi_dialogs_hq_button_rebel_reset_button_tooltip";
 };
 
 class SimpleMenu
 {
-	movingenable=false;
+	movingenable=0;
 	onLoad = "['on'] call SCRT_fnc_ui_toggleMenuBlur;";
 	onUnload = "['off'] call SCRT_fnc_ui_toggleMenuBlur;";
 };
@@ -942,20 +942,20 @@ class SimpleMenuBig : SimpleMenu
 		{
 			idc = -1;
 			text = "";
-			x = 0.244979 * safezoneW + safezoneX;
-			y = 0.223941 * safezoneH + safezoneY;
-			w = 0.445038 * safezoneW;
-			h = 0.492103 * safezoneH;
+			x = "0.244979 * safezoneW + safezoneX";
+			y = "0.223941 * safezoneH + safezoneY";
+			w = "0.445038 * safezoneW";
+			h = "0.492103 * safezoneH";
 		};
 
 		class titleBackground: BOX
 		{
 			idc = -1;
 			text = "";
-			x = 0.244979 * safezoneW + safezoneX;
-			y = 0.223941 * safezoneH + safezoneY;
-			w = 0.445038 * safezoneW;
-			h = 0.02 * safezoneH;
+			x = "0.244979 * safezoneW + safezoneX";
+			y = "0.223941 * safezoneH + safezoneY";
+			w = "0.445038 * safezoneW";
+			h = "0.02 * safezoneH";
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.376])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.125])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.043])",1};
 		};
 	};
@@ -969,20 +969,20 @@ class SimpleMenuBigger : SimpleMenu
 		{
 			idc = -1;
 			text = "";
-			x = 0.244979 * safezoneW + safezoneX;
-			y = 0.223941 * safezoneH + safezoneY;
-			w = 0.445038 * safezoneW;
-			h = 0.5751155 * safezoneH;
+			x = "0.244979 * safezoneW + safezoneX";
+			y = "0.223941 * safezoneH + safezoneY";
+			w = "0.445038 * safezoneW";
+			h = "0.5751155 * safezoneH";
 		};
 
 		class titleBackground: BOX
 		{
 			idc = -1;
 			text = "";
-			x = 0.244979 * safezoneW + safezoneX;
-			y = 0.223941 * safezoneH + safezoneY;
-			w = 0.445038 * safezoneW;
-			h = 0.02 * safezoneH;
+			x = "0.244979 * safezoneW + safezoneX";
+			y = "0.223941 * safezoneH + safezoneY";
+			w = "0.445038 * safezoneW";
+			h = "0.02 * safezoneH";
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.376])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.125])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.043])",1};
 		};
 	};
@@ -996,20 +996,20 @@ class SimpleMenuSmall : SimpleMenu
 		{
 			idc = -1;
 			text = "";
-			x = 0.244979 * safezoneW + safezoneX;
-			y = 0.223941 * safezoneH + safezoneY;
-			w = 0.445038 * safezoneW;
-			h = 0.20 * safezoneH;
+			x = "0.244979 * safezoneW + safezoneX";
+			y = "0.223941 * safezoneH + safezoneY";
+			w = "0.445038 * safezoneW";
+			h = "0.20 * safezoneH";
 		};
 
 		class titleBackground: BOX
 		{
 			idc = -1;
 			text = "";
-			x = 0.244979 * safezoneW + safezoneX;
-			y = 0.223941 * safezoneH + safezoneY;
-			w = 0.445038 * safezoneW;
-			h = 0.02 * safezoneH;
+			x = "0.244979 * safezoneW + safezoneX";
+			y = "0.223941 * safezoneH + safezoneY";
+			w = "0.445038 * safezoneW";
+			h = "0.02 * safezoneH";
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.376])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.125])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.043])",1};
 		};
 	};
@@ -1023,20 +1023,20 @@ class SimpleMenuMedium : SimpleMenu
 		{
 			idc = -1;
 			text = "";
-			x = 0.4175 * safezoneW + safezoneX;
-			y = 0.225 * safezoneH + safezoneY;
-			w = 0.165 * safezoneW;
-			h = 0.429 * safezoneH;
+			x = "0.4175 * safezoneW + safezoneX";
+			y = "0.225 * safezoneH + safezoneY";
+			w = "0.165 * safezoneW";
+			h = "0.429 * safezoneH";
 		};
 
 		class titleBackground: BOX
 		{
 			idc = -1;
 			text = "";
-			x = 0.4175 * safezoneW + safezoneX;
-			y = 0.225 * safezoneH + safezoneY;
-			w = 0.165 * safezoneW;
-			h = 0.02 * safezoneH;
+			x = "0.4175 * safezoneW + safezoneX";
+			y = "0.225 * safezoneH + safezoneY";
+			w = "0.165 * safezoneW";
+			h = "0.02 * safezoneH";
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.376])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.125])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.043])",1};
 		};
 	};
@@ -1045,10 +1045,10 @@ class SimpleMenuMedium : SimpleMenu
 class SimpleTitle: ScrtRscTextSingle
 {
 	colorText[] = {1,1,1,1};
-	x = 0.244979 * safezoneW + safezoneX;
-	y = 0.223941 * safezoneH + safezoneY;
-	w = 0.445038 * safezoneW;
-	h = 0.02 * safezoneH;
+	x = "0.244979 * safezoneW + safezoneX";
+	y = "0.223941 * safezoneH + safezoneY";
+	w = "0.445038 * safezoneW";
+	h = "0.02 * safezoneH";
 	shadow = 2;
 	sizeEx = "((pixelH * (pixelGridNoUIScale) * 2) * 1.2) * 0.5";
 };
@@ -1056,16 +1056,16 @@ class SimpleTitle: ScrtRscTextSingle
 class SimpleButton: ButtonBase
 {
 	fade = 0;
-	w = 0.2 * safezoneW;
-	h = 0.06 * safezoneH;
+	w = "0.2 * safezoneW";
+	h = "0.06 * safezoneH";
 	sizeEx = "((pixelH * (pixelGridNoUIScale) * 2) * 1.5) * 0.5";
 };
 
 class QuarterSimpleButton: ButtonBase
 {
 	fade = 0;
-	w = 0.049 * safezoneW;
-	h = 0.04 * safezoneH;
+	w = "0.049 * safezoneW";
+	h = "0.04 * safezoneH";
 	sizeEx = "((pixelH * (pixelGridNoUIScale) * 2) * 1.5) * 0.5";
 };
 
