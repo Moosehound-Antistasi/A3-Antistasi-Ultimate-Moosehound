@@ -27,17 +27,20 @@ New-Item -Path "..\build\A3A-Plus" -ItemType Directory -Force > $null
 New-Item -Path "..\build\A3A-Plus\addons" -ItemType Directory -Force > $null
 New-Item -Path "..\build\A3A-Plus\Keys" -ItemType Directory -Force > $null
 
-$addonLocation = "." # We are here already
+$addonLocation = Resolve-Path "." # We are here already
 $addonOutLocation = "$PSScriptRoot\..\..\build\A3A-Plus"
 $addonsOutLocation = "$addonOutLocation\addons"
 
 "`nBuild addons..."
+.$PSScriptRoot\hemtt build
+
 $modules = Get-Childitem "$addonLocation\addons" -Directory
 foreach ($module in $modules) {
     $pboName = "$($module.Name).pbo"
     #"Building $pboName...  $addonLocation\addons\$($module.Name)   -> $addonsOutLocation\$pboName"
     "Building $pboName ..."
-    .$PSScriptRoot\hemtt armake pack --force $module.fullName "$addonsOutLocation\$pboName"
+    #.$PSScriptRoot\hemtt armake pack --force $module.fullName "$addonsOutLocation\$pboName"
+    #.$PSScriptRoot\..\AddonBuilder\AddonBuilder $module.fullName "$addonsOutLocation" -clear -include="$PSScriptRoot\include.txt" -project="$addonLocation" -prefix="x\A3A\addons\$($module.Name)" -binarizeAllTextures
 }
 
 "`nCopy mod.cpp..."
