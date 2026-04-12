@@ -7,30 +7,30 @@ outlw_MR_modifierCheck =
 
 	if (outlw_MR_shift && {!_shift}) then
 	{
-		false;
+		0;
 	}
 	else
 	{
 		if (outlw_MR_ctrl && {!_ctrl}) then
 		{
-			false;
+			0;
 		}
 		else
 		{
 			if (outlw_MR_alt && {!_alt}) then
 			{
-				false;
+				0;
 			}
 			else
 			{
-				true;
+				1;
 			};
 		};
 	};
 };
 outlw_MR_keyDown =
 {
-	_isWounded = player getVariable ["incapacitated", false];
+	_isWounded = player getVariable ["incapacitated", 0];
 	_key = _this select 1;
 	
 	if (_key == outlw_MR_keybinding && {_this call outlw_MR_modifierCheck}) then
@@ -38,14 +38,14 @@ outlw_MR_keyDown =
 		if (outlw_MR_canCreateDialog && !(_isWounded)) then
 		{
 			call outlw_MR_createDialog;
-			true;
+			1;
 		}
 		else
 		{
 			if (!outlw_MR_keybindingMenuActive) then
 			{
 				closeDialog 0;
-				true;
+				1;
 			};
 		};
 	}
@@ -53,8 +53,8 @@ outlw_MR_keyDown =
 	{		
 		if (_key == 14 && {_this select 2} && {_this select 3} && {_this select 4} && {outlw_MR_canCreateDialog}) then
 		{
-			[outlw_MR_defaultKeybinding, true] call outlw_MR_applyKeybinding;
-			true;
+			[outlw_MR_defaultKeybinding, 1] call outlw_MR_applyKeybinding;
+			1;
 		};
 	};
 };
@@ -64,7 +64,7 @@ outlw_MR_getIDCs =
 	private ["_this", "_config", "_ctrlCount", "_returnList", "_ctrl", "_n"];
 	
 	_config = _this select 0;
-	_filter = {true};
+	_filter = {1};
 	
 	if (count _this > 1) then
 	{
@@ -104,7 +104,7 @@ outlw_MR_isAnimating =
 	};
 	
 	_ctrlCount = count _listIDCs;
-	_returnBool = false;
+	_returnBool = 0;
 	
 	for "_n" from 0 to (_ctrlCount - 1) do
 	{
@@ -113,7 +113,7 @@ outlw_MR_isAnimating =
 		if !(ctrlCommitted ((uiNamespace getVariable "outlw_MR_Dialog_Main") displayCtrl _idc)) then
 		{
 			_n = _ctrlCount;
-			_returnBool = true;
+			_returnBool = 1;
 		};
 	};
 	
@@ -231,14 +231,14 @@ outlw_MR_magVerified =
 	_toVerify = _this select 0;
 	_ammoCount = _this select 1;
 	_magInfo = call outlw_MR_magInfo;
-	_returnBool = false;
+	_returnBool = 0;
 	
 	for "_n" from 0 to ((count (_magInfo select 0)) - 1) do
 	{
 		if (((_magInfo select 0) select _n) == _toVerify && {((_magInfo select 1) select _n) == _ammoCount}) then
 		{
 			_n = count (_magInfo select 0);
-			_returnBool = true;
+			_returnBool = 1;
 		};
 	};
 	
@@ -258,19 +258,19 @@ outlw_MR_uniqueMags =
 	_returnAmmoCaps = [];
 	_returnMagCounts = [];
 	
-	_isUnique = true;
+	_isUnique = 1;
 	_a = 0;
 	_p = 0;
 	
 	for "_n" from 0 to ((count _magTypes) - 1) do
 	{		
-		_isUnique = true;
+		_isUnique = 1;
 		
 		for [{_a = 0}, {(_a < count _returnMagTypes) && _isUnique}, {_a = _a + 1}] do
 		{
 			if ((_magTypes select _n) == (_returnMagTypes select _a) && {(_magAmmoCounts select _n) == (_returnAmmoCounts select _a)}) then
 			{
-				_isUnique = false;
+				_isUnique = 0;
 			}
 		};
 		
@@ -300,13 +300,13 @@ outlw_MR_isBeltMagazine =
 	_cap = getNumber(configFile >> "CfgMagazines" >> _magType >> "count");
 	_nameSound = getText(configFile >> "CfgMagazines" >> _magType >> "nameSound");
 	
-	_returnBool = false;
+	_returnBool = 0;
 	
-	//if (_nameSound == "mGun" || {(_nameSound != "magazine" && _cap >= 100)}) then - Not returning true on DLC magazines - GiPPO
+	//if (_nameSound == "mGun" || {(_nameSound != "magazine" && _cap >= 100)}) then - Not returning 1 on DLC magazines - GiPPO
 	
 	if (_nameSound == "mGun" || {_cap >= 100}) then
 	{
-		_returnBool = true;
+		_returnBool = 1;
 	};
 	
 	_returnBool;
@@ -365,7 +365,7 @@ outlw_MR_convert =
 	};
 	
 	_toAdd = [_magType] call outlw_MR_getConversion;
-	outlw_MR_doAddToMagazines = false;
+	outlw_MR_doAddToMagazines = 0;
 	
 	for "_n" from 0 to (_ammoCount - 1) do
 	{

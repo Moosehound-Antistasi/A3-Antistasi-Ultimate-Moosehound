@@ -2,7 +2,7 @@
 outlw_MR_openKeybindings =
 {
 	createDialog "MagRepack_Dialog_Keybindings";
-	outlw_MR_keybindingMenuActive = true;
+	outlw_MR_keybindingMenuActive = 1;
 	
 	outlw_KB_cShift = outlw_MR_shift;
 	outlw_KB_cCtrl = outlw_MR_ctrl;
@@ -11,7 +11,7 @@ outlw_MR_openKeybindings =
 	
 	call outlw_KB_updateKeyText;
 	
-	((uiNamespace getVariable "outlw_MR_Dialog_Keybindings") displayCtrl 2401) ctrlEnable false;
+	((uiNamespace getVariable "outlw_MR_Dialog_Keybindings") displayCtrl 2401) ctrlEnable 0;
 	
 	if (outlw_KB_cShift) then
 	{
@@ -62,7 +62,7 @@ outlw_KB_keyDown =
 		call outlw_KB_updateKeyText;
 		call outlw_KB_enableApply;
 		
-		true;
+		1;
 	};
 };
 
@@ -70,11 +70,11 @@ outlw_KB_enableApply =
 {
 	if !([outlw_MR_keyList, [outlw_KB_cShift, outlw_KB_cCtrl, outlw_KB_cAlt, outlw_KB_cKey]] call BIS_fnc_areEqual) then
 	{
-		((uiNamespace getVariable "outlw_MR_Dialog_Keybindings") displayCtrl 2401) ctrlEnable true;
+		((uiNamespace getVariable "outlw_MR_Dialog_Keybindings") displayCtrl 2401) ctrlEnable 1;
 	}
 	else
 	{
-		((uiNamespace getVariable "outlw_MR_Dialog_Keybindings") displayCtrl 2401) ctrlEnable false;
+		((uiNamespace getVariable "outlw_MR_Dialog_Keybindings") displayCtrl 2401) ctrlEnable 0;
 	};
 };
 
@@ -92,12 +92,12 @@ outlw_KB_modifierSwitch =
 		if (!outlw_KB_cShift) then
 		{
 			((uiNamespace getVariable "outlw_MR_Dialog_Keybindings") displayCtrl 2500) ctrlSetBackgroundColor [1, 1, 1, 0.25];
-			outlw_KB_cShift = true;
+			outlw_KB_cShift = 1;
 		}
 		else
 		{
 			((uiNamespace getVariable "outlw_MR_Dialog_Keybindings") displayCtrl 2500) ctrlSetBackgroundColor [0, 0, 0, 0.8];
-			outlw_KB_cShift = false;
+			outlw_KB_cShift = 0;
 		};
 	}
 	else
@@ -107,12 +107,12 @@ outlw_KB_modifierSwitch =
 			if (!outlw_KB_cCtrl) then
 			{
 				((uiNamespace getVariable "outlw_MR_Dialog_Keybindings") displayCtrl 2501) ctrlSetBackgroundColor [1, 1, 1, 0.25];
-				outlw_KB_cCtrl = true;
+				outlw_KB_cCtrl = 1;
 			}
 			else
 			{
 				((uiNamespace getVariable "outlw_MR_Dialog_Keybindings") displayCtrl 2501) ctrlSetBackgroundColor [0, 0, 0, 0.8];
-				outlw_KB_cCtrl = false;
+				outlw_KB_cCtrl = 0;
 			};
 		}
 		else
@@ -122,12 +122,12 @@ outlw_KB_modifierSwitch =
 				if (!outlw_KB_cAlt) then
 				{
 					((uiNamespace getVariable "outlw_MR_Dialog_Keybindings") displayCtrl 2502) ctrlSetBackgroundColor [1, 1, 1, 0.25];
-					outlw_KB_cAlt = true;
+					outlw_KB_cAlt = 1;
 				}
 				else
 				{
 					((uiNamespace getVariable "outlw_MR_Dialog_Keybindings") displayCtrl 2502) ctrlSetBackgroundColor [0, 0, 0, 0.8];
-					outlw_KB_cAlt = false;
+					outlw_KB_cAlt = 0;
 				};
 			};
 		};

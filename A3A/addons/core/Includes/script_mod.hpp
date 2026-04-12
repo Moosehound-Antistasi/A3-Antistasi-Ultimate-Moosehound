@@ -4,15 +4,17 @@
 #endif
 
 #include "script_version.hpp"
+    #define VERSION MAJOR.MINOR
 #if PATCHLVL > 0
-    #define VERSION MAJOR.MINOR.PATCHLVL
+    #define VERSION_STR MAJOR.MINOR.PATCHLVL
     #define VERSION_AR MAJOR,MINOR,PATCHLVL
 #else
-    #define VERSION MAJOR.MINOR
+    #define VERSION_STR MAJOR.MINOR
     #define VERSION_AR MAJOR,MINOR
 #endif
 
 #define VERSION_FULL MAJOR.MINOR.PATCHLVL.BUILD
+#define VERSION_STR_FULL MAJOR.MINOR.PATCHLVL.BUILD
 #define VERSION_AR_FULL MAJOR,MINOR,PATCHLVL,BUILD
 
 // probably should move to script_version.hpp?

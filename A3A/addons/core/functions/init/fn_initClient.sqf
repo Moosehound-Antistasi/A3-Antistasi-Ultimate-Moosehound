@@ -6,8 +6,8 @@ FIX_LINE_NUMBERS()
 if (isNil "logLevel") then { logLevel = 2; A3A_logDebugConsole = 1 };
 
 Info("initClient started");
-A3A_clientVersion = QUOTE(VERSION);
-Info_1("Client version: %1", QUOTE(VERSION_FULL));
+A3A_clientVersion = VERSION_STR;
+Info_1("Client version: %1", VERSION_STR_FULL);
 
 // *************************** Client pre-setup init *******************************
 

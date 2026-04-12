@@ -16,7 +16,7 @@ class ItemPictureBackground: RscItemText {
 };
 
 class ItemPicture: RscItemCtrlStaticPictureKeepAspect {
-	idc = IDC_ITEM_PICTURE;
+	idc = "IDC_ITEM_PICTURE";
 		
 	x = 0.014;
 	y = 0;
@@ -42,7 +42,7 @@ class ItemDescriptionGroup: RscItemCtrlGroup {
 	
 	class controls {
 		class ItemText: RscItemStructuredText {
-			idc = IDC_ITEM_TEXT;
+			idc = "IDC_ITEM_TEXT";
 			x = 0;
 			y = 0;
 			w = GRID_X(ITEM_W);
@@ -51,7 +51,7 @@ class ItemDescriptionGroup: RscItemCtrlGroup {
 		};
 
 		class ItemDescripton: RscItemStructuredText {
-			idc = IDC_ITEM_TEXT_DES;
+			idc = "IDC_ITEM_TEXT_DES";
 			x = 0;
 			y = 0;
 			w = GRID_X(ITEM_W - SPACE_W);
@@ -67,7 +67,7 @@ class ItemDescriptionGroup: RscItemCtrlGroup {
 		};
 
 		class ProgressBar1: RscItemStatProgress {
-			idc = IDC_STATS_PROGRESS_1;
+			idc = "IDC_STATS_PROGRESS_1";
 							
 			x = GRID_X(SPACE_W);
 			y = GRID_Y(SPACE_H);
@@ -75,7 +75,7 @@ class ItemDescriptionGroup: RscItemCtrlGroup {
 			h = GRID_Y(BAR_H);
 		};
 		class ProgressBarText1: RscItemStatText {
-			idc = IDC_STATS_PROGRESS_TEXT_1;
+			idc = "IDC_STATS_PROGRESS_TEXT_1";
 							
 			x = GRID_X(SPACE_W);
 			y = GRID_Y(SPACE_H);
@@ -85,7 +85,7 @@ class ItemDescriptionGroup: RscItemCtrlGroup {
 			sizeEx = FONT(0.8);
 		};
 		class ProgressBar2: RscItemStatProgress {
-			idc = IDC_STATS_PROGRESS_2;
+			idc = "IDC_STATS_PROGRESS_2";
 							
 			x = GRID_X(SPACE_W);
 			y = GRID_Y(4);
@@ -93,7 +93,7 @@ class ItemDescriptionGroup: RscItemCtrlGroup {
 			h = GRID_Y(BAR_H);
 		};
 		class ProgressBarText2: RscItemStatText {
-			idc = IDC_STATS_PROGRESS_TEXT_2;
+			idc = "IDC_STATS_PROGRESS_TEXT_2";
 							
 			x = GRID_X(SPACE_W);
 			y = GRID_Y(4);
@@ -103,7 +103,7 @@ class ItemDescriptionGroup: RscItemCtrlGroup {
 			sizeEx = FONT(0.8);
 		};
 		class ProgressBar3: RscItemStatProgress {
-			idc = IDC_STATS_PROGRESS_3;
+			idc = "IDC_STATS_PROGRESS_3";
 							
 			x = GRID_X(SPACE_W);
 			y = GRID_Y(7);
@@ -111,7 +111,7 @@ class ItemDescriptionGroup: RscItemCtrlGroup {
 			h = GRID_Y(BAR_H);
 		};
 		class ProgressBarText3: RscItemStatText {
-			idc = IDC_STATS_PROGRESS_TEXT_3;
+			idc = "IDC_STATS_PROGRESS_TEXT_3";
 							
 			x = GRID_X(SPACE_W);
 			y = GRID_Y(7);
@@ -121,7 +121,7 @@ class ItemDescriptionGroup: RscItemCtrlGroup {
 			sizeEx = FONT(0.8);
 		};
 		class ProgressBar4: RscItemStatProgress {
-			idc = IDC_STATS_PROGRESS_4;
+			idc = "IDC_STATS_PROGRESS_4";
 							
 			x = GRID_X(SPACE_W);
 			y = GRID_Y(10);
@@ -129,7 +129,7 @@ class ItemDescriptionGroup: RscItemCtrlGroup {
 			h = GRID_Y(BAR_H);
 		};
 		class ProgressBarText4: RscItemStatText {
-			idc = IDC_STATS_PROGRESS_TEXT_4;
+			idc = "IDC_STATS_PROGRESS_TEXT_4";
 							
 			x = GRID_X(SPACE_W);
 			y = GRID_Y(10);
@@ -139,7 +139,7 @@ class ItemDescriptionGroup: RscItemCtrlGroup {
 			sizeEx = FONT(0.8);
 		};
 		class ProgressBar5: RscItemStatProgress {
-			idc = IDC_STATS_PROGRESS_5;
+			idc = "IDC_STATS_PROGRESS_5";
 							
 			x = GRID_X(SPACE_W);
 			y = GRID_Y(13);
@@ -147,7 +147,7 @@ class ItemDescriptionGroup: RscItemCtrlGroup {
 			h = GRID_Y(BAR_H);
 		};
 		class ProgressBarText5: RscItemStatText {
-			idc = IDC_STATS_PROGRESS_TEXT_5;
+			idc = "IDC_STATS_PROGRESS_TEXT_5";
 							
 			x = GRID_X(SPACE_W);
 			y = GRID_Y(13);

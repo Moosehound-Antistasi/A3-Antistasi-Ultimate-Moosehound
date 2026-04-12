@@ -28,12 +28,12 @@ disableSerialization;
 outlw_MR_version = "3.1.3";
 outlw_MR_date = "31 August 2015";
 
-outlw_MR_defaultKeybinding = [false, true, false, 19];
+outlw_MR_defaultKeybinding = [0, 1, 0, 19];
 
-outlw_MR_canCreateDialog = true;
-outlw_MR_keybindingMenuActive = false;
-outlw_MR_debugMode = profileNamespace getVariable ["outlw_MR_debugMode_profile", false];
-outlw_MR_doHideFull = profileNamespace getVariable ["outlw_MR_doHideFull_profile", false];
+outlw_MR_canCreateDialog = 1;
+outlw_MR_keybindingMenuActive = 0;
+outlw_MR_debugMode = profileNamespace getVariable ["outlw_MR_debugMode_profile", 0];
+outlw_MR_doHideFull = profileNamespace getVariable ["outlw_MR_doHideFull_profile", 0];
 outlw_MR_keyList = profileNamespace getVariable ["outlw_MR_keyList_profile", outlw_MR_defaultKeybinding];
 
 if (typeName(outlw_MR_keyList select 0) != "BOOL") then

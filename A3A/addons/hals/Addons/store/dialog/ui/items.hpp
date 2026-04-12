@@ -1,8 +1,8 @@
 #define CURRENT_Y GRID_Y(0)
 
 class ListCategories: RscItemListBoxCategories {
-	idc = IDC_COMBO_CATEGORY;
-	x = GRID_X;
+	idc = "IDC_COMBO_CATEGORY";
+	x = GRID_X(0);
 	y = GRID_Y(LIST_Y);
 	w = GRID_X(38); 
 	h = GRID_Y(LIST_H);
@@ -15,7 +15,7 @@ class ListCategories: RscItemListBoxCategories {
 };
 
 class ItemCheckboxSort: RscItemCheckboxGreen {
-	idc = IDC_LISTBOX_SORT;
+	idc = "IDC_LISTBOX_SORT";
 	x = GRID_X(SPACE_W2 + COMBO_W + SPACE_W);
 	y = CURRENT_Y;
 	w = GRID_X(BAR_W);
@@ -45,7 +45,7 @@ class ItemCheckboxSort: RscItemCheckboxGreen {
 };
 
 class ItemCheckboxAvailable: RscItemCheckboxGreen {
-	idc = IDC_CHECKBOX + 1;
+	idc = "IDC_CHECKBOX + 1";
 	x = GRID_X(SPACE_W2 + COMBO_W + SPACE_W*2 + BAR_W);
 	y = CURRENT_Y;
 	w = GRID_X(BAR_W);
@@ -55,7 +55,7 @@ class ItemCheckboxAvailable: RscItemCheckboxGreen {
 };
 
 class ItemCheckboxCompatible: RscItemCheckboxGreen {
-	idc = IDC_CHECKBOX + 2;
+	idc = "IDC_CHECKBOX + 2";
 	x = GRID_X(SPACE_W2 + COMBO_W + SPACE_W*3 + BAR_W*2);
 	y = CURRENT_Y;
 	w = GRID_X(BAR_W);
@@ -65,7 +65,7 @@ class ItemCheckboxCompatible: RscItemCheckboxGreen {
 };
 
 class ItemCheckboxSell: RscItemCheckboxGreen {
-	idc = IDC_CHECKBOX + 3;
+	idc = "IDC_CHECKBOX + 3";
 	x = GRID_X(SPACE_W2 + COMBO_W + SPACE_W*4 + BAR_W*3);
 	y = CURRENT_Y;
 	w = GRID_X(BAR_W);
@@ -75,7 +75,7 @@ class ItemCheckboxSell: RscItemCheckboxGreen {
 };
 
 class ItemListbox: RscItemListBox {
-	idc = IDC_LISTBOX;
+	idc = "IDC_LISTBOX";
 	x = GRID_X(STORE_W/4.16);
 	y = GRID_Y(LIST_Y);
 	w = GRID_X(67.6);

@@ -45,6 +45,7 @@ class A3A {
     #include "CfgFunctions.hpp"
 #endif
 
+#pragma hemtt flag pe23_ignore_has_include
 // Load external member list if present
 #if __has_include("\A3AMembers.hpp")
 #include "\A3AMembers.hpp"

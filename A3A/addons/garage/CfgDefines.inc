@@ -3,20 +3,20 @@
 
 //-- pixelGrid --\\
 #define pixelScale    0.50
-#define GRID_NOUISCALE_W (pixelW * pixelGridNoUIScale * pixelScale)
-#define GRID_NOUISCALE_H (pixelH * pixelGridNoUIScale * pixelScale)
+#define GRID_NOUISCALE_W "(pixelW * pixelGridNoUIScale * pixelScale)"
+#define GRID_NOUISCALE_H "(pixelH * pixelGridNoUIScale * pixelScale)"
 
 //-- Screen edge coordinates --\\
-#define SCREEN_TOP safeZoneY
-#define SCREEN_BOTTOM safeZoneH + safeZoneY
-#define SCREEN_LEFT safeZoneX
-#define SCREEN_RIGHT safeZoneW + safeZoneX
+#define SCREEN_TOP "safeZoneY"
+#define SCREEN_BOTTOM "safeZoneH + safeZoneY"
+#define SCREEN_LEFT "safeZoneX"
+#define SCREEN_RIGHT "safeZoneW + safeZoneX"
 
 //-- Text sizes --\\
-#define TEXT_SIZE_SMALL GRID_NOUISCALE_H * 2
-#define TEXT_SIZE_MEDIUM GRID_NOUISCALE_H * 2.4
-#define TEXT_SIZE_LARGE GRID_NOUISCALE_H * 3
-#define TEXT_SIZE_HUGE GRID_NOUISCALE_H * 4.5
+#define TEXT_SIZE_SMALL "GRID_NOUISCALE_H * 2"
+#define TEXT_SIZE_MEDIUM "GRID_NOUISCALE_H * 2.4"
+#define TEXT_SIZE_LARGE "GRID_NOUISCALE_H * 3"
+#define TEXT_SIZE_HUGE "GRID_NOUISCALE_H * 4.5"
 
 //-- Category --\\
 #define HR_GRG_IDC_CatUndercoverCar 1700100

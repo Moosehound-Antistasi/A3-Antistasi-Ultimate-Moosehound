@@ -126,22 +126,22 @@ Maintainer: DoomMetal
 
 #define pixelScale 0.5  // Was originally 0.5.
 #define PixelGridScaler pixelGridNoUIScale
-#define GRID_W (pixelW * PixelGridScaler * pixelScale)
-#define GRID_H (pixelH * PixelGridScaler * pixelScale)
+#define GRID_W "(pixelW * PixelGridScaler * pixelScale)"
+#define GRID_H "(pixelH * PixelGridScaler * pixelScale)"
 
 // Converts pixelGrid units to GUI coordinates
-#define PX_W(n) n*GRID_W
-#define PX_H(n) n*GRID_H
+#define PX_W(n) "n*GRID_W"
+#define PX_H(n) "n*GRID_H"
 
 // Gets origin (top-left) in GUI coordinates of a centered box defined by pixelGrid units
-#define CENTER_X(n) ((getResolution select 2) * 0.5 * pixelW) - (0.5 * (PX_W(n)))
-#define CENTER_Y(n) ((getResolution select 3) * 0.5 * pixelH) - (0.5 * (PX_H(n)))
+#define CENTER_X(n) "((getResolution select 2) * 0.5 * pixelW) - (0.5 * (PX_W(n)))"
+#define CENTER_Y(n) "((getResolution select 3) * 0.5 * pixelH) - (0.5 * (PX_H(n)))"
 
 // Text sizes
-#define GUI_TEXT_SIZE_SMALL (GRID_H * 3.2) // Fits inside 3*GRID_H
-#define GUI_TEXT_SIZE_SPECIAL (GRID_H * 3.5) // Fits inside alright)
-#define GUI_TEXT_SIZE_MEDIUM (GRID_H * 4.2)  // Fits inside 4*GRID_H
-#define GUI_TEXT_SIZE_LARGE (GRID_H * 5) // Fits inside 6*GRID_H
+#define GUI_TEXT_SIZE_SMALL "(GRID_H * 3.2)" // Fits inside 3*GRID_H
+#define GUI_TEXT_SIZE_SPECIAL "(GRID_H * 3.5)" // Fits inside alright)
+#define GUI_TEXT_SIZE_MEDIUM "(GRID_H * 4.2)"  // Fits inside 4*GRID_H
+#define GUI_TEXT_SIZE_LARGE "(GRID_H * 5)" // Fits inside 6*GRID_H
 
 
 ////////////

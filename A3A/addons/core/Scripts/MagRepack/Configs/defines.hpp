@@ -289,7 +289,7 @@ class outlw_MR_RscButtonMenu
 		font = "PuristaLight";
 		color = "#E5E5E5";
 		align = "left";
-		shadow = "false";
+		shadow = "0";
 	};
 	class ShortcutPos
 	{

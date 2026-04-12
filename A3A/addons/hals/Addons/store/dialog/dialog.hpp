@@ -9,7 +9,7 @@ class RscDisplayStore {
 	
 	class controlsBackground { 
 		class TitleBackground: RscItemText {
-			moving = true;
+			moving = 1;
 			x = DIALOG_X;
 			y = DIALOG_Y;
 			w = GRID_X(STORE_W);
@@ -18,9 +18,9 @@ class RscDisplayStore {
 		};
 
 		class StoreBackground: RscItemText {
-			moving = true;
+			moving = 1;
 			x = DIALOG_X;
-			y = DIALOG_Y + GRID_Y(BAR_H + SPACE_H2);
+			y = "DIALOG_Y + GRID_Y(BAR_H + SPACE_H2)";
 			w = GRID_X(STORE_W);
 			h = GRID_Y(STORE_H - (BAR_H + SPACE_H2));
 			colorBackground[] = {0.05, 0.05, 0.05, 0.7};
@@ -29,7 +29,7 @@ class RscDisplayStore {
 
 	class controls {
 		class CloseButton: RscItemButtonClose {
-			x = DIALOG_X + GRID_X(STORE_W - BAR_W);
+			x = "DIALOG_X + GRID_X(STORE_W - BAR_W)";
 			y = DIALOG_Y;
 			w = GRID_X(BAR_W);
 			h = GRID_Y(BAR_H);
@@ -42,7 +42,7 @@ class RscDisplayStore {
 		class TitleFunds: RscItemStructuredText {
 			idc = IDC_FUNDS;
 
-			x = DIALOG_X + GRID_X(STORE_W - BAR_W - BAR_W - FUNDS_W);
+			x = "DIALOG_X + GRID_X(STORE_W - BAR_W - BAR_W - FUNDS_W)";
 			y = DIALOG_Y;
 			w = GRID_X(FUNDS_W);
 			h = GRID_Y(FUNDS_H);
@@ -53,7 +53,7 @@ class RscDisplayStore {
 				font = "PuristaMedium";
 				color = "#aaffaa";
 				valign = "bottom";
-				shadow='1';
+				shadow = 1;
 			};
 		};
 
@@ -75,7 +75,7 @@ class RscDisplayStore {
 
 		class HelpButton {
 			idc = -1;
-			x = DIALOG_X + GRID_X(STORE_W - BAR_W - BAR_W);
+			x = "DIALOG_X + GRID_X(STORE_W - BAR_W - BAR_W)";
 			y = DIALOG_Y;
 			w = GRID_X(BAR_W);
 			h = GRID_Y(BAR_H);
@@ -105,7 +105,7 @@ class RscDisplayStore {
 		class ContainerGroup: RscItemCtrlGroupNoScrollbars {
 			idc = IDC_GROUP_TRADER;
 			x = TRADER_X;
-			y = DIALOG_Y + GRID_Y(BAR_H + SPACE_H2);
+			y = "DIALOG_Y + GRID_Y(BAR_H + SPACE_H2)";
 			w = GRID_X(TRADER_W);
 			h = GRID_Y(TRADER_H);
 			
@@ -117,7 +117,7 @@ class RscDisplayStore {
 		class HALs_store_dialog: RscItemCtrlGroupNoScrollbars {
 			idc = IDC_GROUP_ITEMS;
 			x = DIALOG_X;
-			y = DIALOG_Y + GRID_Y(BAR_H + SPACE_H + SPACE_H2);
+			y = "DIALOG_Y + GRID_Y(BAR_H + SPACE_H + SPACE_H2)";
 			w = GRID_X(BUFFER_W + LIST_W);
 			h = GRID_Y(STORE_H);
 
@@ -129,8 +129,8 @@ class RscDisplayStore {
 		class SelectedItemGroup: RscItemCtrlGroupNoScrollbars {
 			idc = IDC_GROUP_SELECTED;
 			
-			x = DIALOG_X + GRID_X(ITEM_X);
-			y = DIALOG_Y + GRID_Y(ITEM_Y);
+			x = "DIALOG_X + GRID_X(ITEM_X)";
+			y = "DIALOG_Y + GRID_Y(ITEM_Y)";
 			w = GRID_X(ITEM_W);
 			h = GRID_Y(STORE_H);
 

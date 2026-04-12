@@ -12,26 +12,26 @@ class A3A_teamLeaderBuilder
 {
     idd = A3A_IDD_TEAMLEADERDIALOG;
     onLoad = "[""onLoad""] spawn A3A_fnc_teamLeaderRTSPlacerDialog";
-    movingenable = true;
+    movingenable = 1;
 
     class ControlsBackground
     {
         class TitleBarBackground : A3A_Background
         {
-            moving = true;
+            moving = 1;
             colorBackground[] = A3A_COLOR_TITLEBAR_BACKGROUND;
-            x = safeZoneX;
-            y = SCREEN_BOTTOM - PX_H(41);
-            w = safeZoneW - PX_W(40);
-            h = PX_H(5);
+            x = "safeZoneX";
+            y = "SCREEN_BOTTOM - PX_H(41)";
+            w = "safeZoneW - PX_W(40)";
+            h = "PX_H(5)";
         };
 
         class Background : A3A_Background
         {
-            x = safeZoneX;
-            y = SCREEN_BOTTOM - PX_H(36);
-            w = safeZoneW - PX_W(40);
-            h = PX_H(36);
+            x = "safeZoneX";
+            y = "SCREEN_BOTTOM - PX_H(36)";
+            w = "safeZoneW - PX_W(40)";
+            h = "PX_H(36)";
         };
     };
 
@@ -40,21 +40,21 @@ class A3A_teamLeaderBuilder
         class TitlebarText : A3A_TitlebarText
         {
             idc = -1;
-            // text = $STR_antistasi_teamleader_placer_title;
+            // text = "$STR_antistasi_teamleader_placer_title";
             text = "Teamleader Builder";
-            x = safeZoneX;
-            y = SCREEN_BOTTOM - PX_H(41);
-            w = safeZoneW - PX_W(80);
-            h = PX_H(5);
+            x = "safeZoneX";
+            y = "SCREEN_BOTTOM - PX_H(41)";
+            w = "safeZoneW - PX_W(80)";
+            h = "PX_H(5)";
         };
         class RemMoneyText: A3A_TitlebarText
         {
             idc = A3A_IDC_TEAMLEADERBUILDERMONEY;
             text = "500 €";
-            x = SCREEN_RIGHT - PX_W(80);
-            y = SCREEN_BOTTOM - PX_H(41);
-            w = PX_W(40);
-            h = PX_H(5);
+            x = "SCREEN_RIGHT - PX_W(80)";
+            y = "SCREEN_BOTTOM - PX_H(41)";
+            w = "PX_W(40)";
+            h = "PX_H(5)";
             style = ST_RIGHT;
         };
 
@@ -62,10 +62,10 @@ class A3A_teamLeaderBuilder
         class MainContent : A3A_DefaultControlsGroup
         {
             idc = A3A_IDC_TEAMLEADERBUILDERMAIN;
-            x = safeZoneX;
-            y = SCREEN_BOTTOM - PX_H(36);
-            w = safeZoneW - PX_W(40);
-            h = PX_H(36);
+            x = "safeZoneX";
+            y = "SCREEN_BOTTOM - PX_H(36)";
+            w = "safeZoneW - PX_W(40)";
+            h = "PX_H(36)";
 
             class Controls
             {
@@ -73,9 +73,9 @@ class A3A_teamLeaderBuilder
                 {
                     idc = A3A_IDC_TEAMLEADERBUILDINGGROUP;
                     x = 0;
-                    y = PX_H(4);
-                    w = safeZoneW - PX_W(40);
-                    h = PX_H(32);
+                    y = "PX_H(4)";
+                    w = "safeZoneW - PX_W(40)";
+                    h = "PX_H(32)";
                 };
             };
         };

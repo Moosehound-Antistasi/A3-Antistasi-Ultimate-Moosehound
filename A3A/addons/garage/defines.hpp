@@ -157,7 +157,7 @@ class HR_GRG_RscStructuredText
         color = "#FFFFFF";
         align = "left";
         valign = "middle";
-        shadow = false;
+        shadow = 0;
         shadowColor = "#F5F5F5";
         size = "1";
     };
@@ -399,7 +399,7 @@ class HR_GRG_RscCombo
     colorSelectBackground[] = {0.53,0.53,0.53,0.75};
     arrowEmpty = "\A3\ui_f\data\GUI\RscCommon\RscCombo\arrow_combo_ca.paa";
     arrowFull = "\A3\ui_f\data\GUI\RscCommon\RscCombo\arrow_combo_active_ca.paa";
-    wholeHeight = 0.45 * safeZoneH;
+    wholeHeight = "0.45 * safeZoneH";
     colorActive[] = {1,0,0,1};
 };
 class HR_GRG_RscComboBlckBG : HR_GRG_RscCombo
