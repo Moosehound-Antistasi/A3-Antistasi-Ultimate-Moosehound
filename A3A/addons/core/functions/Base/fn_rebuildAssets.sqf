@@ -46,14 +46,15 @@ private _rebuildFail = {
 
 switch (true) do {
 	case (_site in citiesX): {
-		[0, 10, _position] remoteExec ["A3A_fnc_citySupportChange",2];
-    	[Occupants, 10, 30] remoteExec ["A3A_fnc_addAggression",2];
-    	[Invaders, 10, 30] remoteExec ["A3A_fnc_addAggression",2];
-
 		private _destroyedSite = destroyedSites find _site;
 		if (_destroyedSite == -1) exitWith {
 			["STR_notifiers_rebuild_assets_nothing_to_rebuild", _name] call _rebuildFail;
 		};
+
+		[0, 10, _position] remoteExec ["A3A_fnc_citySupportChange",2];
+    	[Occupants, 10, 30] remoteExec ["A3A_fnc_addAggression",2];
+    	[Invaders, 10, 30] remoteExec ["A3A_fnc_addAggression",2];
+
 		destroyedSites deleteAt(_destroyedSite);
 		publicVariable "destroyedSites";
 
