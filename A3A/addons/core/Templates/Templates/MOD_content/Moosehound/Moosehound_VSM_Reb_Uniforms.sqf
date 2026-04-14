@@ -1,0 +1,27 @@
+
+_dlcUniforms append [
+	"IFFM_Multicam_Crye_Camo_1",
+	"IFFM_Multicam_Crye_SS_Camo_1",
+	"IFFM_MulticamGNS_Crye_Camo_1",
+	"IFFM_MulticamGNS_Crye_SS_Camo_1",
+	"IFFM_MulticamGS_Crye_Camo_1",
+	"IFFM_MulticamGS_Crye_SS_Camo_1",
+	"IFFM_MulticamGNP_Crye_Camo_1",
+	"IFFM_MulticamGNP_Crye_SS_Camo_1",
+	"IFFM_MulticamTP_Crye_Camo_1",
+	"IFFM_MulticamTP_Crye_SS_Camo_1",
+	"IFFM_MulticamArid_Crye_Camo_1",
+	"IFFM_MulticamArid_Crye_SS_Camo_1",
+	"IFFM_MulticamBlack_Crye_Camo_1",
+	"IFFM_MulticamBlack_Crye_SS_Camo_1",
+	"IFFM_OGABlack_Crye_Camo_1",
+	"IFFM_OGABlack_Crye_SS_Camo_1",
+	"IFFM_M81_Crye_Camo_1",
+	"IFFM_M81_Crye_SS_Camo_1",
+	"IFFM_M81GNS_Crye_Camo_1",
+	"IFFM_M81GNS_Crye_SS_Camo_1",
+	"IFFM_M81GS_Crye_Camo_1",
+	"IFFM_M81GS_Crye_SS_Camo_1",
+	"IFFM_M81TS_Crye_Camo_1",
+	"IFFM_M81TS_Crye_SS_Camo_1"
+];

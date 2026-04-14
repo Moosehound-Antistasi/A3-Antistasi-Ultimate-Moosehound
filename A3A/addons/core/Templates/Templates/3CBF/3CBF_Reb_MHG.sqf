@@ -176,6 +176,10 @@ if (isClass (configfile >> "CfgPatches" >> "VSM_Multicam_Config")) then {
 	};
 };
 
+if (["Drift91_VSM_IFF_Moosestasi"] call A3U_fnc_hasAddon) then {
+	#include "..\MOD_content\Moosehound\Moosehound_VSM_Reb_Uniforms.sqf"
+};
+
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
 ["uniforms", _rebUniforms + _dlcUniforms] call _fnc_saveToTemplate;
