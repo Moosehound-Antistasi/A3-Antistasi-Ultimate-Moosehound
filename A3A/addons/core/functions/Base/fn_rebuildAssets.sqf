@@ -92,10 +92,6 @@ switch (true) do {
 		{
 			[_x] remoteExec ["A3A_fnc_repairRuinedBuilding", 2];
 		} forEach _militaryBuildings;
-		
-		destroyedSites deleteAt(destroyedSites find _site);
-		publicVariable "destroyedSites";
-
 		["STR_notifiers_rebuild_assets_success", _name] call _rebuildSuccess;
 		[clientOwner, "destroyedBuildings"] remoteExecCall ["publicVariableClient", 2];
 	};
