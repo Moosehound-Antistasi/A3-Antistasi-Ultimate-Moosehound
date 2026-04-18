@@ -6,7 +6,7 @@ param (
 "Workshop ID: $WorkshopID`n`n"
 Push-Location
 
-Set-Location "$PSScriptRoot\..\..\A3A"
+Set-Location "$PSScriptRoot\..\..\x\A3A"
 
 "`nGet version number"
 $versionFile = (Get-Content addons\core\Includes\script_version.hpp)
@@ -19,25 +19,28 @@ ForEach($line in $versionFile) {
 $version = $version.Substring(0, $version.Length -1)
 
 "Setup temporary directories..."
-if (Test-Path "..\build") {
-    Remove-Item -Path "..\build" -Recurse -Force
+if (Test-Path "..\..\build") {
+    Remove-Item -Path "..\..\build" -Recurse -Force
 }
-New-Item -Path "..\build" -ItemType Directory -Force > $null
-New-Item -Path "..\build\A3A-Plus" -ItemType Directory -Force > $null
-New-Item -Path "..\build\A3A-Plus\addons" -ItemType Directory -Force > $null
-New-Item -Path "..\build\A3A-Plus\Keys" -ItemType Directory -Force > $null
+New-Item -Path "..\..\build" -ItemType Directory -Force > $null
+New-Item -Path "..\..\build\A3A-Plus" -ItemType Directory -Force > $null
+New-Item -Path "..\..\build\A3A-Plus\addons" -ItemType Directory -Force > $null
+New-Item -Path "..\..\build\A3A-Plus\Keys" -ItemType Directory -Force > $null
 
-$addonLocation = "." # We are here already
+$addonLocation = Resolve-Path "." # We are here already
 $addonOutLocation = "$PSScriptRoot\..\..\build\A3A-Plus"
 $addonsOutLocation = "$addonOutLocation\addons"
+$projectDir = Resolve-Path "$PSScriptRoot\..\.."
 
 "`nBuild addons..."
 $modules = Get-Childitem "$addonLocation\addons" -Directory
+#$modules = $modules | Where-Object -FilterScript { $_.Name -ne "a3" } | Where-Object -FilterScript { $_.Name -ne "cba" }
 foreach ($module in $modules) {
     $pboName = "$($module.Name).pbo"
     #"Building $pboName...  $addonLocation\addons\$($module.Name)   -> $addonsOutLocation\$pboName"
     "Building $pboName ..."
-    .$PSScriptRoot\hemtt armake pack --force $module.fullName "$addonsOutLocation\$pboName"
+    #.$PSScriptRoot\hemtt armake pack --force $module.fullName "$addonsOutLocation\$pboName"
+    .$PSScriptRoot\..\AddonBuilder\AddonBuilder $module.fullName "$addonsOutLocation" -clear -include="$PSScriptRoot\include.txt" -project="$projectDir" -prefix="x\A3A\addons\$($module.Name)" -binarizeAllTextures
 }
 
 "`nCopy mod.cpp..."
