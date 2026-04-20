@@ -1,6 +1,6 @@
 private _outputData = [];
 
-"(getText (_x >> ""type"") in [""NameCityCapital"", ""NameCity"", ""NameVillage"", ""CityCenter""]) && !(getText (_x >> ""Name"") isEqualTo """")"
+"(toLower getText (_x >> ""type"") in [""namecitycapital"", ""namecity"", ""namevillage"", ""citycenter""]) && !(getText (_x >> ""Name"") isEqualTo """")"
 configClasses (configfile >> "CfgWorlds" >> worldName >> "Names") apply
 {
    _nameX = configName _x;
