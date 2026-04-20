@@ -26,7 +26,7 @@ class CfgFaces
 		class Drift91_HeadKyle_01: WhiteHead_09
 		{
 			displayname="McKeown";
-			texture="\Drift91_Faces\faces\kyle_01_co.paa";
+			texture="x\A3A\addons\drift91_faces\faces\kyle_01_co.paa";
 			identityTypes[]={};
 			author="Bohemia Interactive & Drift_91";
 		};
@@ -37,7 +37,7 @@ class CfgFaces
 			displayname="Shields";
 			identityTypes[]={};
 			author="Bohemia Interactive & Drift_91";
-			textureHL="\Drift91_Faces\arms\hl_white_bald_1_WeThePeople_co.paa";
+			textureHL="x\A3A\addons\drift91_faces\arms\hl_white_bald_1_WeThePeople_co.paa";
 		};
 	};
 };

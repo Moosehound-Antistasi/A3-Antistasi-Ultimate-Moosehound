@@ -8,7 +8,7 @@ private _hasArtOfWar = "aow" in A3A_enabledDLC;
 ["name", "FIA"] call _fnc_saveToTemplate;
 
 ["flag", "D91_Flag_FIA_F"] call _fnc_saveToTemplate;
-["flagTexture", "Drift91_Moosestasi\textures\flags\Flag_Moose_CO.paa"] call _fnc_saveToTemplate;
+["flagTexture", "x\A3A\addons\drift91_moosestasi\textures\flags\Flag_Moose_CO.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "D91_flag_FIA"] call _fnc_saveToTemplate;
 
 

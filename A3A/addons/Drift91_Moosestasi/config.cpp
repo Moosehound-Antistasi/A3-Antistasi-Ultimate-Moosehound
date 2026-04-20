@@ -17,18 +17,18 @@ class CfgFactionClasses
 {
 	class IND_G_F
 	{
-		icon="\Drift91_Moosestasi\textures\flags\cfgFactionClasses_IND_G_ca.paa";
-		flag="\Drift91_Moosestasi\textures\flags\Flag_Moose_CO.paa";
+		icon="x\A3A\addons\drift91_moosestasi\textures\flags\cfgFactionClasses_IND_G_ca.paa";
+		flag="x\A3A\addons\drift91_moosestasi\textures\flags\Flag_Moose_CO.paa";
 	};
 	class BLU_G_F
 	{
-		icon="\Drift91_Moosestasi\textures\flags\cfgFactionClasses_IND_G_ca.paa";
-		flag="\Drift91_Moosestasi\textures\flags\Flag_Moose_CO.paa";
+		icon="x\A3A\addons\drift91_moosestasi\textures\flags\cfgFactionClasses_IND_G_ca.paa";
+		flag="x\A3A\addons\drift91_moosestasi\textures\flags\Flag_Moose_CO.paa";
 	};
 	class OPF_G_F
 	{
-		icon="\Drift91_Moosestasi\textures\flags\cfgFactionClasses_IND_G_ca.paa";
-		flag="\Drift91_Moosestasi\textures\flags\Flag_Moose_CO.paa";
+		icon="x\A3A\addons\drift91_moosestasi\textures\flags\cfgFactionClasses_IND_G_ca.paa";
+		flag="x\A3A\addons\drift91_moosestasi\textures\flags\Flag_Moose_CO.paa";
 	};
 };
 
@@ -39,7 +39,7 @@ class CfgVehicles
 	{
 		class EventHandlers
 		{
-			init = "(_this select 0) setFlagTexture '\Drift91_Moosestasi\textures\flags\Flag_Moose_CO.paa'";
+			init = "(_this select 0) setFlagTexture 'x\A3A\addons\drift91_moosestasi\textures\flags\Flag_Moose_CO.paa'";
 		};
 		scope = 2;
 		scopeCurator = 2;
@@ -48,7 +48,7 @@ class CfgVehicles
 	{
 		class EventHandlers
 		{
-			init = "(_this select 0) setFlagTexture '\Drift91_Moosestasi\textures\flags\Flag_Moose_CO.paa'";
+			init = "(_this select 0) setFlagTexture 'x\A3A\addons\drift91_moosestasi\textures\flags\Flag_Moose_CO.paa'";
 		};
 		scope = 2;
 		scopeCurator = 2;
@@ -57,7 +57,7 @@ class CfgVehicles
 	{
 		class EventHandlers
 		{
-			init = "(_this select 0) setFlagTexture '\Drift91_Moosestasi\textures\flags\Flag_Moose_CO.paa'";
+			init = "(_this select 0) setFlagTexture 'x\A3A\addons\drift91_moosestasi\textures\flags\Flag_Moose_CO.paa'";
 		};
 		scope = 2;
 		scopeCurator = 2;
@@ -70,19 +70,19 @@ class CfgMarkers
 	class D91_flag_FIA: flag_NATO
 	{
 		name="$STR_A3_CfgMarkers_flag_FIA";
-		icon="\Drift91_Moosestasi\textures\flags\Moose_ca.paa";
-		texture="\Drift91_Moosestasi\textures\flags\Moose_ca.paa";
+		icon="x\A3A\addons\drift91_moosestasi\textures\flags\Moose_ca.paa";
+		texture="x\A3A\addons\drift91_moosestasi\textures\flags\Moose_ca.paa";
 	};
 	class D91_Marker_NAP: flag_NATO
 	{
 		name="3CB NAPA (The National Party)";
-		icon="\Drift91_Moosestasi\textures\flags\Moose_ca.paa";
-		texture="\Drift91_Moosestasi\textures\flags\Moose_ca.paa";
+		icon="x\A3A\addons\drift91_moosestasi\textures\flags\Moose_ca.paa";
+		texture="x\A3A\addons\drift91_moosestasi\textures\flags\Moose_ca.paa";
 	};
 	class D91_Marker_MHG: flag_NATO
 	{
 		name="Moosehound Group";
-		icon="\Drift91_Moosestasi\textures\flags\Moose_ca.paa";
-		texture="\Drift91_Moosestasi\textures\flags\Moose_ca.paa";
+		icon="x\A3A\addons\drift91_moosestasi\textures\flags\Moose_ca.paa";
+		texture="x\A3A\addons\drift91_moosestasi\textures\flags\Moose_ca.paa";
 	};
 };
