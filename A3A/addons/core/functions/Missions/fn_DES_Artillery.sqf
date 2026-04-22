@@ -104,7 +104,6 @@ private _potentialSites = (outposts + milbases + airportsX + resourcesX + factor
     private _potentialPos = getMarkerPos _x;
     sidesX getVariable [_x,sideUnknown] == teamPlayer && {_missionOriginPos distance _potentialPos < 2500}
 };
-_potentialSites pushBack "Synd_HQ"; //sorry, Petros
 
 private _targetSite = selectRandom _potentialSites;
 private _targetPosition = getMarkerPos _targetSite;
@@ -261,19 +260,10 @@ waitUntil {
 
 switch (true) do {
     case (alive _artilleryVeh && {_artilleryCrew findIf {alive _x} != -1}): {
-        Info("Artillery will fire at rebel position for some time, fail.");
+        Info("Artillery still alive, fail.");
         [_taskId, "DES", "FAILED"] call A3A_fnc_taskSetState;
         [-900, _sideX] remoteExec ["A3A_fnc_timingCA",2];
         [-15,theBoss] call A3A_fnc_addScorePlayer;
-
-        if (!isNil "_firedEh") then {
-            _artilleryVeh removeEventHandler ["Fired", _firedEh];
-        };
-        [_artilleryVeh] call A3A_fnc_addArtilleryTrailEH;
-        _shellCount = round(random [2,4,7]);
-        sleep 1;
-        _artilleryVeh doArtilleryFire [_targetPosition, _artilleryShellClass, _shellCount];
-        sleep 60; //shelling...
     };
     case (!(alive _artilleryVeh) || {_artilleryCrew findIf {alive _x} == -1}): {
         Info("Artillery is destroyed, success.");
