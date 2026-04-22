@@ -202,8 +202,8 @@ while {true} do {
  	A3A_oldHQInfoOcc = A3A_oldHQInfoOcc select { _x set [2, _x#2 - 0.1]; _x#2 > 0 };			// arrays of [xpos, ypos, knowledge]
 	A3A_oldHQInfoInv = A3A_oldHQInfoInv select { _x set [2, _x#2 - 0.1]; _x#2 > 0 };
 
-	private _missionChance = 5 * A3A_activePlayerCount;
-	if ((!bigAttackInProgress) and (random 100 < _missionChance)) then {[] spawn A3A_fnc_missionRequest};
+	//private _missionChance = 5 * A3A_activePlayerCount;
+	//if ((!bigAttackInProgress) and (random 100 < _missionChance)) then {[] spawn A3A_fnc_missionRequest};
 	//Removed from scheduler for now, as it errors on Headless Clients.
 	//[[],"A3A_fnc_reinforcementsAI"] call A3A_fnc_scheduler;
 	[] spawn A3A_fnc_reinforcementsAI;
