@@ -24,8 +24,11 @@ if (_vehUID isEqualTo -1) exitWith {["STR_HR_GRG_Feedback_confirm_NullSelection"
 private _fnc_placed = {
     params ["_veh"];
 
-    if (!isNull _veh && !HR_GRG_ServiceDisabled_Refuel) then {
-        [_veh] remoteExecCall ["HR_GRG_fnc_refuelVehicleFromSources", 2];
+    _veh spawn {
+        sleep 3;
+        if (!isNull _this && !HR_GRG_ServiceDisabled_Refuel) then {
+            [_this] remoteExecCall ["HR_GRG_fnc_refuelVehicleFromSources", 2];
+        };
     };
     _veh call HR_GRG_fnc_vehInit;
 
